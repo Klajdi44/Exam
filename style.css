@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background:  #F6F8F7;
 
 }
@@ -94,7 +96,8 @@ header{
     background-size:cover;
     background-repeat: no-repeat;
     background-image: url(images/landscape2filter.png);
-    min-height: 98vh;
+    min-height: 45vh;
+    transform: translateY(-1.7em)
 
 }
 
@@ -103,6 +106,103 @@ header{
     color: #000;
     font-size: 1.2em;
 }
+.ptext h1 {
+ transform: translateY(1em);
+}
+.ptext p {
+ transform: translateY(2em);
+        font-size: 1.2em;
+    margin: 0em .3em;
+
+}
+/************* </landscreen******************/
+
+
+/************* story******************/
+
+section > h2{
+    text-align: center;
+    font-size: 2em;
+     transform: translateY(-2.5em)
+}
+
+section > p{
+transform: translateY(-4em);
+    margin: 2em 1em;
+    text-align:inherit;
+        font-size: 1.2em;
+
+     }
+
+.storyimg{
+height:40vh;
+    position: relative;
+    }
+
+.border{
+    position: absolute;
+    padding: 0em .4em;
+    background: #2C2B30;
+    color: #F6F8F7;
+    bottom: -16em;
+    left:16em;
+    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
+
+}
+.border h2{
+    font-size: 1.2em;
+}
+
+.quote p{
+    text-align: center;
+    margin: 3em;
+        font-size: 1.2em;
+
+}
+
+.middleimgs img{
+    height: 12vh;
+    }
+
+.middleimgs{
+   display: flex;
+    justify-content:space-between;
+    }
+
+.underimgp p{
+    margin: 2em  1em;
+    font-size: 1.2em;
+}
+
+.underimgp p:nth-child(3){
+ margin: 0;
+ transform: translateX(9em);
+    font-size: 2em;
+    color: #44BAC0;
+    }
+.underimgp p:nth-child(4){
+ margin: 0;
+ transform: translateX(7.5em);
+    font-size: 2em;
+    }
+.underimgp p:nth-child(5){
+ margin: 0;
+ transform: translateX(9em);
+    font-size: 2em;
+    color: #44BAC0;
+    }
+.underimgp p:nth-child(6){
+ margin: 0;
+ transform: translateX(7.5em);
+    font-size: 2em;
+    }
+
+/*************</story******************/
+
+/*************environment******************/
+
+
+
 
 
 
