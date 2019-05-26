@@ -1,0 +1,89 @@
+body{
+    background:  #F6F8F7;
+
+}
+/************* NAVBAR******************/
+header{
+    border: 1px solid;
+}
+
+.burgerMenu{
+    font-size: 3em;
+    transform: translateX(2e)
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E9F3F4;
+    opacity: 0.95;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: top;
+    margin-top: 2em;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.overlay a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    color:#494D66;
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+    padding-bottom: .7em;
+}
+
+.overlay  a:hover{
+    color: #878787;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7em;
+}
+
+.closebtn {
+    position: absolute;
+    right: .9em;
+    top: 1em;
+    cursor:pointer;
+    border: none;
+    font-size: 2em;
+     background: none;
+}
+.closebtn:hover{
+    transform: rotate(180deg);
+    font-size: 2.3em;
+    transition: .5s;}
+
+.logo{
+   height: 6em
+}
+
+.bag{
+    height: 4em;
+
+}
+
+.headerAdj{
+    display: flex;
+    justify-content:space-between;
+    margin-top: .3em;
+
+    }
+
+
+
+/************* NAVBAR******************/
