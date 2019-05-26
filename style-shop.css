@@ -104,6 +104,37 @@ main {
 
 footer {
     background-color: #2C2B30;
-    height: 130px;
+    height: 160px;
     box-shadow: -1px -1px 15px black;
 }
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.contact-info {
+    grid-column: 1/span 3;
+    grid-row: 1/span 2;
+    font-family: 'Montserrat', sans-serif;
+    color: #F6F8F7;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+
+.contact-info .contact {
+    font-size: 1rem;
+}
+
+.social-media {
+    grid-column: 1/span 3;
+    grid-row: 3/span 1;
+}
+
+.social-media img {
+    width: 40px;
+    margin: 0px 10px;
+
+}
+
