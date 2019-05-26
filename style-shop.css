@@ -32,7 +32,7 @@ a {
     all: unset;
 }
 
-/* GRID */
+/* GRID MAIN */
 
 main {
     display: grid;
@@ -98,4 +98,12 @@ main {
 
 .hidden {
     display: none;
+}
+
+/* GRID FOOTER */
+
+footer {
+    background-color: #2C2B30;
+    height: 130px;
+    box-shadow: -1px -1px 15px black;
 }
