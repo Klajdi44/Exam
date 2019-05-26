@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:  #F6F8F7;
+
+}
+/************* NAVBAR******************/
+header{
+    border: 1px solid;
+}
+
+.burgerMenu{
+    font-size: 3em;
+    transform: translateX(2e)
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E9F3F4;
+    opacity: 0.95;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: top;
+    margin-top: 2em;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.overlay a {
+    padding: 0.5em;
+    text-decoration: none;
+    font-size: 1.3em;
+    color:#494D66;
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+    padding-bottom: .7em;
+}
+
+.overlay  a:hover{
+    color: #878787;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7em;
+}
+
+.closebtn {
+    position: absolute;
+    right: .9em;
+    top: 1em;
+    cursor:pointer;
+    border: none;
+    font-size: 2em;
+     background: none;
+}
+.closebtn:hover{
+    transform: rotate(180deg);
+    font-size: 2.3em;
+    transition: .5s;}
+
+.logo{
+   height: 6em
+}
+
+.bag{
+    height: 4em;
+
+}
+
+.headerAdj{
+    display: flex;
+    justify-content:space-between;
+    margin-top: .3em;
+
+    }
+/************* </NAVBAR******************>/
+
+/************* landscreen******************/
+
+
+.landscreenimg {
+    position: relative;
+    opacity: 0.70;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(images/landscape2filter.png);
+    min-height: 45vh;
+    transform: translateY(-1.7em)
+
+}
+
+.ptext {
+    text-align: center;
+    color: #000;
+    font-size: 1.2em;
+}
+.ptext h1 {
+ transform: translateY(1em);
+}
+.ptext p {
+ transform: translateY(2em);
+        font-size: 1.2em;
+    margin: 0em .3em;
+
+}
+/************* </landscreen******************/
+
+
+/************* story******************/
+
+section > h2{
+    text-align: center;
+    font-size: 2em;
+     transform: translateY(-2.5em)
+}
+
+section > p{
+transform: translateY(-4em);
+    margin: 2em 1em;
+    text-align:inherit;
+        font-size: 1.2em;
+
+     }
+
+.storyimg{
+height:40vh;
+    position: relative;
+    }
+
+.border{
+    position: absolute;
+    padding: 0em .4em;
+    background: #2C2B30;
+    color: #F6F8F7;
+    bottom: -16em;
+    left:16em;
+    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
+
+}
+.border h2{
+    font-size: 1.2em;
+}
+
+.quote p{
+    text-align: center;
+    margin: 3em;
+        font-size: 1.2em;
+
+}
+
+.middleimgs img{
+    height: 12vh;
+    }
+
+.middleimgs{
+   display: flex;
+    justify-content:space-between;
+    }
+
+.underimgp p{
+    margin: 2em  1em;
+    font-size: 1.2em;
+}
+
+.underimgp p:nth-child(3){
+ margin: 0;
+ transform: translateX(9em);
+    font-size: 2em;
+    color: #44BAC0;
+    }
+.underimgp p:nth-child(4){
+ margin: 0;
+ transform: translateX(7.5em);
+    font-size: 2em;
+    }
+.underimgp p:nth-child(5){
+ margin: 0;
+ transform: translateX(9em);
+    font-size: 2em;
+    color: #44BAC0;
+    }
+.underimgp p:nth-child(6){
+ margin: 0;
+ transform: translateX(7.5em);
+    font-size: 2em;
+    }
+
+/*************</story******************/
+
+/*************environment******************/
+
+
+
+
+
+
+
+
