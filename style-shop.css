@@ -109,6 +109,7 @@ footer {
 }
 
 .footer-content {
+    margin-left: calc(50% - 100px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -137,4 +138,5 @@ footer {
     margin: 0px 10px;
 
 }
+
 
