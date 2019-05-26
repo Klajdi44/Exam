@@ -1,0 +1,80 @@
+.inuit-picture {
+    margin-left: calc(50% + 120px);
+}
+
+/* GRID SYSTEM ITEM */
+
+.container-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.2em;
+}
+
+.item {
+    margin-bottom: 30px;
+    width: 200px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 60px 1fr 0px 30px;
+    grid-template-columns: 1fr;
+}
+
+.image-item {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+.additional-details {
+    grid-row: 4/span 1;
+    grid-column: 1/span 1;
+    text-align: right;
+}
+
+/* PRICE */
+
+.price-margin {
+    margin-left: -164px;
+    margin-top: -212px;
+    opacity: 0.8;
+}
+
+.price-rotate {
+    transform: rotate(270deg);
+}
+
+.price {
+    display: inline;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    padding: 5px 25px;
+}
+
+/* TYPOGRAPHY */
+
+h4 {
+    margin-top: 35px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.price-margin {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: #404D66;
+}
+
+.additional-details {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color: #45BAC1;
+}
+
+.collection {
+    margin-top: -10px;
+}
