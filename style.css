@@ -129,13 +129,13 @@ header{
 
 /************* story******************/
 
-section > h2{
+.story  h2{
     text-align: center;
     font-size: 2em;
      transform: translateY(-2.5em)
 }
 
-section > p{
+.story p{
 transform: translateY(-4em);
     margin: 2em 1em;
     text-align:inherit;
@@ -144,8 +144,8 @@ transform: translateY(-4em);
      }
 
 .storyimg{
-height:40vh;
-    position: relative;
+    height: 400px;
+    width: 100%
     }
 
 .border{
@@ -212,6 +212,7 @@ height:40vh;
 
 .environment h2 {
     margin-top: 6em;
+    text-align: center;
     }
 
 .borderenv{
@@ -234,8 +235,10 @@ height:40vh;
     }
 
 .environment p{
-    left: 1.5em;
-        transform: translateY(2em);
+    margin: 5em 1em 0em 1em;
+        font-size: 1.2em;
+
+
 }
 
 
@@ -254,36 +257,63 @@ height:40vh;
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
+
+
+.happyclients h2 {
+    margin-top: 6em;
+    text-align: center;
+    }
+
+.borderenv{
+    position: absolute;
+    padding: 0em .4em;
+    background: #2C2B30;
+    color: #F6F8F7;
+    bottom: -94em;
+    left:15em;
+    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.happyclients  img:nth-child(3){
+    height:15vh;
+    position: absolute;
+    transform: translateY(-5em);
+    left: 1.5em;
+    }
+
+.happyclients  p{
+    margin: 5em 1em 0em 1em;
+        font-size: 1.2em;
+
+
+}
 /*************</happy clients******************/
 
-.happyclients{
+.famousproducts{
     text-align: center;
     padding-top: 2.5em;
 
 }
-.happyclients img{
+.famousproducts img{
     height: 12vh;
     position: relative;
 
 }
 
-.gridclients{
+.gridproducts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
     grid-gap: 1em;
     padding: 0em .4em;
     padding-bottom: 1em;
 }
-.gridclients p:nth-child(3){
+.gridproducts p:nth-child(3){
 transform: translateY(-4.2em)  translateX(-1.5em) rotate(90deg);
     background: #EDEEEE;
     width: 4.5em;
     border: 1px solid;
-
-
-
-
-
 
 }
 
