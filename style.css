@@ -1,14 +1,17 @@
-*{
-font-family: helvetica}
-body{
+* {
+    font-family: helvetica
+}
+
+body {
     margin: 0;
     padding: 0;
-    background:  #F6F8F7;
+    background: #F6F8F7;
     overflow-x: hidden;
 
 }
+
 /************* NAVBAR******************/
-header{
+header {
     border: 1px solid;
     background: #fff;
     width: 100%;
@@ -19,8 +22,9 @@ header{
     top: 0;
 }
 
-.burgerMenu{
-    font-size: 3em;}
+.burgerMenu {
+    font-size: 3em;
+}
 
 
 .overlay {
@@ -51,14 +55,14 @@ header{
     padding: 0.5em;
     text-decoration: none;
     font-size: 1.3em;
-    color:#494D66;
+    color: #494D66;
     display: block;
     transition: 0.5s;
     text-align: center;
     padding-bottom: .7em;
 }
 
-.overlay  a:hover{
+.overlay a:hover {
     color: #878787;
     font-family: 'Poppins', sans-serif;
     font-size: 1.7em;
@@ -68,35 +72,38 @@ header{
     position: absolute;
     right: -.7em;
     top: 1.2em;
-    cursor:pointer;
+    cursor: pointer;
     border: none;
     font-size: 2em;
-     background: none;
+    background: none;
     width: 20%;
 }
-.closebtn:hover{
+
+.closebtn:hover {
     transform: rotate(180deg);
     font-size: 2.3em;
-    transition: .5s;}
-
-.logo{
-   height: 6em
+    transition: .5s;
 }
 
-.bag{
+.logo {
+    height: 6em
+}
+
+.bag {
     height: 4em;
 
 }
 
-.headerAdj{
+.headerAdj {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin-top: .3em;
     margin-left: 1em;
     margin-right: 1em;
 
 
-    }
+}
+
 /************* </NAVBAR******************>/
 
 /************* landscreen******************/
@@ -104,7 +111,7 @@ header{
 
 .landscreenimg {
     opacity: 0.70;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/landscape2filter.png);
     min-height: 45vh;
@@ -117,41 +124,46 @@ header{
     color: #000;
     font-size: 1.2em;
 }
+
 .ptext h1 {
- transform: translateY(1em);
+    transform: translateY(1em);
 }
+
 .ptext p {
- transform: translateY(2em);
-        font-size: 1.2em;
+    transform: translateY(2em);
+    font-size: 1.2em;
     margin: 0em .3em;
 
 }
+
 /************* </landscreen******************/
 
 
 /************* story******************/
 
-.story  h2{
+.story h2 {
     text-align: center;
     font-size: 2em;
     padding-bottom: 1.3em;
 }
 
-.story p{
+.story p {
     margin: 1em 1em 1em 1em;
-    text-align:inherit;
-        font-size: 1.2em;}
+    text-align: inherit;
+    font-size: 1.2em;
+}
 
-.containerstory{
+.containerstory {
     position: relative;
     width: 100%;
 }
-.containerstory img{
+
+.containerstory img {
     height: 400px;
     width: 100%
-    }
+}
 
-.border{
+.border {
     position: absolute;
     padding: 0em .4em;
     background: #2C2B30;
@@ -162,50 +174,54 @@ header{
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
-.border h2{
+
+.border h2 {
     font-size: 1.2em;
 }
 
-.quote p{
+.quote p {
     text-align: center;
     margin: 3em;
-        font-size: 1.2em;
+    font-size: 1.2em;
 
 }
 
-.middleimgs img{
+.middleimgs img {
     height: 12vh;
-    }
+}
 
-.middleimgs{
-   display: flex;
-    justify-content:space-between;
-    }
+.middleimgs {
+    display: flex;
+    justify-content: space-between;
+}
 
-.underimgp p{
-    margin: 2em  1em;
+.underimgp p {
+    margin: 2em 1em;
     font-size: 1.2em;
 }
 
-.underimgp p:nth-child(3){
+.underimgp p:nth-child(3) {
     padding: 0;
- margin: 0em 7em;
+    margin: 0em 7em;
     font-size: 2em;
     color: #44BAC0;
-    }
-.underimgp p:nth-child(4){
- margin: 0em 5em;
+}
+
+.underimgp p:nth-child(4) {
+    margin: 0em 5em;
     font-size: 2em;
-    }
-.underimgp p:nth-child(5){
- margin: 0em 7em;
+}
+
+.underimgp p:nth-child(5) {
+    margin: 0em 7em;
     font-size: 2em;
     color: #44BAC0;
-    }
-.underimgp p:nth-child(6){
- margin: 0em 5em;
+}
+
+.underimgp p:nth-child(6) {
+    margin: 0em 5em;
     font-size: 2em;
-    }
+}
 
 /*************</story******************/
 
@@ -214,12 +230,13 @@ header{
 .environment h2 {
     margin-top: 6em;
     text-align: center;
-    }
-
-.envcontainer{
-    position: relative;
-        width: 100%;
 }
+
+.envcontainer {
+    position: relative;
+    width: 100%;
+}
+
 /*
 .borderenv{
      position: absolute;
@@ -234,20 +251,21 @@ header{
 }
 */
 
-.environment img:nth-child(1){
-     height: 400px;
+.environment img:nth-child(1) {
+    height: 400px;
     width: 100%
 }
-.environment img:nth-child(3){
-    height:15vh;
+
+.environment img:nth-child(3) {
+    height: 15vh;
     position: absolute;
     transform: translateY(-5em);
     left: 1.5em;
-    }
+}
 
-.environment p{
+.environment p {
     margin: 5em 1em 0em 1em;
-        font-size: 1.2em;
+    font-size: 1.2em;
 
 
 }
@@ -275,7 +293,7 @@ header{
 .happyclients h2 {
     margin-top: 6em;
     text-align: center;
-    }
+}
 
 /*
 .borderenv{
@@ -291,69 +309,179 @@ header{
 */
 
 
-.happyclients  img:nth-child(1){
-     height: 400px;
+.happyclients img:nth-child(1) {
+    height: 400px;
     width: 100%
-    }
+}
 
-.happyclients  p{
+.happyclients p {
     margin: 5em 1em 0em 1em;
-        font-size: 1.2em;
+    font-size: 1.2em;
 
 
 }
+
 /*************</happy clients******************/
 
 /*************<famous products******************/
+.inuitmot {
+    margin-left: 23em;
+    transform: translateY(4.5em) rotate(18deg);
 
-.famousproducts{
+
+}
+
+.famousproducts {
     text-align: center;
     padding-top: 2.5em;
 
 }
-.famousproducts img{
+
+.famousproducts img {
     height: 12vh;
     position: relative;
 
 }
 
-.gridproducts{
+.gridproducts {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
     grid-gap: 2em;
     padding: 0em .4em;
     padding-bottom: 1em;
 }
+
 .gridproducts section {
     position: relative;
-    display:inline;
-    background:hotpink;
+    display: inline;
+    background: hotpink;
 
-    width:auto;
+    width: auto;
 }
-.gridproducts section p{
+
+.gridproducts section p {
     position: absolute;
-    left:0;
-    bottom:0;
-  background: #EDEEEE;
+    left: 0;
+    bottom: 0;
+    background: #EDEEEE;
     width: 4.5em;
     border: 1px solid;
 
 }
+
 .famousproducts button {
     text-align: center;
     padding: .3em .4em;
     background: #2C2B30;
     color: #F6F8F7;
     font-size: 1.8em;
-    margin:2.5em
-
+    margin: 2.5em
 }
 
 
 /*************</famous products******************/
 
-/*************</famous products******************/
+
+/*************ABOUT PAGE***********************************/
+.liss {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/liss.png);
+    height: 50vh;
+}
+
+.aboutlisstext h1 {
+    text-align: center;
+    margin: 1.5em;
+}
+
+.aboutlisstext p {
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+.video img {
+    width: 100%
+}
+
+.abouthappyclients h2 {
+    text-align: center;
+    margin: 1.5em;
+}
+
+.abouthappyclients p {
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.2em;
+
+}
+
+.abouthappyclients {
+    padding-bottom: 2em;
+
+}
+
+/*************</ABOUT PAGE***********************************/
+
+/*************<ENVIRONEMNT PAGE***********************************/
+.envimg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/landscape1.png);
+    height: 50vh;
+}
+
+.envcontainer h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+.envcontainer p {
+    margin: 1em;
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+.envvideo img {
+    width: 100%
+}
+
+.envvideo p {
+    margin: 1em;
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+.envvideo button {
+    padding: .5em;
+    font-size: 1.3em;
+    background: #2C2B30;
+    color: #F6F8F7;
+}
+
+.envvideo div {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 4em
+}
+
+.producmaterials {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.producmaterials img {
+    border: 1px solid;
+    height: 20vh;
+    width: 16vh
+}
+
+/*************</ENVIRONEMNT PAGE***********************************/
+
+/*************</footer******************/
 
 footer {
     background-color: #2C2B30;
@@ -362,7 +490,8 @@ footer {
     width: 100%;
 
 }
-.footer-content{
+
+.footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -378,7 +507,7 @@ footer {
 
 
 .contact-info p {
-    color:#fff;
+    color: #fff;
 }
 
 .social-media {
@@ -387,6 +516,8 @@ footer {
 
 .contact-info {
     margin-left: 1em;
-        margin-top: 1.3em;
+    margin-top: 1.3em;
 
 }
+
+/*************</footer******************/
