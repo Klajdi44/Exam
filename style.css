@@ -436,7 +436,7 @@ header {
     font-size: 1.2em;
 }
 
-.envvideo img {
+.videoimgenv {
     width: 100%
 }
 
@@ -522,6 +522,15 @@ footer {
 .aboutimgtablet{
 display: none;}
 
+.envparagraphs{
+    display: none;
+}
+.envinuit{
+    display: none;
+}
+.envbutton{
+    display: none;
+}
 /*************stuff that are not visable in mobile version******************/
 
 
@@ -531,6 +540,8 @@ display: none;}
 /*************ABOUT PAGE TABLET******************/
 
 @media all and (min-width: 768px) {
+    header{width: 99.8%;
+}
 
  .aboutlisstext h2, p:nth-child(2) {
     display:block;
@@ -602,10 +613,106 @@ display: block;
     /*************</About page tablet******************/
 
     /*************Environment page tablet******************/
+    .envinuit{
+    display:block;
+    height: 130px;
+        transform: translateY(1em) translateX(22em) rotate(25deg);
+}
+
+    .envimg{
+        height: 700px
+    }
+
+    .envparagraphs{
+    display: block;
+        font-size: 1.2em;
+        padding: 0 1em;
+        margin: 0;
+
+}
+
+   .envparagraphs p{
+     padding: 0em;
+       margin: 1em .1em;
+     font-size: 1.1em;
+
+
+}
+    .wrapperenv{
+     height: 62vh;
+        padding: 1em 0em;
+        display: grid;
+        grid-template-rows: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "par details2"
+            "par details2"}
+    .envcontainer{
+        grid-area: par;
+        }
+
+.envcontainer h1 {
+    margin: 0em;
+
+
+}
+ .envcontainer p{
+    margin:.4em;
+    font-size:  1.3em;
+}
+
+    .envvideo button {
+        display: none;
+  }
+
+    .envwrapper1{
+         height: 32vh;
+        padding: 1em 0em;
+        display: grid;
+        grid-template-rows: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "par details2"
+            "par details2"}
+
+
+    .envvideo p{
+        padding: 0;
+        margin: 1.3em;
+        }
+
+    .producmaterials img {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+        margin-top: 1em;
+}
+
+    .envbutton{
+    display: block;
+        text-align: center;
+        padding: 4em;
+
+    }
+    .envbutton >button {
+            padding: .4em 3em;
+    font-size: 1.6em;
+    background: #2C2B30;
+    color: #F6F8F7;
+}
+
 
 
 
 }
+
+
+
+
+
+
+
+
 
 
 
