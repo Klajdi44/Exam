@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     background:  #F6F8F7;
+    overflow-x: hidden;
 
 }
 /************* NAVBAR******************/
@@ -136,14 +137,15 @@ header{
 }
 
 .story p{
-transform: translateY(-4em);
-    margin: 2em 1em;
+    margin: 1em 1em 1em 1em;
     text-align:inherit;
-        font-size: 1.2em;
+        font-size: 1.2em;}
 
-     }
-
-.storyimg{
+.containerstory{
+    position: relative;
+    width: 100%;
+}
+.containerstory img{
     height: 400px;
     width: 100%
     }
@@ -153,8 +155,9 @@ transform: translateY(-4em);
     padding: 0em .4em;
     background: #2C2B30;
     color: #F6F8F7;
-    bottom: -18.4em;
-    left:15em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
@@ -184,25 +187,22 @@ transform: translateY(-4em);
 }
 
 .underimgp p:nth-child(3){
- margin: 0;
- transform: translateX(9em);
+    padding: 0;
+ margin: 0em 8em;
     font-size: 2em;
     color: #44BAC0;
     }
 .underimgp p:nth-child(4){
- margin: 0;
- transform: translateX(7.5em);
+ margin: 0em 6em;
     font-size: 2em;
     }
 .underimgp p:nth-child(5){
- margin: 0;
- transform: translateX(9em);
+ margin: 0em 8em;
     font-size: 2em;
     color: #44BAC0;
     }
 .underimgp p:nth-child(6){
- margin: 0;
- transform: translateX(7.5em);
+ margin: 0em 6em;
     font-size: 2em;
     }
 
@@ -215,18 +215,28 @@ transform: translateY(-4em);
     text-align: center;
     }
 
+.envcontainer{
+    position: relative;
+        width: 100%;
+}
+/*
 .borderenv{
-    position: absolute;
+     position: absolute;
     padding: 0em .4em;
     background: #2C2B30;
     color: #F6F8F7;
-    bottom: -94em;
-    left:15em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
+*/
 
-
+.environment img:nth-child(1){
+     height: 400px;
+    width: 100%
+}
 .environment img:nth-child(3){
     height:15vh;
     position: absolute;
@@ -247,6 +257,7 @@ transform: translateY(-4em);
 
 /*************happy clients******************/
 
+/*
 .borderhp{
     position: absolute;
     padding: 0em .4em;
@@ -257,6 +268,7 @@ transform: translateY(-4em);
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
+*/
 
 
 .happyclients h2 {
@@ -264,6 +276,7 @@ transform: translateY(-4em);
     text-align: center;
     }
 
+/*
 .borderenv{
     position: absolute;
     padding: 0em .4em;
@@ -274,13 +287,12 @@ transform: translateY(-4em);
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
 }
+*/
 
 
-.happyclients  img:nth-child(3){
-    height:15vh;
-    position: absolute;
-    transform: translateY(-5em);
-    left: 1.5em;
+.happyclients  img:nth-child(1){
+     height: 400px;
+    width: 100%
     }
 
 .happyclients  p{
@@ -290,6 +302,8 @@ transform: translateY(-4em);
 
 }
 /*************</happy clients******************/
+
+/*************<famous products******************/
 
 .famousproducts{
     text-align: center;
@@ -316,8 +330,53 @@ transform: translateY(-4.2em)  translateX(-1.5em) rotate(90deg);
     border: 1px solid;
 
 }
+.famousproducts button {
+    text-align: center;
+    padding: .3em .4em;
+    background: #2C2B30;
+    color: #F6F8F7;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+
+}
 
 
+/*************</famous products******************/
+
+/*************</famous products******************/
+
+footer {
+    background-color: #2C2B30;
+    height: 160px;
+    box-shadow: -1px -1px 15px black;
+    width: 100%;
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
 
 
+.social-media img {
+    width: 40px;
+    margin: 0px 10px;
 
+}
+
+
+.contact-info p {
+    color:#fff;
+}
+
+.social-media {
+    margin-right: .5em;
+}
+
+.contact-info {
+    margin-left: 1em;
+        margin-top: 1.3em;
+
+}
