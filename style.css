@@ -112,7 +112,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/landscape2filter.png);
-    min-height: 45vh;
+    height: 25em;
     padding-top: 7em;
 
 }
@@ -513,3 +513,102 @@ footer {
 }
 
 /*************</footer******************/
+
+
+/*************stuff that are not visable in mobile version******************/
+.aboutlisstext h2, p:nth-child(2) {
+    display: none;
+    }
+.aboutimgtablet{
+display: none;}
+
+/*************stuff that are not visable in mobile version******************/
+
+
+
+
+/*************MEdia queries tablet 768px******************/
+/*************ABOUT PAGE TABLET******************/
+
+@media all and (min-width: 768px) {
+
+ .aboutlisstext h2, p:nth-child(2) {
+    display:block;
+     padding-top: 4em;
+     text-align: center;
+
+    }
+    .aboutlisstext p:nth-child(2) {
+     padding:0;
+        margin: 2em;
+     text-align: center;
+        font-size: 1.4em;
+    }
+    .aboutlisstext h2 {
+
+        font-size: 1.8em;
+    }
+    .aboutlisstext h1 {
+        font-size: 1.9em;
+}
+    .aboutlisstext p:nth-child(6) {
+        display: none;
+
+}
+    .liss{ height: 43em;
+        }
+
+    .wrapperabout{
+    height: 67vh;
+        padding-bottom: 8em;
+        display: grid;
+        grid-template-rows: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "details img  "
+            "details  img"
+            }
+
+    .aboutlisstext{
+     grid-area: details;
+    }
+
+     .wrapperabout2{
+    height: 45vh;
+         padding-top: 4em;
+        display: grid;
+        grid-template-rows: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "img1 details1"
+            "img1 details1"
+            }
+
+    .aboutimgtablet{
+display: block;
+    grid-area: img1;
+        background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/landscape3.png);
+    height: 25em;
+
+    }
+    .abouthappyclients p {
+    padding: 1em;
+        margin: 0em 1em;
+    font-size: 1.2em;
+
+    }
+    /*************</About page tablet******************/
+
+    /*************Environment page tablet******************/
+
+
+
+}
+
+
+
+
+
+
