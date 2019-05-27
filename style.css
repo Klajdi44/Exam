@@ -185,8 +185,7 @@ header {
 }
 
 .middleimgs img {
-    height: 20vh;
-    width: 25vh;
+    height: 150px;
     margin: 1em;
 }
 
@@ -334,7 +333,7 @@ header {
 }
 
 .famousproducts img {
-    height: 12vh;
+    height: 100px;
     position: relative;
 
 }
@@ -350,8 +349,6 @@ header {
 .gridproducts section {
     position: relative;
     display: inline;
-    background: hotpink;
-
     width: auto;
 }
 
@@ -361,9 +358,8 @@ header {
     bottom: 0;
     background: #EDEEEE;
     width: 4.5em;
-    border: 1px solid;
+    border: 1px solid;}
 
-}
 
 .famousproducts button {
     text-align: center;
@@ -383,7 +379,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/liss.png);
-    height: 50vh;
+    height:25em;
 }
 
 .aboutlisstext h1 {
@@ -426,7 +422,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/landscape1.png);
-    height: 50vh;
+    height:350px;
 }
 
 .envcontainer h1 {
@@ -471,8 +467,8 @@ header {
 
 .producmaterials img {
     border: 1px solid;
-    height: 15vh;
-    width: 11vh
+    height: 8em;
+
 }
 
 /*************</ENVIRONEMNT PAGE***********************************/
