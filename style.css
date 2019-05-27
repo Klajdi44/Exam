@@ -13,13 +13,14 @@ header{
     background: #fff;
     width: 100%;
     z-index: 2;
-
+    position: fixed;
+    margin-bottom: 20em;
+    left: 0;
+    top: 0;
 }
 
 .burgerMenu{
-    font-size: 3em;
-    transform: translateX(2e)
-}
+    font-size: 3em;}
 
 
 .overlay {
@@ -91,7 +92,8 @@ header{
     display: flex;
     justify-content:space-between;
     margin-top: .3em;
-    margin-left: 1em
+    margin-left: 1em;
+    margin-right: 1em;
 
 
     }
@@ -101,13 +103,12 @@ header{
 
 
 .landscreenimg {
-    position: relative;
     opacity: 0.70;
     background-size:cover;
     background-repeat: no-repeat;
     background-image: url(images/landscape2filter.png);
     min-height: 45vh;
-    transform: translateY(-1.7em)
+    padding-top: 7em;
 
 }
 
@@ -133,7 +134,7 @@ header{
 .story  h2{
     text-align: center;
     font-size: 2em;
-     transform: translateY(-2.5em)
+    padding-bottom: 1.3em;
 }
 
 .story p{
@@ -155,8 +156,8 @@ header{
     padding: 0em .4em;
     background: #2C2B30;
     color: #F6F8F7;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 75%;
     transform: translate(-50%, -50%);
     -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
@@ -188,21 +189,21 @@ header{
 
 .underimgp p:nth-child(3){
     padding: 0;
- margin: 0em 8em;
+ margin: 0em 7em;
     font-size: 2em;
     color: #44BAC0;
     }
 .underimgp p:nth-child(4){
- margin: 0em 6em;
+ margin: 0em 5em;
     font-size: 2em;
     }
 .underimgp p:nth-child(5){
- margin: 0em 8em;
+ margin: 0em 7em;
     font-size: 2em;
     color: #44BAC0;
     }
 .underimgp p:nth-child(6){
- margin: 0em 6em;
+ margin: 0em 5em;
     font-size: 2em;
     }
 
@@ -319,13 +320,22 @@ header{
 .gridproducts{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
-    grid-gap: 1em;
+    grid-gap: 2em;
     padding: 0em .4em;
     padding-bottom: 1em;
 }
-.gridproducts p:nth-child(3){
-transform: translateY(-4.2em)  translateX(-1.5em) rotate(90deg);
-    background: #EDEEEE;
+.gridproducts section {
+    position: relative;
+    display:inline;
+    background:hotpink;
+
+    width:auto;
+}
+.gridproducts section p{
+    position: absolute;
+    left:0;
+    bottom:0;
+  background: #EDEEEE;
     width: 4.5em;
     border: 1px solid;
 
@@ -336,7 +346,7 @@ transform: translateY(-4.2em)  translateX(-1.5em) rotate(90deg);
     background: #2C2B30;
     color: #F6F8F7;
     font-size: 1.8em;
-    margin-bottom: 1em;
+    margin:2.5em
 
 }
 
