@@ -1,5 +1,9 @@
 /* TYPOGRAPHY LINKS */
 
+html {
+    font-size: 105%;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -86,7 +90,6 @@ main {
     text-align: center;
     width: 90%;
     height: 280px;
-    border: 1px solid black;
     display: grid;
     grid-template-rows: 135px 145px;
 }
@@ -173,3 +176,5 @@ footer {
     color: white;
     opacity: 0.3;
 }
+
+
