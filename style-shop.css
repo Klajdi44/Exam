@@ -83,15 +83,6 @@ main {
     width: 90%;
     max-height: 130px;
     object-fit: cover;
-    filter: brightness(60%) grayscale(60%);
-    overflow: hidden;
-    transition: filter 0.5s, transform 0.5s;
-}
-
-.image-categ:hover {
-    filter: brightness(100%) grayscale(10%);
-    transform: scale(1.1);
-    overflow: hidden;
 }
 
 /* HELPER CLASSES */

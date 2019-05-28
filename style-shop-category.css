@@ -27,6 +27,13 @@
     width: 100%;
     object-fit: cover;
     border: 1px solid black;
+    filter: brightness(60%) grayscale(60%);
+    transition: filter 0.5s;
+}
+
+.image-item:hover {
+    cursor: pointer;
+    filter: brightness(100%) grayscale(10%);
 }
 
 .additional-details {
