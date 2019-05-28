@@ -1,3 +1,27 @@
+/* TYPOGRAPHY */
+
+h4 {
+    font-size: 1.3rem;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.price-margin {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    color: #404D66;
+}
+
+.additional-details {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    color: #45BAC1;
+}
+
+.collection {
+    margin-top: -10px;
+}
+
 .inuit-picture {
     margin-left: calc(50% + 120px);
 }
@@ -5,6 +29,7 @@
 /* GRID SYSTEM ITEM */
 
 .container-item {
+    grid-column: 1/span 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -12,9 +37,9 @@
 }
 
 .item {
-    margin-bottom: 30px;
-    width: 200px;
-    height: 400px;
+    margin: 20px;
+    max-width: 280px;
+    height: 480px;
     display: grid;
     grid-template-rows: 60px 1fr 0px 30px;
     grid-template-columns: 1fr;
@@ -60,28 +85,4 @@
     background-color: white;
     text-align: center;
     padding: 5px 25px;
-}
-
-/* TYPOGRAPHY */
-
-h4 {
-    margin-top: 35px;
-    margin-left: 10px;
-    font-weight: 900;
-}
-
-.price-margin {
-    font-family: 'Lora', serif;
-    font-size: 1.2em;
-    color: #404D66;
-}
-
-.additional-details {
-    font-family: 'Lora', serif;
-    font-size: 1em;
-    color: #45BAC1;
-}
-
-.collection {
-    margin-top: -10px;
 }

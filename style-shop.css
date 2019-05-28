@@ -1,3 +1,5 @@
+/* TYPOGRAPHY LINKS */
+
 body {
     margin: 0;
     padding: 0;
@@ -15,24 +17,48 @@ h1 {
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
+    max-width: 250px;
     font-weight: 100;
     grid-column: 1/span 2;
     text-align: center;
+    margin-left: calc(50% - 125px);
     font-size: 1.3rem;
+    margin-bottom: 3rem;
 }
 
-h4 {
+.text-over h4 {
     font-family: 'Lora', serif;
-    font-weight: 100;
-    font-size: 1.2rem;
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: white;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.text-over p {
+    font-family: 'Lora', serif;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: -20px;
+    width: 250px;
+    margin-left: calc(50% - 125px);
+    color: white;
+    text-shadow: 1px 2px 14px black;
+}
+
+.categ-shop {
+    font-family: 'Lora', serif;
+    margin-left: 20%;
+    font-size: 1.1rem;
 }
 
 a {
     all: unset;
 }
 
-/* GRID MAIN */
+/* GRID SYSTEM CATEGORY */
 
 main {
     display: grid;
@@ -48,23 +74,25 @@ main {
 }
 
 .container-categ {
+    margin-left: 10%;
     grid-column: 1/span 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 1.2em;
 }
 
 .categ {
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: center;
-    width: 45%;
-    height: 220px;
-    grid-template-rows: 60px 200px;
+    width: 90%;
+    height: 280px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: 135px 145px;
 }
 
 .underline {
-    background-image: linear-gradient(120deg, #000 0%, #000 100%);
+    background-image: linear-gradient(160deg, #fff 0%, #e7eaef 100%);
     background-repeat: no-repeat;
     background-size: 0% 2px;
     background-position: left bottom;
@@ -80,9 +108,14 @@ main {
 }
 
 .image-categ {
-    width: 90%;
-    max-height: 130px;
+    grid-template-rows: 1/span 2;
+    height: 280px;
+    width: 100%;
     object-fit: cover;
+}
+
+.text-over {
+    grid-template-rows: 2/span 1;
 }
 
 /* HELPER CLASSES */
@@ -94,40 +127,49 @@ main {
 /* GRID FOOTER */
 
 footer {
+    margin-top: 25px;
     background-color: #2C2B30;
-    height: 160px;
+    height: 180px;
     box-shadow: -1px -1px 15px black;
 }
 
 .footer-content {
-    margin-left: calc(50% - 100px);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 90px 40px 50px;
 }
 
 .contact-info {
-    grid-column: 1/span 3;
-    grid-row: 1/span 2;
+    margin: 10px 15px;
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
     font-family: 'Montserrat', sans-serif;
     color: #F6F8F7;
-    margin-left: 10px;
     font-size: 0.8rem;
+    line-height: 0.6;
 }
 
 .contact-info .contact {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: white;
 }
 
 .social-media {
+    margin-left: calc(50% - 75px);
     grid-column: 1/span 3;
-    grid-row: 3/span 1;
+    grid-row: 2/span 1;
 }
 
 .social-media img {
     width: 40px;
-    margin: 0px 10px;
-
+    margin: 5px 5px;
 }
 
-
+.copyright {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+    margin-left: 10px;
+    color: white;
+    opacity: 0.3;
+}
