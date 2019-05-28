@@ -9,7 +9,7 @@ h4 {
     margin: 20px;
     font-weight: 900;
     -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color:  #2C2B30;
+    -webkit-text-stroke-color: #2C2B30;
 }
 
 .price {
@@ -99,7 +99,7 @@ h4 {
     width: 102%;
     margin: -10px;
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
@@ -131,7 +131,7 @@ h4 {
 }
 
 .genre-modal {
-   text-align: center;
+    text-align: center;
     font-size: 1.1rem
 }
 
@@ -144,7 +144,10 @@ h4 {
     margin-left: 10px;
 }
 
-h2, .price-modal, .genre-modal, .select-options-modal {
+h2,
+.price-modal,
+.genre-modal,
+.select-options-modal {
     font-family: 'Lora', 'serif';
 }
 
@@ -152,7 +155,7 @@ h2 {
     font-size: 2rem;
     color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:  #2C2B30;
+    -webkit-text-stroke-color: #2C2B30;
     text-shadow: 1px 2px 5px #909090;
 }
 
@@ -170,7 +173,7 @@ h2 {
     background-color: transparent;
     padding: 5px 5px 5px 10px;
     border: none;
-    border-bottom: 1px solid #808080 ;
+    border-bottom: 1px solid #808080;
     -moz-appearance: none;
     -webkit-appearance: none;
     font-size: 0.9rem;
@@ -182,7 +185,7 @@ h2 {
     margin-top: -50px;
     padding: 0px 15px;
     display: grid;
-    grid-template-columns: 35px repeat(3,1fr) 35px;
+    grid-template-columns: 35px repeat(3, 1fr) 35px;
     grid-template-rows: 50px 300px 130px 90px;
 }
 
@@ -214,7 +217,7 @@ h2 {
     grid-column: 2/span 3;
     grid-row: 4/span 1;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
 }
 
@@ -288,5 +291,50 @@ h2 {
 }
 
 @keyframes fadeIn {
-    to { opacity: 1; }
+    to {
+        opacity: 1;
+    }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 500px) {
+    .modal-content {
+        margin: 3.5% 13%;
+        height: 90%;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .info-section {
+        width: 400px;
+        margin-left: calc(50% - 200px);
+        grid-template-rows: 100px 30px 1fr;
+    }
+
+    .info-section button {
+        margin-left: 0px;
+    }
+
+    .info-section .genre-modal p {
+        font-size: 1.1rem;
+    }
+
+    .info-section .genre-modal {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 750px) {
+
+    .modal-content {
+        margin: 5%;
+        width: 85%;
+        height: 90%;
+        padding: 10px;
+    }
+
+
+
 }
