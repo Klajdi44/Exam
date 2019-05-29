@@ -1,6 +1,10 @@
-*{
+*:not(.fs) {
     margin: 0;
     padding: 0;
+}
+
+.fs:not(.copyright) {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -18,14 +22,15 @@ h3 {
     font-weight: normal;
 }
 
-p {
+
+p:not(.copyright) {
     font-size: 1.2em;
     font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
 }
 
-a {
+p: a {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -562,12 +567,17 @@ footer {
     grid-row: 1/span 1;
     font-family: 'Montserrat', sans-serif;
     color: #F6F8F7;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     line-height: 0.6;
 }
 
+.contact-info .phone,
+.contact-info .email {
+    font-size: 0.8rem !important;
+}
+
 .contact-info .contact {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     -webkit-text-stroke-width: 0.4px;
     -webkit-text-stroke-color: white;
 }
@@ -640,15 +650,15 @@ footer {
     }
 
     .contact-info .contact {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
     }
 
     .contact-info .phone {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
 
     .contact-info .email {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -1150,6 +1160,4 @@ footer {
     header {
         width: 99.87%;
     }
-
-
 }
