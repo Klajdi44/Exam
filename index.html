@@ -156,6 +156,84 @@
             }
         }
 
+        @media only screen and (min-width : 1024px) {
+            .landscreenimg {
+                grid-template-columns: 2fr 2fr;
+                grid-template-areas:
+                    'slogan-area slogan-area'
+                    '. .';
+            }
+
+            .ptext {
+                margin: auto 19em;
+            }
+
+
+
+            .story-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'h-area .'
+                    'pstory-area image1-area'
+                    'imgstory-area imgstory-area'
+                    'image2-area pstory2-area'
+                    'quote-area keywords1024-area'
+                    '. keywords1024-area';
+            }
+
+            #content-wrap {
+                margin: 0 15vw;
+            }
+
+            .underimgp {
+                display: none;
+            }
+
+
+            .middleimage1 {
+                grid-area: image1-area
+            }
+
+            .middleimage2 {
+                grid-area: image2-area
+            }
+
+            .para1024 {
+                grid-area: pstory2-area;
+            }
+
+            .k1024 {
+                grid-area: keywords1024-area;
+            }
+
+            .environment {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'envh-area'
+                    'envimg-area'
+                    'pcontent-area'
+            }
+
+            .happyclients {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'hch-area'
+                    'hcimage-area'
+                    'hcp-area';
+            }
+            .envp{
+                display: grid;
+                grid-gap: 17em;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hcp{
+                display: grid;
+                grid-gap: 17em;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
     </style>
 </head>
 
@@ -229,8 +307,11 @@
                 <div class="middleimgs">
                     <img src="images/landscape3.png" alt="storyimg">
                     <img src="images/landscape3.png" alt="storyimg">
-
                 </div>
+
+
+                <div class="middleimage1"><img src="images/landscape3.png" alt="storyimg"></div>
+                <div class="middleimage2"><img src="images/landscape3.png" alt="storyimg"></div>
 
                 <div class="underimgp">
                     <div class="para">
@@ -247,6 +328,27 @@
                         </div>
                     </em>
                 </div>
+
+
+
+
+
+
+                <div class="para1024">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
+
+                    <p class="paragraph">Lorem ipsum dolor doloremque eveniet doloribus consequatur minima deleniti sint iure. sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum </p>
+                </div>
+
+                <em class="k1024">
+                    <div class="keywords">
+                        <p id="firstkey">Keyword </p>
+                        <p id="secondkey">Keyword </p>
+                        <p id="thirdkey">Keyword </p>
+                        <p id="fourthkey">Keyword </p>
+                    </div>
+                </em>
+
             </div>
             <section class="environment">
                 <h2>Environment</h2>

@@ -17,30 +17,50 @@ p {
     font-size: 1.2em;
 }
 
+main{
+    margin-top: 64px;
+}
+
 .inuitone {
     height: 11vh;
     position: absolute;
-    transform: translateY(-5em);
+    transform: translateY(-7vh);
     left: 1.5em;
 }
 
 .inuittwo {
     height: 9vh;
     position: absolute;
-    transform: translateY(-3em) translateX(14em) rotate(-45deg);
+    transform: translateY(-6vh) translateX(64vw) rotate(-45deg);
     z-index: 1;
     left: 1.5em;
 }
 
+.middleimage1 {
+    display: none;
+}
+
+.middleimage2 {
+    display: none;
+}
+
+.para1024 {
+    display: none;
+}
+
+.k1024 {
+    display: none;
+}
+
 @media only screen and (min-width: 360px) {
     .inuittwo {
-        transform: translateY(-3em) translateX(17em) rotate(-45deg);
+        transform: translateY(-3em) translateX(16em) rotate(-45deg);
     }
 }
 
 @media only screen and (min-width: 425px) {
     .inuittwo {
-        transform: translateY(-3em) translateX(20em) rotate(-45deg);
+        transform: translateY(-3em) translateX(10em) rotate(-45deg);
     }
 }
 
@@ -886,7 +906,7 @@ footer {
     }
 
     .inuittwo {
-        transform: translateY(-7em) translateX(31em) rotate(-45deg);
+        transform: translateY(-9vh) translateX(75vw) rotate(-45deg);
     }
 
 }
@@ -912,7 +932,7 @@ footer {
     }
 
     .headerAdj {
-        margin:0.5em 1em;
+        margin: 0.5em 1em;
     }
 
     .desktop-menu {
@@ -934,18 +954,70 @@ footer {
 
     }
 
+    .middleimgs {
+        display: none;
+    }
+
+    .middleimage1 {
+        display: block;
+    }
+
+    .middleimage2 {
+        display: block;
+    }
+
+    .middleimage1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .middleimage2 img {
+        width: 100%;
+        height: auto;
+    }
 
 
+    .para1024 {
+        display: block;
+    }
 
+    .k1024 {
+        display: block;
+    }
 
+    #h {
+        justify-self: start;
+    }
 
+    .environment h2 {
+        justify-self: start;
+    }
 
+    .happyclients h2{
+        justify-self: start;
+    }
 
+    .envp {
+        padding-top: 4em;
+    }
 
+    .environment p {
+        margin: 0;
+    }
+    .hcp{
+        padding-top: 4em;
+    }
+    .happyclients p{
+        margin: 0;
+    }
 
+    .gridproducts {
+        grid-template-columns: repeat(auto-fit, minmax(241px, 1fr));
+    }
 
-
-
+    .inuitone{
+        transform: translateX(15vw) translateY(50vh);
+    }
 
     .envimg {
         height: 650px;
@@ -970,6 +1042,11 @@ footer {
         justify-content: center;
 
     }
+
+    .quote p{
+        justify-self: center;
+    }
+
 
 
 
