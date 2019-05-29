@@ -1,11 +1,6 @@
 * {
-    font-family: helvetica;
     margin: 0;
     padding: 0;
-}
-
-.desktop-menu {
-    display: none;
 }
 
 body {
@@ -13,97 +8,33 @@ body {
     overflow-x: hidden;
 }
 
+h1,
+h2,
+h3 {
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
 p {
     font-size: 1.2em;
+    font-family: 'Lora', serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
-main{
-    margin-top: 64px;
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
 
-.inuitone {
-    height: 11vh;
-    position: absolute;
-    transform: translateY(-7vh);
-    left: 1.5em;
-}
-
-.inuittwo {
-    height: 9vh;
-    position: absolute;
-    transform: translateY(-6vh) translateX(64vw) rotate(-45deg);
-    z-index: 1;
-    left: 1.5em;
-}
-
-.middleimage1 {
-    display: none;
-}
-
-.middleimage2 {
-    display: none;
-}
-
-.para1024 {
-    display: none;
-}
-
-.k1024 {
-    display: none;
-}
-
-@media only screen and (min-width: 360px) {
-    .inuittwo {
-        transform: translateY(-3em) translateX(16em) rotate(-45deg);
-    }
-}
-
-@media only screen and (min-width: 425px) {
-    .inuittwo {
-        transform: translateY(-3em) translateX(10em) rotate(-45deg);
-    }
-}
-
-.button-wrap {
-    text-align: center;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-button.border {
-    position: relative;
-    width: 220px;
-    height: 50px;
-    border: none;
-    text-align: center;
-    padding: .3em .4em;
-    background: #2C2B30;
-    font-size: 1.8em;
-    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
-}
-
-button a {
-    text-decoration: none;
-    color: #F6F8F7;
-}
-
-#client-image {
-    position: relative;
-}
-
-#story-image {
-    position: relative;
+main {
+    margin-top: 82px;
 }
 
 /********************************************************************/
-
-
-
 
 /******************************NAVBAR********************************/
 header {
@@ -116,10 +47,13 @@ header {
     top: 0;
 }
 
+.desktop-menu {
+    display: none;
+}
+
 .burgerMenu {
     font-size: 2.8em;
 }
-
 
 .overlay {
     height: 100%;
@@ -183,28 +117,98 @@ header {
 
 .bag {
     height: 3em;
-
 }
 
 .headerAdj {
     display: flex;
     justify-content: space-between;
-    margin-top: .3em;
-    margin-left: 1em;
-    margin-right: 1em;
-
-
+    margin: 0.5em 1em;
 }
 
 /********************************************************************/
 
+/******************************Home page*****************************/
+
+.inuitone {
+    height: 11vh;
+    position: absolute;
+    transform: translateY(-7vh);
+    left: 1.5em;
+}
+
+.inuittwo {
+    height: 9vh;
+    position: absolute;
+    transform: translateY(-6vh) translateX(64vw) rotate(-45deg);
+    z-index: 1;
+    left: 1.5em;
+}
+
+.middleimage1 {
+    display: none;
+}
+
+.middleimage2 {
+    display: none;
+}
+
+.para1024 {
+    display: none;
+}
+
+.k1024 {
+    display: none;
+}
+
+@media only screen and (min-width: 360px) {
+    .inuittwo {
+        transform: translateY(-3em) translateX(16em) rotate(-45deg);
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    .inuittwo {
+        transform: translateY(-3em) translateX(10em) rotate(-45deg);
+    }
+}
+
+.button-wrap {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button.border {
+    position: relative;
+    width: 220px;
+    height: 50px;
+    border: none;
+    text-align: center;
+    padding: .3em .4em;
+    background: #2C2B30;
+    font-size: 1em;
+    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
+}
+
+button a {
+    text-decoration: none;
+    color: #F6F8F7;
+}
+
+#client-image {
+    position: relative;
+}
+
+#story-image {
+    position: relative;
+}
 
 
 
-
-
-
-/******************************landscreen****************************/
 .landscreenimg {
     opacity: 0.70;
     background-size: cover;
@@ -227,17 +231,14 @@ header {
 }
 
 .landscreenimg .ptext p {
+    font-style: italic;
     transform: translateY(2em);
     font-size: 0.9em;
     margin: 1em .3em;
     display: block;
-
 }
 
 /********************************************************************/
-
-
-
 
 
 /*******************************story********************************/
@@ -259,17 +260,17 @@ header {
 }
 
 .quote p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
     text-align: center;
-    margin: 3em;
+    margin: 3em 2em;
     font-size: 1.2em;
-
 }
 
 .middleimgs img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
-
 
 .middleimgs {
     text-align: center;
@@ -277,7 +278,6 @@ header {
     grid-gap: 1.5em;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 2.5em;
-
 }
 
 .paragraph {
@@ -296,6 +296,8 @@ header {
 }
 
 .keywords p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 1.5em;
     text-align: center;
 }
@@ -320,8 +322,6 @@ header {
 
 /********************************************************************/
 
-
-
 /*************************environment********************************/
 .environment h2 {
     text-align: center;
@@ -335,20 +335,6 @@ header {
     width: 100%;
 }
 
-/*
-.borderenv{
-     position: absolute;
-    padding: 0em .4em;
-    background: #2C2B30;
-    color: #F6F8F7;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
-
-}
-*/
-
 .storyimg {
     width: 100%
 }
@@ -360,25 +346,7 @@ header {
 
 /********************************************************************/
 
-
-
-
-
-
 /****************************happy clients***************************/
-
-/*
-.borderhp{
-    position: absolute;
-    padding: 0em .4em;
-    background: #2C2B30;
-    color: #F6F8F7;
-    bottom: -144em;
-    left:18em;
-    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
-}
-*/
-
 
 .happyclients h2 {
     text-align: center;
@@ -387,25 +355,9 @@ header {
     padding-bottom: 0.8em;
 }
 
-/*
-.borderenv{
-    position: absolute;
-    padding: 0em .4em;
-    background: #2C2B30;
-    color: #F6F8F7;
-    bottom: -94em;
-    left:15em;
-    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
-
-}
-*/
-
-
 .happyclients p {
     margin: 2em 1em 0em 1em;
     font-size: 1.2em;
-
-
 }
 
 .inuitmot {
@@ -415,11 +367,6 @@ header {
 }
 
 /********************************************************************/
-
-
-
-
-
 
 /*************************famous products****************************/
 .famousproducts {
@@ -435,17 +382,18 @@ header {
 
 .famous-product img {
     height: auto;
-    width: 100%;
+    max-width: 100%;
     border: solid 1px;
 }
 
 .famous-product p {
     text-align: left;
+    font-weight: 600;
 }
 
 .gridproducts {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: .9em 1.5em;
     padding: 1em;
     padding-left: 2em;
@@ -463,8 +411,8 @@ header {
     display: block;
     padding-top: 0;
     position: absolute;
-    left: -32px;
-    bottom: 35px;
+    left: -31px;
+    bottom: 34px;
     background: #EDEEEE;
     width: 4.5em;
     border: 1px solid;
@@ -472,35 +420,42 @@ header {
     transform: rotate(-90deg)
 }
 
-
 .famousproducts button {
     text-align: center;
     padding: .3em .4em;
     background: #2C2B30;
     color: #F6F8F7;
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 1em;
     border: none;
 }
 
 /********************************************************************/
 
-
-
-
-
-
 /***********************ABOUT PAGE***********************************/
 .liss {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(images/liss.png);
-    height: 25em;
+    position: relative;
 }
+
+.liss img {
+    max-width: 100%;
+    height: auto;
+}
+
+.aboutimg {
+    position: relative;
+}
+
+.aboutimg img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 .aboutlisstext h1 {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 .aboutlisstext p {
@@ -529,12 +484,6 @@ header {
 }
 
 /********************************************************************/
-
-
-
-
-
-
 
 /*********************ENVIRONEMNT PAGE*******************************/
 .envimg {
@@ -591,10 +540,6 @@ header {
 
 /********************************************************************/
 
-
-
-
-
 /***************************footer***********************************/
 footer {
     background-color: #2C2B30;
@@ -609,12 +554,10 @@ footer {
     align-items: center;
 }
 
-
 .social-media img {
     width: 40px;
     margin: 0px;
 }
-
 
 .contact-info p {
     color: #fff;
@@ -631,19 +574,11 @@ footer {
 
 /********************************************************************/
 
-
-
-
-
 /*************stuff that is only for mobile version******************/
 @media only screen and (max-width: 767px) {
 
-    .aboutlisstext h2,
-    .aboutlisstext p:nth-child(2) {
-        display: none;
-    }
 
-    .aboutimgtablet {
+    .aboutimg {
         display: none;
     }
 
@@ -658,112 +593,95 @@ footer {
     .envbutton {
         display: none;
     }
-
-    .video1 {
-        width: 100%;
-        display: none;
-
-    }
-
     .keywords {
         margin: 0 20px 0 70px;
     }
-
-    /*
-    .containerstory{
-        margin-bottom: -60px;
-    }
-    .envcontainer{
-        margin-bottom: -60px;
-    }
-*/
 }
 
 /********************************************************************/
 
-
-
-
-
 /**********************MEdia queries tablet 768px********************/
 @media all and (min-width: 768px) {
-    /*************ABOUT PAGE******************/
+    /*************************ABOUT PAGE*****************************/
 
     header {
         width: 99.8%;
     }
 
-    .aboutlisstext p:nth-child(2) {
-        padding: 0;
-        margin: 2em;
-        text-align: center;
-        font-size: 1.4em;
-    }
-
     .aboutlisstext h2 {
-
         font-size: 1.8em;
     }
 
     .aboutlisstext h1 {
         font-size: 1.9em;
-    }
-
-    .aboutlisstext p:nth-child(6) {
-        display: none;
-
+        margin-top: 0;
     }
 
     .liss {
-        height: 43em;
+        grid-area: img;
+        margin: auto 0;
     }
 
     .wrapperabout {
-        height: 67vh;
-        padding-bottom: 8em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0 3em;
+        grid-gap: 5em;
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.2fr 0.8fr;
         grid-template-areas:
-            "details img  "
-            "details  img"
+            "details img";
+    }
+
+    .aboutlisstext p {
+        margin: 1em 0;
     }
 
     .aboutlisstext {
+        place-self: center;
         grid-area: details;
     }
 
     .wrapperabout2 {
-        height: 45vh;
-        padding: 5em 0em;
+        padding-top: 3em;
+        padding-bottom: 1.5em;
+        margin: 0 3em;
         display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        grid-template-columns: 0.8fr 1.2fr;
         grid-template-areas:
-            "img1 details1"
-            "img1 details1"
+            "img1 details1";
     }
 
-    .aboutimgtablet {
+    .video{
+        margin: 0 3em;
+    }
+
+    .abouthappyclients h2 {
+        margin: 0;
+    }
+
+    .aboutimg {
         display: block;
         grid-area: img1;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(images/landscape3.png);
-        height: 25em;
+        margin: auto 0;
+    }
 
+    .abouthappyclients{
+        place-self: center;
+        padding: 0;
     }
 
     .abouthappyclients p {
-        padding: 1em;
-        margin: 0em 1em;
+        margin: 1em 0;
+        padding: 0;
         font-size: 1.2em;
-
     }
 
-    /*************About page******************/
 
-    /*************Environment page******************/
+    /****************************************************************/
+
+    /*****************************Environment page*******************/
     .envinuit {
         display: block;
         height: 130px;
@@ -779,25 +697,19 @@ footer {
         font-size: 1.2em;
         padding: 0 1em;
         margin: 0;
-
     }
 
     .envparagraphs p {
         padding: 0em;
         margin: 1em .1em;
         font-size: 1.1em;
-
-
     }
 
     .wrapperenv {
-        height: 43vh;
-        padding: 1em 0em;
+        padding: 1em 0;
         display: grid;
-        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "par details2"
             "par details2"
     }
 
@@ -819,16 +731,12 @@ footer {
     }
 
     .envwrapper1 {
-        height: 32vh;
-        padding: 1em 0em;
+        padding: 1em 0;
         display: grid;
-        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
             "par details2"
-            "par details2";
     }
-
 
     .envvideo p {
         padding: 0;
@@ -846,7 +754,6 @@ footer {
         display: block;
         text-align: center;
         padding: 4em;
-
     }
 
     .envbutton > button {
@@ -856,8 +763,9 @@ footer {
         color: #F6F8F7;
     }
 
+    /****************************************************************/
 
-    /*************HOME PAGE******************/
+    /***************************HOME PAGE****************************/
     .keywords {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
@@ -908,20 +816,12 @@ footer {
     .inuittwo {
         transform: translateY(-9vh) translateX(75vw) rotate(-45deg);
     }
-
 }
 
 /********************************************************************/
 
-
-
-
-
-
-
-/******************MEdia queries Desktop 1024px**********************/
+/******************Media queries Desktop 1024px**********************/
 @media all and (min-width: 1024px) {
-    /*************environment page******************/
 
     .bag {
         display: none;
@@ -954,46 +854,13 @@ footer {
 
     }
 
-    .middleimgs {
-        display: none;
-    }
-
-    .middleimage1 {
-        display: block;
-    }
-
-    .middleimage2 {
-        display: block;
-    }
-
-    .middleimage1 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .middleimage2 img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    .para1024 {
-        display: block;
-    }
-
-    .k1024 {
-        display: block;
-    }
-
-    #h {
-        justify-self: start;
-    }
+    /*********************environment page***************************/
 
     .environment h2 {
         justify-self: start;
     }
 
-    .happyclients h2{
+    .happyclients h2 {
         justify-self: start;
     }
 
@@ -1004,10 +871,12 @@ footer {
     .environment p {
         margin: 0;
     }
-    .hcp{
+
+    .hcp {
         padding-top: 4em;
     }
-    .happyclients p{
+
+    .happyclients p {
         margin: 0;
     }
 
@@ -1015,7 +884,7 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(241px, 1fr));
     }
 
-    .inuitone{
+    .inuitone {
         transform: translateX(15vw) translateY(50vh);
     }
 
@@ -1040,17 +909,11 @@ footer {
         height: 50vh;
         display: flex;
         justify-content: center;
-
     }
 
-    .quote p{
+    .quote p {
         justify-self: center;
     }
-
-
-
-
-
 
     .video1 {
         display: block;
@@ -1059,71 +922,93 @@ footer {
         background-repeat: no-repeat;
         background-image: url(images/video.png);
         height: 40em;
-
     }
 
-    .video1 img {
-        height: 500px;
-        padding-bottom: 3em;
-
-    }
 
     .video {
-        width: 100%;
+        margin: 0;
+    }
+
+    /********************************************************/
+
+    /*********************About page*************************/
+    .abouthappyclients {
+        padding: 0;
+    }
+
+    .wrapperabout {
+        margin: 0 3em;
+        padding-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'details img'
+    }
+
+    .wrapperabout2 {
+        margin: 0 3em;
+        padding-top: 1em;
+    }
+
+
+    .aboutimg {
+        margin: auto 0;
+    }
+
+
+
+    /********************************************************/
+
+    /**********************Home page*************************/
+
+    .middleimgs {
         display: none;
     }
 
+    .middleimage1 {
+        display: block;
+    }
 
+    .middleimage2 {
+        display: block;
+    }
 
+    .middleimage1 img {
+        max-width: 100%;
+        height: auto;
+    }
 
-
-
-
-
-
-
-
-    /*************</environment page******************/
-
-    /*************About page******************/
-
-
-    .wrapperabout {
-        height: 67vh;
-        padding-bottom: 45em;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "video video "
-            "details img  "
-            "details  img"
+    .middleimage2 img {
+        max-width: 100%;
+        height: auto;
     }
 
 
-    .wrapperabout2 {
-        padding-top: 3em;
-        padding-bottom: 0;
-        margin-top: 1em;
-
+    .para1024 {
+        display: block;
     }
 
-    .wrapperabout2 {
-        height: 60vh;
-
+    .k1024 {
+        display: block;
     }
 
-    .liss {
-        max-height: 38em;
-        width: 30em;
-        margin-left: 10em;
-        margin-top: 7em;
+    #h {
+        justify-self: start;
+    }
+}
 
+/********************************************************************/
+
+/*****************Media queries Desktop 1920px***********************/
+@media all and (min-width: 1920px) {
+    .ptext h1 {
+        font-size: 2em;
     }
 
+    .landscreenimg .ptext p {
+        font-size: 1.2em;
+    }
 
 
 
 }
-
-/********************************************************************/
