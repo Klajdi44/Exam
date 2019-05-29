@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,35 @@
 </head>
 
 <body>
+    <header>
+        <div class="headerAdj">
+            <label for="menu" class="burgerMenu" onclick="opennav()">
+                &#9776;
+            </label>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <img class="bag" src="images/bag1.png" alt="bagicon">
+            <div class="desktop-menu">
+                <div><a href="#">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="shop.html">Shop</a></div>
+                <div><a href="environment.html">Environment</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
+
+
+        </div>
+        <nav id="navbar" class="overlay">
+            <button class="closebtn" onclick="closenav()">&times;</button>
+            <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="environment.html">Environment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <h1> Type of Item </h1>
         <img class="inuit-picture" alt="inuit image" src="images/inuitmotif.png">
@@ -82,54 +112,54 @@
                     <section class="image-section">
 
 
-                    <h2> Inuit Scarf </h2>
+                        <h2> Inuit Scarf </h2>
 
-                    <img class="image-modal-main" alt="item image" src="images/landscape1.png">
+                        <img class="image-modal-main" alt="item image" src="images/landscape1.png">
 
-                    <div class="price-margin-modal">
-                        <h5 class="price-modal"> 300dkk </h5>
-                    </div>
+                        <div class="price-margin-modal">
+                            <h5 class="price-modal"> 300dkk </h5>
+                        </div>
 
-                    <div class="presentation-images">
-                    <img class="image-modal-first" alt="item image" src="images/landscape1.png">
-                    <img class="image-modal-second" alt="item image" src="images/landscape3.png">
-                    <img class="image-modal-third" alt="item image" src="images/landscape2filter.png">
-                    </div>
+                        <div class="presentation-images">
+                            <img class="image-modal-first" alt="item image" src="images/landscape1.png">
+                            <img class="image-modal-second" alt="item image" src="images/landscape3.png">
+                            <img class="image-modal-third" alt="item image" src="images/landscape2filter.png">
+                        </div>
 
                     </section>
 
                     <section class="info-section">
-                    <div class="select-options">
-                    <div class="select-container">
-                        <select class="select-options-modal">
-                            <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                            <option value="1"> Value 1 </option>
-                            <option value="2"> Value 2 </option>
-                            <option value="3"> Value 3 </option>
-                        </select>
-                    </div>
-                    <div class="select-container">
-                        <select class="select-options-modal">
-                            <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                            <option value="1"> Value 1 </option>
-                            <option value="2"> Value 2 </option>
-                            <option value="3"> Value 3 </option>
-                        </select>
-                    </div>
-                    </div>
+                        <div class="select-options">
+                            <div class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
+                                    <option value="1"> Value 1 </option>
+                                    <option value="2"> Value 2 </option>
+                                    <option value="3"> Value 3 </option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
+                                    <option value="1"> Value 1 </option>
+                                    <option value="2"> Value 2 </option>
+                                    <option value="3"> Value 3 </option>
+                                </select>
+                            </div>
+                        </div>
 
-                    <button>
-                        <p> Add to Basket </p>
-                    </button>
+                        <button>
+                            <p> Add to Basket </p>
+                        </button>
 
-                    <section class="genre-modal">
-                        <p> Material </p>
-                        <p> Collection </p>
-                        <p> Other Details </p>
-                    </section>
+                        <section class="genre-modal">
+                            <p> Material </p>
+                            <p> Collection </p>
+                            <p> Other Details </p>
+                        </section>
 
-                    <p class="product-details"> Suscipit adipiscing             bibendum est ultricies. Ultricies mi quis hendrerit     dolor magna. Eget sit amet tellus cras adipiscing       enim eu. Platea dictumst vestibulum rhoncus est.
-                    </p>
+                        <p class="product-details"> Suscipit adipiscing bibendum est ultricies. Ultricies mi quis hendrerit dolor magna. Eget sit amet tellus cras adipiscing enim eu. Platea dictumst vestibulum rhoncus est.
+                        </p>
                     </section>
 
                 </article>
@@ -153,6 +183,8 @@
             <p class="copyright"> © Liss Stender Designs 2019 </p>
         </div>
     </footer>
-    <script src="javascript-modal.js"> </script>
+    <script src="javascript-modal.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
