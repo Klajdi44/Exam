@@ -6,6 +6,230 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media only screen and (min-width : 768px) {
+            h1 {
+                font-size: 26px;
+            }
+
+            main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'top-area'
+                    'rest-area';
+            }
+
+            .landscreenimg {
+                grid-area: top-area;
+                display: grid;
+                grid-template-columns: 1.5fr 2fr;
+                grid-template-areas:
+                    'slogan-area .'
+                    '. .';
+            }
+
+            .ptext {
+                grid-area: slogan-area;
+            }
+
+            #content-wrap {
+                margin: 0 2em;
+                grid-area: rest-area;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'story-area'
+                    'enviroment-area'
+                    'client-area'
+                    'product-area';
+            }
+
+            .story-grid {
+                align-items: center;
+                justify-items: center;
+                grid-area: story-area;
+                grid-column-gap: 3em;
+                grid-row-gap: 2em;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'h-area .'
+                    'imgstory-area pstory-area'
+                    'quote-area mimage-area'
+                    'bottom-area bottom-area';
+            }
+
+            #h {
+                grid-area: h-area;
+            }
+
+            #storytime {
+                grid-area: pstory-area;
+            }
+
+            #story-image {
+                grid-area: imgstory-area;
+                position: relative;
+            }
+
+            .quote {
+                grid-area: quote-area;
+            }
+
+            .middleimgs {
+                grid-area: mimage-area;
+            }
+
+            .underimgp {
+                grid-area: bottom-area;
+                display: grid;
+                grid-column-gap: 3em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'paragraph-area .'
+                    'paragraph-area keyword-area'
+                    '. keyword-area'
+            }
+
+            .para {
+                grid-area: paragraph-area;
+            }
+
+            em {
+                align-self: end;
+                grid-area: keyword-area;
+            }
+
+            .environment {
+                grid-area: enviroment-area;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-column-gap: 3em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'envh-area envh-area'
+                    'envimg-area pcontent-area'
+            }
+
+            .enviroment h2 {
+                grid-area: envh-area
+            }
+
+            .envcontainer {
+                grid-area: envimg-area;
+            }
+
+            .envp {
+                grid-area: pcontent-area;
+            }
+
+            .happyclients {
+                grid-area: client-area;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-column-gap: 3em;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'hch-area .'
+                    'hcp-area hcimage-area'
+            }
+
+            .happyclients h2 {
+                grid-area: hch-area;
+            }
+
+            #client-image {
+                grid-area: hcimage-area;
+            }
+
+            .hcp {
+                grid-area: hcp-area;
+            }
+
+            .famousproducts {
+                grid-area: product-area;
+            }
+        }
+
+        @media only screen and (min-width : 1024px) {
+            .landscreenimg {
+                grid-template-columns: 2fr 2fr;
+                grid-template-areas:
+                    'slogan-area slogan-area'
+                    '. .';
+            }
+
+            .ptext {
+                margin: auto 19em;
+            }
+
+            .story-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas:
+                    'h-area .'
+                    'pstory-area image1-area'
+                    'imgstory-area imgstory-area'
+                    'image2-area pstory2-area'
+                    'quote-area keywords1024-area'
+                    '. keywords1024-area';
+            }
+
+            #content-wrap {
+                margin: 0 15vw;
+            }
+
+            .underimgp {
+                display: none;
+            }
+
+            .middleimage1 {
+                grid-area: image1-area
+            }
+
+            .middleimage2 {
+                grid-area: image2-area
+            }
+
+            .para1024 {
+                grid-area: pstory2-area;
+            }
+
+            .k1024 {
+                grid-area: keywords1024-area;
+            }
+
+            .environment {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'envh-area'
+                    'envimg-area'
+                    'pcontent-area'
+            }
+
+            .happyclients {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'hch-area'
+                    'hcimage-area'
+                    'hcp-area';
+            }
+
+            .envp {
+                display: grid;
+                grid-gap: 17em;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .hcp {
+                display: grid;
+                grid-gap: 17em;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -17,6 +241,15 @@
             </label>
             <img class="logo" src="images/logo.png" alt="logo">
             <img class="bag" src="images/bag1.png" alt="bagicon">
+            <div class="desktop-menu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="#">Shop</a></div>
+                <div><a href="environment.html">Environment</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
+
+
         </div>
         <nav id="navbar" class="overlay">
             <button class="closebtn" onclick="closenav()">&times;</button>
@@ -39,127 +272,167 @@
 
             </div>
         </div>
+        <div id="content-wrap">
+            <div class="story-grid">
 
-        <section class="story">
-            <h2>Story</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facere ab hic possimus. Maxime possimus molestias, commodi assumenda obcaecati nulla quas quia distinctio id perspiciatis voluptas, unde harum, animi modi.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facere ab hic possimus. Maxime possimus molestias, commodi assumenda obcaecati nulla quas quia distinctio id perspiciatis voluptas, unde harum, animi modi.</p>
+                <section class="story" id="h">
+                    <h2>Story</h2>
+                </section>
 
-        </section>
+                <section class="story" id="storytime">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facere ab hic possimus. Maxime possimus molestias, commodi assumenda obcaecati nulla quas quia distinctio id perspiciatis voluptas, unde harum, animi modi.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste facere ab hic possimus. Maxime possimus molestias, commodi assumenda obcaecati nulla quas quia distinctio id perspiciatis voluptas, unde harum, animi modi.</p>
+                </section>
 
-        <div class="containerstory">
-            <img class="storyimg" src="images/landscape3.png" alt="storyimg">
-            <div class="ptext">
-                <span class="border">
-                    <h2>View Products</h2>
+                <div class="containerstory" id="story-image">
+                    <img class="storyimg" src="images/landscape3.png" alt="storyimg">
+                    <div class="button-wrap">
+                        <button id="button-story" class="border">
+                            <a href="">View products</a>
+                        </button>
+                    </div>
+                </div>
+
+
+                <span class="quote">
+                    <p>"Non aliquam officia consequuntur facilis adipisci ipsa sunt, esse debitis fugiat ducimus. "</p>
                 </span>
+
+
+                <div class="middleimgs">
+                    <img src="images/landscape3.png" alt="storyimg">
+                    <img src="images/landscape3.png" alt="storyimg">
+                </div>
+
+
+                <div class="middleimage1"><img src="images/landscape3.png" alt="storyimg"></div>
+                <div class="middleimage2"><img src="images/landscape3.png" alt="storyimg"></div>
+
+                <div class="underimgp">
+                    <div class="para">
+                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
+
+                        <p class="paragraph">Lorem ipsum dolor doloremque eveniet doloribus consequatur minima deleniti sint iure. sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum </p>
+                    </div>
+                    <em>
+                        <div class="keywords">
+                            <p id="firstkey">Keyword </p>
+                            <p id="secondkey">Keyword </p>
+                            <p id="thirdkey">Keyword </p>
+                            <p id="fourthkey">Keyword </p>
+                        </div>
+                    </em>
+                </div>
+
+
+
+
+
+
+                <div class="para1024">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
+
+                    <p class="paragraph">Lorem ipsum dolor doloremque eveniet doloribus consequatur minima deleniti sint iure. sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum </p>
+                </div>
+
+                <em class="k1024">
+                    <div class="keywords">
+                        <p id="firstkey">Keyword </p>
+                        <p id="secondkey">Keyword </p>
+                        <p id="thirdkey">Keyword </p>
+                        <p id="fourthkey">Keyword </p>
+                    </div>
+                </em>
+
             </div>
+            <section class="environment">
+                <h2>Environment</h2>
+
+
+
+                <div class="envcontainer">
+                    <img class="storyimg" src="images/landscape3.png" alt="storyimg">
+                    <div class="button-wrap">
+                        <button class="border">
+                            <a href="#">Read More</a>
+                        </button>
+                    </div>
+                </div>
+                <img class="inuitone" src="images/inuitmotif.png" alt="inuit">
+                <div class="envp">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure.</p>
+                </div>
+
+            </section>
+
+            <section class="happyclients">
+
+                <h2>Happy Clients</h2>
+
+
+
+                <div class="containerstory" id="client-image">
+                    <img class="storyimg" src="images/landscape3.png" alt="storyimg">
+                    <div class="button-wrap">
+                        <button class="border">
+                            <a href="#">Find Out</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hcp">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure.</p>
+                </div>
+            </section>
+
+            <section class="famousproducts">
+                <h2>Famous Products</h2>
+                <img class="inuittwo" src="images/inuitmotif.png" alt="inuit">
+                <div class="gridproducts">
+
+                    <div class="famous-product">
+                        <p>Inuit scarf</p>
+                        <section>
+                            <img src="images/landscape3.png" alt="">
+                            <p>300dkk</p>
+                        </section>
+                    </div>
+                    <div class="famous-product">
+                        <p>Inuit scarf</p>
+                        <section>
+                            <img src="images/landscape3.png" alt="">
+                            <p>300dkk</p>
+                        </section>
+                    </div>
+                    <div class="famous-product">
+                        <p>Inuit scarf</p>
+                        <section>
+                            <img src="images/landscape3.png" alt="">
+                            <p>300dkk</p>
+                        </section>
+                    </div>
+                    <div class="famous-product">
+                        <p>Inuit scarf</p>
+                        <section>
+                            <img src="images/landscape3.png" alt="">
+                            <p>300dkk</p>
+                        </section>
+                    </div>
+
+                </div>
+
+                <button><a href="shop.html">Shop now</a></button>
+
+            </section>
         </div>
-
-
-        <span class="quote">
-            <p>" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aliquam officia consequuntur facilis adipisci ipsa sunt, esse debitis fugiat ducimus. "</p>
-        </span>
-
-
-        <div class="middleimgs">
-            <img src="images/landscape3.png" alt="storyimg">
-            <img src="images/landscape3.png" alt="storyimg">
-
-        </div>
-
-        <div class="underimgp">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure.</p>
-
-            <p>Keyword </p>
-            <p>Keyword </p>
-            <p>Keyword </p>
-            <p>Keyword </p>
-        </div>
-
-        <section class="environment">
-            <h2>Environment</h2>
-
-
-
-            <div class="envcontainer">
-                <img class="storyimg" src="images/landscape3.png" alt="storyimg">
-                <div class="ptext">
-                    <span class="border">
-                        <h3>View Products</h3>
-                    </span>
-                </div>
-            </div>
-            <img src="images/inuitmotif.png" alt="inuit">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure.</p>
-
-
-        </section>
-
-        <section class="happyclients">
-            <img  class="inuitmot" src="images/inuitmotif.png" alt="inuit">
-            <h2>Happy Clients</h2>
-
-
-
-            <div class="containerstory">
-                <img class="storyimg" src="images/landscape3.png" alt="storyimg">
-                <div class="ptext">
-                    <span class="border">
-                        <h3>Find out</h3>
-                    </span>
-                </div>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure repellat similique delectus.</p>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, modi dolores, dignissimos ullam, sed adipisci cupiditate ipsam aliquid cum doloremque eveniet doloribus consequatur minima deleniti sint iure.</p>
-        </section>
-
-        <section class="famousproducts">
-<!--            <img class="inuitmot" src="images/inuitmotif.png" alt="inuit figure">-->
-            <h1>Famous Products</h1>
-            <div class="gridproducts">
-                <div>
-                    <p>Inuit scarf</p>
-                    <section>
-                        <img src="images/landscape3.png" alt="">
-                        <p>300dkk</p>
-                    </section>
-                </div>
-                <div>
-                    <p>Inuit scarf</p>
-                    <section>
-                        <img src="images/landscape3.png" alt="">
-                        <p>300dkk</p>
-                    </section>
-                </div>
-                <div>
-                    <p>Inuit scarf</p>
-                    <section>
-                        <img src="images/landscape3.png" alt="">
-                        <p>300dkk</p>
-                    </section>
-                </div>
-                <div>
-                    <p>Inuit scarf</p>
-                    <section>
-                        <img src="images/landscape3.png" alt="">
-                        <p>300dkk</p>
-                    </section>
-                </div>
-
-            </div>
-
-            <button>Shop now</button>
-
-        </section>
-
 
     </main>
+
+
 
     <footer>
         <div class="footer-content">
@@ -175,10 +448,6 @@
             </section>
         </div>
     </footer>
-
-
-
-
 
 
 

@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @media only screen and (min-width : 768px) {
+            main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'one-area'
+                    'video-area'
+                    'two-area'
+            }
+
+            .wrapperabout {
+                grid-area: one-area;
+            }
+
+            .video {
+                grid-area: video-area;
+            }
+
+            .wrapperabout2 {
+                grid-area: two-area;
+            }
+        }
+
+        @media only screen and (min-width : 1024px) {
+            main {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    'video-area'
+                    'one-area'
+                    'two-area'
+            }
+        }
+
+    </style>
 </head>
 
 <body>
@@ -17,12 +53,19 @@
             </label>
             <img class="logo" src="images/logo.png" alt="logo">
             <img class="bag" src="images/bag1.png" alt="bagicon">
+            <div class="desktop-menu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="#">Shop</a></div>
+                <div><a href="environment.html">Environment</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
         </div>
         <nav id="navbar" class="overlay">
             <button class="closebtn" onclick="closenav()">&times;</button>
             <div class="overlay-content">
                 <a href="index.html">Home</a>
-                <a href="about.html">About</a>
+                <a href="#">About</a>
                 <a href="#">Shop</a>
                 <a href="environment.html">Environment</a>
                 <a href="#">Contact</a>
@@ -34,16 +77,15 @@
 
 
     <main>
-             <div class="wrapperabout">
-        <div class="liss"></div>
-        <section class="aboutlisstext">
-             <h2> Liss Stender Designs</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-            <h1>About Liss stender</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque nesciunt, magni, ipsam deserunt iure reprehenderit possimus dicta repellat, cupiditate sapiente quia ab quod nihil recusandae praesentium maiores. Vitae, nisi!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam error ipsa dicta, officia non maxime earum nihil quis reiciendis quam, obcaecati dolorum, provident aliquam!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quo, saepe in reprehenderit dolorum distinctio. Ex earum, vel, optio, sit doloremque iste quasi asperiores nulla odio cumque vero.</p>
-        </section>
+        <div class="wrapperabout">
+            <div class="liss">
+                <img src="images/liss.png" alt="portrait">
+            </div>
+            <section class="aboutlisstext">
+                <h1>About Liss stender</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur cumque nesciunt, magni, ipsam deserunt iure reprehenderit possimus dicta repellat, cupiditate sapiente quia ab quod nihil recusandae praesentium maiores. Vitae, nisi!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quo, saepe in reprehenderit dolorum distinctio. Ex earum, vel, optio, sit doloremque iste quasi asperiores nulla odio cumque vero.</p>
+            </section>
         </div>
 
         <section class="video">
@@ -51,15 +93,17 @@
         </section>
 
         <div class="wrapperabout2">
-        <section class="abouthappyclients">
-            <h2>
-                Happy Clients
-            </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia beatae, eaque natus quod accusamus possimus sequi provident magni veniam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo recusandae a, sequi minima maiores, nulla, similique quasi perspiciatis culpa numquam vel. Reiciendis, rem, asperiores?</p>
-        </section>
-          <div class="aboutimgtablet"></div>
-          </div>
+            <section class="abouthappyclients">
+                <h2>
+                    Happy Clients
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia beatae, eaque natus quod accusamus possimus sequi provident magni veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo recusandae a, sequi minima maiores, nulla, similique quasi perspiciatis culpa numquam vel. Reiciendis, rem, asperiores?</p>
+            </section>
+            <div class="aboutimg">
+                <img src="images/landscape3.png" alt="happyclients">
+            </div>
+        </div>
 
 
 
