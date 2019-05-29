@@ -505,7 +505,7 @@ button a {
 }
 
 .videoimgenv {
-    width: 100%
+    width: 100%;
 }
 
 .envvideo p {
@@ -593,6 +593,7 @@ footer {
     .envbutton {
         display: none;
     }
+
     .keywords {
         margin: 0 20px 0 70px;
     }
@@ -619,7 +620,7 @@ footer {
 
     .liss {
         grid-area: img;
-        margin: auto 0;
+        margin: auto auto;
     }
 
     .wrapperabout {
@@ -653,7 +654,7 @@ footer {
             "img1 details1";
     }
 
-    .video{
+    .video {
         margin: 0 3em;
     }
 
@@ -667,7 +668,7 @@ footer {
         margin: auto 0;
     }
 
-    .abouthappyclients{
+    .abouthappyclients {
         place-self: center;
         padding: 0;
     }
@@ -684,63 +685,84 @@ footer {
     /*****************************Environment page*******************/
     .envinuit {
         display: block;
-        height: 130px;
+        position: absolute;
+        height: 90px;
         transform: translateY(1em) translateX(22em) rotate(25deg);
     }
 
     .envimg {
-        height: 700px
+        height: 350px
     }
 
     .envparagraphs {
         display: block;
-        font-size: 1.2em;
-        padding: 0 1em;
+        padding: 0;
         margin: 0;
     }
 
+    #containerimg {
+        margin: 0 3em;
+    }
+
     .envparagraphs p {
-        padding: 0em;
-        margin: 1em .1em;
-        font-size: 1.1em;
+        padding: 0.5em 0;
     }
 
     .wrapperenv {
-        padding: 1em 0;
+        margin: 0 2em;
+        padding: 3em 0;
+        padding-top: 6em;
+        grid-gap: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-            "par details2"
+            'par details2'
     }
 
     .envcontainer {
         grid-area: par;
     }
 
+    .envvideo p {
+        place-self: center;
+    }
+
+    .producmaterials {
+        padding: 0;
+    }
+
     .envcontainer h1 {
-        margin: 0em;
+        margin: 0;
+        margin-bottom: 1em;
     }
 
     .envcontainer p {
-        margin: .4em;
-        font-size: 1.3em;
+        margin: 0;
+        padding: 0.5em 0;
     }
 
-    .envvideo button {
+    .envvideo div {
         display: none;
     }
 
     .envwrapper1 {
         padding: 1em 0;
+        margin: 0 2em;
+        grid-gap: 2em;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto;
         grid-template-areas:
             "par details2"
     }
 
     .envvideo p {
         padding: 0;
-        margin: 1.3em;
+        margin: 0;
+        margin-top: 1em;
+    }
+
+    .producmaterials {
+        margin: auto 0;
     }
 
     .producmaterials img {
@@ -889,41 +911,64 @@ footer {
     }
 
     .envimg {
-        height: 650px;
+        background-position: center center;
     }
 
     .wrapperenv {
-        height: 30vh;
-        padding: 1em 0em;
+        margin: 0 15vw;
+        padding: 1em 0;
+        grid-gap: 5em;
+    }
+
+    .xd {
+        display: grid;
+        margin: 0 15vw;
+        padding: 1em 0;
+        grid-gap: 5em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'envpar-area envvideo-area';
     }
 
     .envwrapper1 {
-        height: 20vh;
-    }
-
-    .videoimgenv {
-        width: 70vh;
+        grid-area: envpar-area;
     }
 
     #containerimg {
-        height: 50vh;
-        display: flex;
-        justify-content: center;
+        grid-area: envvideo-area;
+    }
+
+    .envvideo div {
+        display: block;
+    }
+
+    .envbutton {
+        display: none;
+    }
+
+    #containerimg {
+        margin: auto 0;
+    }
+
+    .envvideo div {
+        padding-bottom: 0;
+    }
+
+    .envinuit {
+        transform: translateY(38em) translateX(38em) rotate(25deg);
+    }
+
+    .envwrapper1 {
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'par'
+            'details2';
     }
 
     .quote p {
         justify-self: center;
     }
-
-    .video1 {
-        display: block;
-        grid-area: video;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: url(images/video.png);
-        height: 40em;
-    }
-
 
     .video {
         margin: 0;
@@ -937,7 +982,7 @@ footer {
     }
 
     .wrapperabout {
-        margin: 0 3em;
+        margin: 0 15vw;
         padding-top: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -946,7 +991,7 @@ footer {
     }
 
     .wrapperabout2 {
-        margin: 0 3em;
+        margin: 0 15vw;
         padding-top: 1em;
     }
 
@@ -1007,6 +1052,18 @@ footer {
 
     .landscreenimg .ptext p {
         font-size: 1.2em;
+    }
+
+    .envinuit {
+        display: none;
+    }
+
+    .inuitone {
+        display: none;
+    }
+
+    .button-wrap {
+        top: 80%;
     }
 
 
