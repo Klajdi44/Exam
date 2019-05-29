@@ -959,6 +959,7 @@ footer {
     }
 
     .desktop-menu div a {
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.4em;
         text-align: center;
         text-decoration: none;
