@@ -154,6 +154,7 @@ header {
 }
 
 .inuittwo {
+    display: none;
     height: 9vh;
     position: absolute;
     transform: translateY(-6vh) translateX(64vw) rotate(-45deg);
@@ -199,6 +200,7 @@ h1 {
     font-weight: 100;
     font-size: 1.5em;
     padding: 25px 0px 10px 0px;
+    text-align: center;
 }
 
 .ptext p {
@@ -223,7 +225,7 @@ button.border {
     width: 130px;
     height: 35px;
     margin-left: 60%;
-    margin-top: 20%;
+    margin-top: 28%;
     font-size: 0.9rem;
     opacity: 0.85;
 }
@@ -233,7 +235,8 @@ button.border:hover {
 }
 
 button a {
-    all:unset;
+    all: unset;
+    color: white;
 }
 
 #client-image {
@@ -291,15 +294,16 @@ button a {
 /*******************************story********************************/
 .story h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     padding-top: 1.3em;
     padding-bottom: 0.8em;
 }
 
 .story p {
-    margin: 1em 1em 1em 1em;
     text-align: inherit;
-    font-size: 1.2em;
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.1em;
 }
 
 .containerstory img {
@@ -330,6 +334,9 @@ button a {
 .paragraph {
     display: block;
     margin: 1em;
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.1em;
 }
 
 .keywords {
@@ -372,7 +379,7 @@ button a {
 /*************************environment********************************/
 .environment h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     padding-top: 1.3em;
     padding-bottom: 0.8em;
 }
@@ -387,8 +394,9 @@ button a {
 }
 
 .environment p {
-    margin: 2em 1em 0em 1em;
-    font-size: 1.2em;
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.1em;
 }
 
 /********************************************************************/
@@ -397,14 +405,15 @@ button a {
 
 .happyclients h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     padding-top: 1.3em;
     padding-bottom: 0.8em;
 }
 
 .happyclients p {
-    margin: 2em 1em 0em 1em;
-    font-size: 1.2em;
+    margin: 1.5em;
+    padding: .5em;
+    font-size: 1.1em;
 }
 
 .inuitmot {
@@ -422,7 +431,7 @@ button a {
 
 .famousproducts h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5rem;
     padding-top: 1.3em;
     padding-bottom: 1.4em;
 }
@@ -433,11 +442,12 @@ button a {
 }
 
 .famous-product .item-name {
-    font-size: 1.3rem;
+    font-family: 'Montserrat', 'sans-serif';
     margin: 10px;
-    font-weight: 900;
-    -webkit-text-stroke-width: 0.75px;
-    -webkit-text-stroke-color: #2C2B30;
+    font-weight: 100;
+    font-size: 1.3rem;
+    color: #2c2b30;
+    z-index: 3;
 }
 
 .famous-product p {
@@ -483,18 +493,19 @@ button a {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.famousproducts button {
-    text-align: center;
-    margin: 1em;
-    background-color: white;
-    font-family: 'Montserrat', 'sans-serif';
-    line-height: 0;
-    width: 130px;
-    height: 35px;
-    font-size: 0.9rem;
-    border: 1px solid #2c2b30;
-    margin: 30px 30px 50px 30px;
-}
+   .famousproducts button {
+        text-align: center;
+        margin: 1em;
+        background-color: white;
+        font-family: 'Montserrat', 'sans-serif';
+        line-height: 0;
+        width: 200px;
+        height: 45px;
+        font-size: 1.2rem;
+        opacity: 0.9;
+        border: 1px solid #2c2b30;
+        margin: 30px 30px 50px 30px;
+    }
 
 .famousproducts button a {
     color: #2c2b30;
@@ -646,9 +657,9 @@ button a {
 }
 
 .envcontainer p {
-    margin: 1em;
+    margin: 1.5em;
     padding: .5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .videoimgenv {
@@ -661,18 +672,28 @@ button a {
     font-size: 1.2em;
 }
 
-.envvideo button {
+
+    .envvideo button {
+        text-align: center;
+        margin: 1em;
+        background-color: white;
+        font-family: 'Montserrat', 'sans-serif';
+        line-height: 0;
+        width: 200px;
+        height: 45px;
+        font-size: 1.2rem;
+        opacity: 0.9;
+        border: 1px solid #2c2b30;
+        margin: 30px 30px 50px 30px;
+    }
+
+
+.envvideo button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.envvideo button a {
     color: #2c2b30;
-    text-align: center;
-    margin: 1em;
-    background-color: white;
-    font-family: 'Montserrat', 'sans-serif';
-    line-height: 0;
-    width: 130px;
-    height: 35px;
-    font-size: 0.9rem;
-    border: 1px solid #2c2b30;
-    margin: 30px 30px 50px 30px;
 }
 
 .envvideo div {
@@ -788,6 +809,10 @@ footer {
 }
 
 @media screen and (min-width:600px) {
+
+    .envcontainer h1 {
+        text-align: left;
+    }
     .social-media {
         grid-column: 2/span 1;
         grid-row: 1/span 1;
@@ -1105,7 +1130,7 @@ footer {
     }
 
     .inuittwo {
-        transform: translateY(-9vh) translateX(75vw) rotate(-45deg);
+        transform: translateY(-3vh) translateX(75vw) rotate(-45deg);
     }
 }
 
@@ -1121,7 +1146,7 @@ footer {
 
     button.border {
         margin-left: 70%;
-        margin-top: 22%;
+        margin-top: 29%;
     }
 
     .bag {
@@ -1187,7 +1212,7 @@ footer {
     }
 
     .inuitone {
-        transform: translateX(15vw) translateY(50vh);
+        display: none;
     }
 
     .envimg {
@@ -1345,24 +1370,10 @@ footer {
         border: 1px solid white;
         width: 200px;
         height: 45px;
-        margin-left: 70%;
-        margin-top: 23%;
+        margin-left: 67%;
+        margin-top: 30%;
         font-size: 1.2rem;
         opacity: 0.85;
-    }
-
-    .famousproducts button {
-        text-align: center;
-        margin: 1em;
-        background-color: white;
-        font-family: 'Montserrat', 'sans-serif';
-        line-height: 0;
-        width: 200px;
-        height: 45px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border: 1px solid #2c2b30;
-        margin: 30px 30px 50px 30px;
     }
 
     .gridproducts {
