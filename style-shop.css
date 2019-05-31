@@ -99,6 +99,8 @@ header {
 
 /* TYPOGRAPHY LINKS */
 
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+
 html {
     font-size: 100%;
     color: #2b2c30;
@@ -231,7 +233,7 @@ main {
 }
 
 .image-overlay {
-   background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 90%);
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0) 90%);
 }
 
 .underline {
@@ -361,8 +363,7 @@ footer {
     }
 
 
-     .container-categ article:nth-of-type(2) {
-    }
+    .container-categ article:nth-of-type(2) {}
 
     .container-categ article:nth-of-type(3) {
         margin-left: -3%;
@@ -436,7 +437,7 @@ footer {
 /******************************NAVBAR BIG SCREEN********************************/
 @media all and (min-width: 768px) {
     header {
-        width: 99.8%;
+        width: 100%;
     }
 }
 

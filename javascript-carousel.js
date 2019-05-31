@@ -12,10 +12,9 @@ function showNext(no) {
 }
 
 function showCurrentImage(no) {
-    if(no < 0) {
+    if (no < 0) {
         imageIndex = imagesArr.length - 1;
-    }
-    else if(no >= imagesArr.length) {
+    } else if (no >= imagesArr.length) {
         imageIndex = 0;
     } else {
         imageIndex = no;
@@ -23,10 +22,9 @@ function showCurrentImage(no) {
 
     imagesArr[imageIndex].style.display = "block";
 
-    for(let i = 0; i < imagesArr.length; i++) {
-        if(i != imageIndex) {
+    for (let i = 0; i < imagesArr.length; i++) {
+        if (i != imageIndex) {
             imagesArr[i].style.display = "none";
         }
     }
 }
-

@@ -289,7 +289,7 @@ h2 {
 }
 
 .info-section button:hover {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .info-section .genre-modal {
@@ -475,4 +475,3 @@ h2 {
     }
 
 }
-

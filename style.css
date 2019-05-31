@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+
 *:not(.fs) {
     margin: 0;
     padding: 0;
@@ -253,6 +255,7 @@ button a {
     background-image: url(images/p2.jpg);
     height: 90vh;
     padding-top: 7em;
+    margin-top: -10px;
 }
 
 .image-overlay {
@@ -493,19 +496,19 @@ button a {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-   .famousproducts button {
-        text-align: center;
-        margin: 1em;
-        background-color: white;
-        font-family: 'Montserrat', 'sans-serif';
-        line-height: 0;
-        width: 200px;
-        height: 45px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border: 1px solid #2c2b30;
-        margin: 30px 30px 50px 30px;
-    }
+.famousproducts button {
+    text-align: center;
+    margin: 1em;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 0;
+    width: 200px;
+    height: 45px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    border: 1px solid #2c2b30;
+    margin: 30px 30px 50px 30px;
+}
 
 .famousproducts button a {
     color: #2c2b30;
@@ -574,7 +577,8 @@ button a {
 /* CAROUSEL */
 
 .envimg {
-    height: 450px
+    height: 450px;
+    margin-top: -10px;
 }
 
 .envimg img {
@@ -673,19 +677,19 @@ button a {
 }
 
 
-    .envvideo button {
-        text-align: center;
-        margin: 1em;
-        background-color: white;
-        font-family: 'Montserrat', 'sans-serif';
-        line-height: 0;
-        width: 200px;
-        height: 45px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border: 1px solid #2c2b30;
-        margin: 30px 30px 50px 30px;
-    }
+.envvideo button {
+    text-align: center;
+    margin: 1em;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 0;
+    width: 200px;
+    height: 45px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    border: 1px solid #2c2b30;
+    margin: 30px 30px 50px 30px;
+}
 
 
 .envvideo button:hover {
@@ -813,6 +817,7 @@ footer {
     .envcontainer h1 {
         text-align: left;
     }
+
     .social-media {
         grid-column: 2/span 1;
         grid-row: 1/span 1;
@@ -880,7 +885,7 @@ footer {
     }
 
     header {
-        width: 99.8%;
+        width: 100%;
     }
 
     .aboutlisstext h2 {
@@ -966,7 +971,8 @@ footer {
     }
 
     .envimg {
-        height: 550px
+        height: 550px;
+        margin-top: -10px;
     }
 
     .envimg img {
@@ -1405,6 +1411,6 @@ footer {
     }
 
     header {
-        width: 99.87%;
+        width: 100%;
     }
 }
