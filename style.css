@@ -213,16 +213,19 @@ button a {
     position: relative;
 }
 
-
-
 .landscreenimg {
-    opacity: 0.70;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/landscape2filter.png);
-    height: 25em;
+    background-image: url(images/p2.jpg);
+    height: 90vh;
     padding-top: 7em;
+}
 
+.image-overlay {
+    margin-top: -10px;
+    object-fit: cover;
+    height: 90vh;
+    width: 100vw;
 }
 
 .ptext {
@@ -492,11 +495,82 @@ button a {
 /********************************************************************/
 
 /*********************ENVIRONEMNT PAGE*******************************/
+
+/* CAROUSEL */
+
 .envimg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(images/enviroCarous.jpg);
-    height: 350px;
+    height: 450px
+}
+
+.envimg img {
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+}
+
+.arrow-right, .arrow-left {
+    width: 30px;
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.6));
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 20px;
+}
+
+.arrow-right {
+    margin-left: calc(100% - 50px);
+}
+
+/* CAROUSEL EFFECTS */
+
+.effect-switch {
+    animation: anim-carous 1.5s 1 forwards;
+}
+
+@keyframes anim-carous {
+    from {
+        filter: brightness(30%);
+    }
+    to {
+        filter: brightness(100%);
+    }
+}
+
+.arrow-right:hover {
+    animation: move-left 0.5s 1 forwards;
+}
+
+.arrow-left:hover {
+    animation: move-right 0.5s 1 forwards;
+}
+
+@keyframes move-left {
+    25% {
+        transform: translateX(2.5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(2.5px);
+    }
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes move-right {
+    25% {
+        transform: translateX(-2.5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(-2.5px);
+    }
+    100% {
+        transform: translateX(5px);
+    }
 }
 
 .envcontainer h1 {
@@ -602,6 +676,11 @@ footer {
 }
 
 @media screen and (min-width:450px) {
+
+    .arrow-right, .arrow-left {
+    margin-top: -250px;
+    }
+
     footer {
         height: 140px;
     }
@@ -782,7 +861,13 @@ footer {
     }
 
     .envimg {
-        height: 350px
+        height: 550px
+    }
+
+    .envimg img {
+    object-fit: cover;
+    width: 100%;
+    height: 550px;
     }
 
     .envparagraphs {

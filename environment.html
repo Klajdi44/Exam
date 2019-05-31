@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -38,8 +38,28 @@
     </header>
     <main>
 
-        <div class="envimg"></div>
+        <div class="carousel-container">
+
+        <div class="envimg effect-switch">
+            <img src="images/enviroCarous.jpg">
+        </div>
+
+        <div class="envimg effect-switch">
+            <img src="images/enviroCarous%202.jpg">
+        </div>
+
+        <div class="envimg effect-switch">
+            <img src="images/enviroCarous3.jpg">
+        </div>
+
+            <a class="prev-img" onclick="showPrevious(-1)"> <img class="arrow-right" src="images/buttonCarous.png"> </a>
+
+            <a class="next-img" onclick="showNext(1)"> <img class="arrow-left" src="images/buttonCarousLeft.png"> </a>
+
+        </div>
+
         <img class="envinuit" src="images/inuitmotif.png" alt="inuit">
+
         <div class="wrapperenv">
             <div class="envcontainer">
                 <h1>Environment</h1>
@@ -108,6 +128,7 @@
 
 
     <script src="script.js"></script>
+    <script src="javascript-carousel.js"> </script>
 </body>
 
 </html>
