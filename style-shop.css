@@ -14,6 +14,10 @@ header {
     display: none;
 }
 
+.desktop-menu div a {
+   cursor: pointer !important;
+}
+
 .burgerMenu {
     font-size: 2.8em;
 }
@@ -242,7 +246,7 @@ main {
 }
 
 .underline:hover {
-    transition: background-size 0.5s ease-in;
+    transition: background-size 0.2s ease-in;
     background-size: 100% 2px;
 }
 
