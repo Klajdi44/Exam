@@ -28,7 +28,7 @@ h2 {
 
 
 p:not(.copyright) {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: 'Lora', serif;
     font-style: normal;
     font-weight: normal;
@@ -197,7 +197,8 @@ h1 {
 .envcontainer h1 {
     color: #2c2b30;
     font-weight: 100;
-    font-size: 2.1em;
+    font-size: 1.5em;
+    padding: 25px 0px 10px 0px;
 }
 
 .ptext p {
@@ -232,8 +233,7 @@ button.border:hover {
 }
 
 button a {
-    text-decoration: none;
-    color: #F6F8F7;
+    all:unset;
 }
 
 #client-image {
@@ -645,11 +645,6 @@ button a {
     }
 }
 
-.envcontainer h1 {
-    text-align: center;
-    margin: 1em;
-}
-
 .envcontainer p {
     margin: 1em;
     padding: .5em;
@@ -667,10 +662,17 @@ button a {
 }
 
 .envvideo button {
-    padding: .5em;
-    font-size: 1.3em;
-    background: #2C2B30;
-    color: #F6F8F7;
+    color: #2c2b30;
+    text-align: center;
+    margin: 1em;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 0;
+    width: 130px;
+    height: 35px;
+    font-size: 0.9rem;
+    border: 1px solid #2c2b30;
+    margin: 30px 30px 50px 30px;
 }
 
 .envvideo div {
@@ -934,8 +936,8 @@ footer {
     .envinuit {
         display: block;
         position: absolute;
-        height: 90px;
-        transform: translateY(1em) translateX(22em) rotate(25deg);
+        height: 70px;
+        transform: translateY(6em) translateX(20em) rotate(25deg);
     }
 
     .envimg {
@@ -958,19 +960,24 @@ footer {
         margin: 0 3em;
     }
 
+    .envparagraphs {
+        margin-top: 85px;
+    }
+
     .envparagraphs p {
         padding: 0.5em 0;
     }
 
     .wrapperenv {
-        margin: 0 2em;
+        margin: 0 3em;
         padding: 3em 0;
         padding-top: 6em;
         grid-gap: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-areas:
-            'par details2'
+            'par details2';
     }
 
     .envcontainer {
@@ -993,6 +1000,7 @@ footer {
     .envcontainer p {
         margin: 0;
         padding: 0.5em 0;
+        font-size: 1.1em;
     }
 
     .envvideo div {
@@ -1001,7 +1009,7 @@ footer {
 
     .envwrapper1 {
         padding: 1em 0;
-        margin: 0 2em;
+        margin: 0 3em;
         grid-gap: 2em;
         display: grid;
         grid-template-columns: auto;
@@ -1013,6 +1021,7 @@ footer {
         padding: 0;
         margin: 0;
         margin-top: 1em;
+        font-size: 1.1em;
     }
 
     .producmaterials {
@@ -1033,10 +1042,16 @@ footer {
     }
 
     .envbutton > button {
-        padding: .4em 3em;
-        font-size: 1.6em;
-        background: #2C2B30;
-        color: #F6F8F7;
+        text-align: center;
+        margin: 1em;
+        background-color: white;
+        font-family: 'Montserrat', 'sans-serif';
+        line-height: 0;
+        width: 130px;
+        height: 35px;
+        font-size: 0.9rem;
+        border: 1px solid #2c2b30;
+        margin: 30px 30px 50px 30px;
     }
 
     /****************************************************************/
@@ -1180,14 +1195,14 @@ footer {
     }
 
     .wrapperenv {
-        margin: 0 15vw;
+        margin: 0 22vw;
         padding: 1em 0;
         grid-gap: 5em;
     }
 
     .xd {
         display: grid;
-        margin: 0 15vw;
+        margin: 0 22vw;
         padding: 1em 0;
         grid-gap: 5em;
         grid-template-columns: 1fr 1fr;
@@ -1216,11 +1231,13 @@ footer {
     }
 
     .envvideo div {
+        padding-top: 30px;
         padding-bottom: 0;
     }
 
     .envinuit {
-        transform: translateY(38em) translateX(38em) rotate(25deg);
+        transform: translateY(45em) translateX(40em) rotate(25deg);
+        display: none;
     }
 
     .envwrapper1 {
