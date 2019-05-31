@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,34 @@
 </head>
 
 <body>
+    <header>
+        <div class="headerAdj">
+            <label for="menu" class="burgerMenu" onclick="opennav()">
+                &#9776;
+            </label>
+            <img class="logo" src="images/logo.png" alt="logo">
+            <img class="bag" src="images/bag1.png" alt="bagicon">
+            <div class="desktop-menu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="#">Shop</a></div>
+                <div><a href="environment.html">Environment</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
+
+
+        </div>
+        <nav id="navbar" class="overlay">
+            <button class="closebtn" onclick="closenav()">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="#">Shop</a>
+                <a href="environment.html">Environment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
     <main>
         <h1> Shop </h1>
         <h3> <i> "Laoreet id donec ultrices tincidunt arcu non." </i> </h3>
@@ -17,10 +46,10 @@
             <a href="shop-category.html">
                 <article class="categ">
 
-                    <img class="image-categ" alt="category image" src="images/landscape1.png">
+                    <img class="image-categ" alt="category image" src="images/fabric.jpg">
 
                     <div class="text-over">
-                        <h4> <span class="underline"> Type of Items </span> </h4>
+                        <h4> <span class="underline"> Textile </span> </h4>
                         <p> Laoreet id donec ultrices tincidunt arcu non. </p>
                     </div>
                 </article>
@@ -28,32 +57,32 @@
             <a href="shop-category.html">
                 <article class="categ">
 
-                    <img class="image-categ" alt="category image" src="images/landscape1.png">
+                    <img class="image-categ" alt="category image" src="images/crockery.jpg">
 
                     <div class="text-over">
-                        <h4> <span class="underline"> Type of Items </span> </h4>
+                        <h4> <span class="underline"> Crockery </span> </h4>
                         <p> Laoreet id donec ultrices tincidunt arcu non. </p>
                     </div>
                 </article>
             </a>
-             <a href="shop-category.html">
+            <a href="shop-category.html">
                 <article class="categ">
 
-                    <img class="image-categ" alt="category image" src="images/landscape1.png">
+                    <img class="image-categ" alt="category image" src="images/apparel.jpg">
 
                     <div class="text-over">
-                        <h4> <span class="underline"> Type of Items </span> </h4>
+                        <h4> <span class="underline"> Apparel </span> </h4>
                         <p> Laoreet id donec ultrices tincidunt arcu non. </p>
                     </div>
                 </article>
             </a>
-             <a href="shop-category.html">
+            <a href="shop-category.html">
                 <article class="categ">
 
-                    <img class="image-categ" alt="category image" src="images/landscape1.png">
+                    <img class="image-categ" alt="category image" src="images/homedecor.jpg">
 
                     <div class="text-over">
-                        <h4> <span class="underline"> Type of Items </span> </h4>
+                        <h4> <span class="underline"> Homce Descor </span> </h4>
                         <p> Laoreet id donec ultrices tincidunt arcu non. </p>
                     </div>
                 </article>
@@ -75,5 +104,7 @@
             <p class="copyright"> © Liss Stender Designs 2019 </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
