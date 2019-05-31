@@ -360,13 +360,13 @@ h2 {
         padding: 10px;
     }
 
-<<<<<<< HEAD
 }
 
 @media screen and (min-width: 1024px) {
     .container-item {
         margin: 0 18vw;
-=======
+    }
+
     .item-modal {
         display: grid;
         grid-template-columns: 340px 340px;
@@ -481,6 +481,5 @@ h2 {
         width: 800px;
         height: 600px;
         padding: 10px;
->>>>>>> origin/master
     }
 }
