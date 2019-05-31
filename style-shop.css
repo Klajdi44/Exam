@@ -1,12 +1,13 @@
 /******************************NAVBAR********************************/
 header {
-    border: 1px solid;
+    border-bottom: 1.25px solid black;
     background: #fff;
-    width: 99.4%;
+    width: 100%;
     z-index: 3;
     position: fixed;
     left: 0;
     top: 0;
+    opacity: 0.95;
 }
 
 .desktop-menu {
@@ -37,7 +38,7 @@ header {
     text-align: center;
     margin-top: 2em;
     font-size: 2em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .overlay a {
@@ -53,7 +54,7 @@ header {
 
 .overlay a:hover {
     color: #878787;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .closebtn {
@@ -74,11 +75,16 @@ header {
 }
 
 .logo {
-    height: 4em;
+    height: 3.5em;
 }
 
 .bag {
-    height: 3em;
+    margin-top: 5px;
+    height: 2.5em;
+}
+
+.menu {
+    height: 0.7em;
 }
 
 .headerAdj {
@@ -95,6 +101,8 @@ header {
 
 html {
     font-size: 100%;
+    color: #2b2c30;
+    overflow-x: hidden;
 }
 
 body {
@@ -106,22 +114,44 @@ body {
 /* TYPOGRAPHY */
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    width: 300px;
+    opacity: 0.85;
     font-weight: 100;
+    margin-left: calc(50% - 150px);
+    font-family: 'Montserrat', sans-serif;
     grid-column: 1/span 2;
     text-align: center;
-    font-size: 2.1rem;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+.header-shop h1:nth-of-type(2) {
+    margin-left: calc(50% - 175px);
+    width: 350px;
+    margin-top: -20px;
 }
 
 h3 {
+    color: #2b2c30;
+    background-color: white;
+    opacity: 0.85;
     font-family: 'Lora', serif;
-    max-width: 250px;
+    max-width: 300px;
     font-weight: 100;
     grid-column: 1/span 2;
     text-align: center;
-    margin-left: calc(50% - 125px);
+    margin-left: calc(50% - 150px);
     font-size: 1.3rem;
     margin-bottom: 3rem;
+}
+
+h3:nth-of-type(2) {
+    margin-top: -40px;
+    max-width: 250px;
+    margin-left: calc(50% - 125px);
 }
 
 .text-over h4 {
@@ -147,8 +177,11 @@ h3 {
 
 .categ-shop {
     font-family: 'Lora', serif;
+    margin-top: 50px;
     margin-left: 10%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #2C2B30;
 }
 
 a {
@@ -159,8 +192,19 @@ a {
 
 main {
     display: grid;
-    margin: 5px;
     grid-template-columns: 1fr 1fr;
+}
+
+/* HEADER SHOP */
+
+.header-shop {
+    margin-top: -9px;
+    grid-column: 1/span 2;
+    width: 100%;
+    height: 300px;
+    background-image: url("images/shopHeader.jpg");
+    background-position: bottom;
+    background-size: cover;
 }
 
 .inuit-picture {
@@ -171,7 +215,6 @@ main {
 }
 
 .container-categ {
-    margin-left: 8%;
     grid-column: 1/span 2;
     display: flex;
     flex-wrap: wrap;
@@ -185,6 +228,10 @@ main {
     height: 280px;
     display: grid;
     grid-template-rows: 135px 145px;
+}
+
+.image-overlay {
+   background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(255,255,255,0) 90%);
 }
 
 .underline {
@@ -208,6 +255,7 @@ main {
     height: 280px;
     width: 100%;
     object-fit: cover;
+
 }
 
 .text-over {
@@ -307,17 +355,22 @@ footer {
 
 @media screen and (min-width:600px) {
 
-    .container-categ a:nth-of-type(2) {
-        margin-left: -5%;
+    .header-shop {
+        height: 400px;
+        background-position: 30% 60%;
     }
 
-    .container-categ a:nth-of-type(3) {
-        margin-left: -10%;
+
+     .container-categ article:nth-of-type(2) {
     }
 
-    .container-categ a:nth-of-type(2),
-    .container-categ a:nth-of-type(3) {
-        width: 48%;
+    .container-categ article:nth-of-type(3) {
+        margin-left: -3%;
+    }
+
+    .container-categ article:nth-of-type(2),
+    .container-categ article:nth-of-type(3) {
+        width: 42%;
     }
 
     .social-media {
@@ -350,19 +403,21 @@ footer {
 
 @media screen and (min-width: 900px) {
 
-    .container-categ a:nth-of-type(1) > .categ {
+    .container-categ article:nth-of-type(1) {
+        height: 340px;
+        grid-template-rows: 195px 145px;
+    }
+
+    .container-categ article:nth-of-type(1) > .image-categ {
         height: 340px;
     }
 
-    .container-categ a:nth-of-type(1) > .categ > .image-categ {
+    .container-categ article:nth-of-type(4) {
         height: 340px;
+        grid-template-rows: 195px 145px;
     }
 
-    .container-categ a:nth-of-type(4) > .categ {
-        height: 340px;
-    }
-
-    .container-categ a:nth-of-type(4) > .categ > .image-categ {
+    .container-categ article:nth-of-type(4) > .image-categ {
         height: 340px;
     }
 
@@ -370,8 +425,7 @@ footer {
 
 @media screen and (min-width: 1100px) {
     .container-categ {
-        margin-left: 15%;
-        margin-right: 7%;
+        margin: 0 18vw;
     }
 
     .categ-shop {

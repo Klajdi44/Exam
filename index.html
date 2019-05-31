@@ -9,7 +9,18 @@
     <style>
         @media only screen and (min-width : 768px) {
             h1 {
-                font-size: 26px;
+                color: white;
+                font-weight: 900;
+            }
+
+            .ptext p {
+                color: white;
+            }
+
+            .landscreenimg .ptext p {
+                font-size: 1.2em;
+                width: 500px;
+                margin-left: calc(50% - 250px);
             }
 
             main {
@@ -23,14 +34,6 @@
             .landscreenimg {
                 grid-area: top-area;
                 display: grid;
-                grid-template-columns: 1.5fr 2fr;
-                grid-template-areas:
-                    'slogan-area .'
-                    '. .';
-            }
-
-            .ptext {
-                grid-area: slogan-area;
             }
 
             #content-wrap {
@@ -155,17 +158,6 @@
         }
 
         @media only screen and (min-width : 1024px) {
-            .landscreenimg {
-                grid-template-columns: 2fr 2fr;
-                grid-template-areas:
-                    'slogan-area slogan-area'
-                    '. .';
-            }
-
-            .ptext {
-                margin: auto 19em;
-            }
-
             .story-grid {
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
@@ -229,7 +221,6 @@
                 grid-template-columns: 1fr 1fr;
             }
         }
-
     </style>
 </head>
 
@@ -273,6 +264,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, fuga!</p>
             </div>
         </div>
+
         <div id="content-wrap">
             <div class="story-grid">
 
@@ -391,33 +383,36 @@
             </section>
 
             <section class="famousproducts">
-                <h2>Famous Products</h2>
+                <h2>Notorious Products Selections</h2>
                 <img class="inuittwo" src="images/inuitmotif.png" alt="inuit">
                 <div class="gridproducts">
 
                     <div class="famous-product">
-                        <p>Inuit scarf</p>
+                        <p class="item-name">Inuit scarf</p>
                         <section>
                             <img src="images/landscape3.png" alt="">
                             <p>300dkk</p>
                         </section>
                     </div>
+
                     <div class="famous-product">
-                        <p>Inuit scarf</p>
+                        <p class="item-name">Inuit scarf</p>
                         <section>
                             <img src="images/landscape3.png" alt="">
                             <p>300dkk</p>
                         </section>
                     </div>
+
                     <div class="famous-product">
-                        <p>Inuit scarf</p>
+                        <p class="item-name">Inuit scarf</p>
                         <section>
                             <img src="images/landscape3.png" alt="">
                             <p>300dkk</p>
                         </section>
                     </div>
+
                     <div class="famous-product">
-                        <p>Inuit scarf</p>
+                        <p class="item-name">Inuit scarf</p>
                         <section>
                             <img src="images/landscape3.png" alt="">
                             <p>300dkk</p>
