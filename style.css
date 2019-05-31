@@ -1220,14 +1220,14 @@ footer {
     }
 
     .wrapperenv {
-        margin: 0 22vw;
+        margin: 0 18vw;
         padding: 1em 0;
         grid-gap: 5em;
     }
 
     .xd {
         display: grid;
-        margin: 0 22vw;
+        margin: 0 18vw;
         padding: 1em 0;
         grid-gap: 5em;
         grid-template-columns: 1fr 1fr;
@@ -1290,7 +1290,7 @@ footer {
     }
 
     .wrapperabout {
-        margin: 0 22vw;
+        margin: 0 15vw;
         padding-top: 2em;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1299,7 +1299,7 @@ footer {
     }
 
     .wrapperabout2 {
-        margin: 0 22vw;
+        margin: 0 15vw;
         padding-top: 1em;
     }
 
