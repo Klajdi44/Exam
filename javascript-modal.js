@@ -12,7 +12,7 @@ function openModal(itemId) {
 
 
 function showModal(listing) {
-    console.log(listing);
+    //console.log(listing);
 
     document.querySelector("h2").textContent = listing.title.rendered;
     document.querySelector(".image-modal-main").src = listing._embedded["wp:featuredmedia"][0].source_url;
@@ -96,3 +96,11 @@ function showModal(listing) {
 
     productModal.style.display = "block";
 }
+
+
+
+function imageChange(source){
+     document.querySelector(".image-modal-main").src = source;
+}
+
+
