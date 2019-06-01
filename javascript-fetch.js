@@ -1,4 +1,4 @@
-let baseLink = "http://inuk.one/stender/wp-json/wp/v2/";
+let baseLink = "https://inuk.one/stender/wp-json/wp/v2/";
 const linkParameters = new URLSearchParams(window.location.search);
 const categID = linkParameters.get("cat");
 

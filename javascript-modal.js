@@ -1,5 +1,5 @@
 let productModal = document.querySelector(".modal");
-let productLink = "http://inuk.one/stender/wp-json/wp/v2/product/";
+let productLink = "https://inuk.one/stender/wp-json/wp/v2/product/";
 
 function toggleModal() {
     productModal.style.display = "none";
