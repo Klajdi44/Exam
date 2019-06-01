@@ -194,6 +194,10 @@ a {
     all: unset;
 }
 
+.social-media a:hover {
+    cursor: pointer;
+}
+
 /* GRID SYSTEM CATEGORY */
 
 main {

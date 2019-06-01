@@ -758,6 +758,14 @@ footer {
     -webkit-text-stroke-color: white;
 }
 
+.social-media a {
+    all: unset;
+}
+
+.social-media a:hover {
+    cursor: pointer;
+}
+
 .social-media {
     margin-left: calc(50% - 75px);
     grid-column: 1/span 2;

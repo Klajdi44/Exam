@@ -7,6 +7,10 @@
     width: 50px;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 .social-media {
     margin-left: calc(50% - 110px);
 }
@@ -73,6 +77,10 @@ input:nth-of-type(4) {
     float: right;
     margin: 20px 0px;
     font-size: 0.8rem;
+}
+
+input:nth-of-type(4):hover {
+    cursor: pointer;
 }
 
 @media screen and (min-width:600px) {
