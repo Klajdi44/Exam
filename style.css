@@ -47,7 +47,13 @@ main {
     margin-top: 82px;
     color: #2b2c30;
 }
+.arrow-left{
+    cursor: pointer;
+}
 
+.arrow-right{
+    cursor: pointer
+}
 /******************************NAVBAR********************************/
 header {
     border-bottom: 1.25px solid black;
@@ -496,19 +502,19 @@ button a {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-   .famousproducts button {
-        text-align: center;
-        margin: 1em;
-        background-color: white;
-        font-family: 'Montserrat', 'sans-serif';
-        line-height: 0;
-        width: 200px;
-        height: 45px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border: 1px solid #2c2b30;
-        margin: 30px 30px 50px 30px;
-    }
+.famousproducts button {
+    text-align: center;
+    margin: 1em;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 0;
+    width: 200px;
+    height: 45px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    border: 1px solid #2c2b30;
+    margin: 30px 30px 50px 30px;
+}
 
 .famousproducts button a {
     color: #2c2b30;
@@ -676,19 +682,18 @@ button a {
 }
 
 
-    .envvideo button {
-        text-align: center;
-        margin: 1em;
-        background-color: white;
-        font-family: 'Montserrat', 'sans-serif';
-        line-height: 0;
-        width: 200px;
-        height: 45px;
-        font-size: 1.2rem;
-        opacity: 0.9;
-        border: 1px solid #2c2b30;
-        margin: 30px 30px 50px 30px;
-    }
+.envvideo button {
+    text-align: center;
+    margin: 1em;
+    background-color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 0;
+    width: 200px;
+    height: 45px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    border: 1px solid #2c2b30;
+}
 
 
 .envvideo button:hover {
@@ -701,13 +706,11 @@ button a {
 
 .envvideo div {
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 4em
 }
 
 .producmaterials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1em;
 }
 
@@ -816,6 +819,7 @@ footer {
     .envcontainer h1 {
         text-align: left;
     }
+
     .social-media {
         grid-column: 2/span 1;
         grid-row: 1/span 1;
@@ -860,10 +864,6 @@ footer {
     }
 
     .envinuit {
-        display: none;
-    }
-
-    .envbutton {
         display: none;
     }
 
@@ -1029,10 +1029,6 @@ footer {
         margin: 0;
         padding: 0.5em 0;
         font-size: 1.1em;
-    }
-
-    .envvideo div {
-        display: none;
     }
 
     .envwrapper1 {
@@ -1232,10 +1228,10 @@ footer {
         display: grid;
         margin: 0 18vw;
         padding: 1em 0;
-        grid-gap: 5em;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            'envpar-area envvideo-area';
+            'envvideo-area'
+            'envpar-area';
     }
 
     .envwrapper1 {
@@ -1270,10 +1266,6 @@ footer {
 
     .envwrapper1 {
         margin: 0;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'par'
-            'details2';
     }
 
     .quote p {

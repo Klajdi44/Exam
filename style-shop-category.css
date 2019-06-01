@@ -340,10 +340,6 @@ h2 {
     .info-section .genre-modal p {
         font-size: 1.1rem;
     }
-
-    .info-section .genre-modal {
-        text-align: left;
-    }
 }
 
 @media screen and (min-width: 830px) {
