@@ -41,7 +41,7 @@
 
     <main>
         <div class="header-shop">
-        <h1> Type of Item </h1>
+            <h1> Type of Item </h1>
         </div>
         <img class="inuit-picture-left hidden" alt="inuit image" src="images/inuitmotif.png">
         <section class="container-item">
@@ -50,7 +50,7 @@
         <div class="modal">
 
             <div class="modal-content">
-               <span class="close" onclick="toggleModal()"> &times; </span>
+                <span class="close" onclick="toggleModal()"> &times; </span>
                 <article class="item-modal">
 
                     <section class="image-section">
@@ -74,43 +74,35 @@
 
                     <section class="info-section">
 
-                    <div class="select-options">
-                    <div class="select-container">
-                        <select class="select-options-modal">
-                            <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                            <option value="1"> Value 1 </option>
-                            <option value="2"> Value 2 </option>
-                            <option value="3"> Value 3 </option>
-                        </select>
-                    </div>
-                    <div class="select-container">
-                        <select class="select-options-modal">
-                            <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                            <option value="1"> Value 1 </option>
-                            <option value="2"> Value 2 </option>
-                            <option value="3"> Value 3 </option>
-                        </select>
-                    </div>
-                    </div>
+                        <div class="select-options">
+                            <div class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
+                                    <option class="option1" value="1"> Value 1 </option>
+                                    <option class="option2" value="2"> Value 2 </option>
+                                    <option class="option3" value="3"> Value 3 </option>
+                                </select>
+                            </div>
+                        </div>
 
-                    <button>
-                        <p> Add to Basket </p>
-                    </button>
+                        <button>
+                            <p> Add to Basket </p>
+                        </button>
 
-                    <section class="genre-modal">
-                        <p> Material </p>
-                        <p> Collection </p>
-                    </section>
+                        <section class="genre-modal">
+                            <p class="material-modal"> Material </p>
+                            <p class="collection-modal"> Collection </p>
+                        </section>
 
-                    <div class="presentation-images-tablet">
-                    <img class="image-modal-first" alt="item image" src="images/landscape1.png">
-                    <img class="image-modal-second" alt="item image" src="images/landscape3.png">
-                    <img class="image-modal-third" alt="item image" src="images/landscape2filter.png">
-                    </div>
+                        <div class="presentation-images-tablet">
+                            <img class="image-modal-first" alt="item image" src="images/landscape1.png">
+                            <img class="image-modal-second" alt="item image" src="images/landscape3.png">
+                            <img class="image-modal-third" alt="item image" src="images/landscape2filter.png">
+                        </div>
 
 
-                    <p class="product-details"> Suscipit adipiscing             bibendum est ultricies. Ultricies mi quis hendrerit     dolor magna. Eget sit amet tellus cras adipiscing       enim eu. Platea dictumst vestibulum rhoncus est.
-                    </p>
+                        <p class="product-details"> Suscipit adipiscing bibendum est ultricies. Ultricies mi quis hendrerit dolor magna. Eget sit amet tellus cras adipiscing enim eu. Platea dictumst vestibulum rhoncus est.
+                        </p>
 
                     </section>
 
@@ -138,20 +130,20 @@
 
 
     <template>
-         <article class="item">
-                <h4> Item Name </h4>
+        <article class="item">
+            <h4> Item Name </h4>
 
-                <img class="image-item" alt="item image" src="images/landscape1.png" onclick="openModal()">
+            <img class="image-item" alt="item image" src="images/landscape1.png">
 
-                <div class="price-margin">
-                    <h5 class="price"> 300dkk </h5>
-                </div>
+            <div class="price-margin">
+                <h5 class="price"> 300dkk </h5>
+            </div>
 
-                <div class="additional-details">
-                    <p class="material"> <b> Material </b> </p>
-                    <p class="collection"> <b> Collection </b> </p>
-                </div>
-            </article>
+            <div class="additional-details">
+                <p class="material"> <b> Material </b> </p>
+                <p class="collection"> <b> Collection </b> </p>
+            </div>
+        </article>
     </template>
 
     <script src="javascript-fetch.js"></script>

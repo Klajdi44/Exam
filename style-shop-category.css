@@ -223,15 +223,18 @@ h2 {
     opacity: 0.9;
 }
 
-.presentation-images-tablet {
-    display: none;
+
+@media only screen and (max-width: 1024px) {
+    .presentation-images-tablet {
+    display: none !important;
+}
 }
 
 .image-section .presentation-images {
     margin: 10px;
     grid-column: 2/span 3;
     grid-row: 4/span 1;
-    display: grid;
+    display: grid ;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
 }
@@ -403,7 +406,7 @@ h2 {
     }
 
     .image-section .presentation-images {
-        display: none;
+        display: none !important;
     }
 
     .presentation-images-tablet {

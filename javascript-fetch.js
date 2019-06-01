@@ -23,27 +23,31 @@ function loadApi(data) {
     data.forEach(listing => {
         //console.log(listing);
         const clone = template.cloneNode(true);
+
         clone.querySelector("h4").textContent = listing.title.rendered;
+        clone.querySelector(".image-item").onclick = function () {
+            openModal(listing.id)
+        };
         clone.querySelector(".image-item").src = listing._embedded["wp:featuredmedia"][0].source_url;
         clone.querySelector(".image-item").alt = listing.featured_image_alt;
         clone.querySelector(".price").textContent = listing.price;
         clone.querySelector(".material").textContent = listing.material;
         clone.querySelector(".collection").textContent = listing.collection;
 
+
         parentElement.appendChild(clone);
     })
 };
 
-
-
 function findCategory(data) {
     data.forEach(category => {
-        console.log(category);
+        //console.log(category);
         if (categID == category.id) {
             document.querySelector("h1").textContent = category.name;
         }
     })
 };
+
 
 
 
