@@ -826,6 +826,7 @@ footer {
 @media screen and (min-width:600px) {
 
     .envcontainer h1 {
+        margin-left: 1.5em;
         text-align: left;
     }
 
@@ -978,7 +979,7 @@ footer {
         display: block;
         position: absolute;
         height: 70px;
-        transform: translateY(6em) translateX(20em) rotate(25deg);
+        transform: translateY(6em) translateX(30em) rotate(25deg);
     }
 
     .envimg {
@@ -1278,8 +1279,7 @@ footer {
     }
 
     .envinuit {
-        transform: translateY(45em) translateX(40em) rotate(25deg);
-        display: none;
+        transform: translateY(2em) translateX(45em) rotate(20deg);
     }
 
     .envwrapper1 {
