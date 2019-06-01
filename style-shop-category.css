@@ -292,7 +292,7 @@ h2 {
 }
 
 .info-section button:hover {
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .info-section .genre-modal {
@@ -352,13 +352,18 @@ h2 {
     }
 
     .modal-content {
-        overflow-y: hidden;
         margin: 100px calc(50% - 350px);
         width: 700px;
         height: 600px;
         padding: 10px;
     }
 
+}
+
+@media screen and (min-width: 1024px) {
+    .modal-content {
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -474,4 +479,3 @@ h2 {
     }
 
 }
-

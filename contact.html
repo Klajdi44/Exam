@@ -1,53 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-shop.css">
-    <link rel="stylesheet" href="style-shop-category.css">
     <link rel="stylesheet" href="style-contact.css">
-    <title></title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <title> Contact Designer</title>
 </head>
+<style>
 
+    body {
+    background-color: #2C2B30;
+}
+    footer {
+    all: unset;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    height: 30px;
+    display: block;
+}
+
+    main {
+        margin-left: 10%;
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: 700px) {
+        .contactliss {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .grid-container {
+            height: 91vh;
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .header-image img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        .header-image {
+            grid-column: 2/span 1;
+        }
+
+        form {
+            width: 70%;
+        }
+
+        .left-part-grid {
+            grid-column: 1/span 1;
+            grid-row: 1/span 1;
+            margin-top: 50px;
+        }
+
+        .contact-info .contact {
+            font-size: 1.3rem;
+        }
+
+        .contact-info .phone, .contact-info .email {
+            font-size: 1.2rem;
+            line-height: 15px;
+        }
+        .social-media {
+            margin-left: calc(50% - 110px);
+    }
+
+    }
+
+    @media screen and (min-width: 1300px) {
+        .social-media {
+        margin-left: calc(120% - 400px);
+        }
+    }
+
+</style>
 
 <body>
-    <div class="header-image">
-        <img src="images/landscape1.png" alt="Image Contact">
-    </div>
-    <main>
-        <section class="contact-info">
-            <p class="contact"> Contact Liss Stender: </p>
-            <p class="phone"> +45 8212 2144 </p>
-            <p class="email"> lissstender@gmail.com </p>
-        </section>
-        <section class="social-media">
-            <img src="images/iconfb.png" alt="Facebook Image">
-            <img src="images/iconinsta.png" alt="Instagram Image">
-            <img src="images/iconlinkedin.png" alt="LinkedIn Image">
-        </section>
-    </main>
+    <header>
+        <div class="headerAdj">
+            <label for="menu" class="burgerMenu" onclick="opennav()">
+                &#9776;
+            </label>
+            <img class="logo" src="images/logo.png" alt="Logo Lis Stender">
+            <img class="bag" src="images/bag1.png" alt="Shopping Bag Products">
+            <div class="desktop-menu">
+                <div><a href="index.html">Home</a></div>
+                <div><a href="about.html">About</a></div>
+                <div><a href="shop.html">Showroom</a></div>
+                <div><a href="environment.html">Environment</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
 
-    <p class="contact-liss"> Write a direct message and get in contact with Liss: </p>
-    <form>
-        <p> First name:</p>
-        <input type="text" value="Leonardo">
-        <br>
-        <br>
-        <p> Second name:</p>
-        <input type="text" value="da Vinci">
-        <br>
-        <input type="text" value="Write the subject here...">
-        <br>
-        <textarea name="message" rows="15" cols="40">
+
+        </div>
+        <nav id="navbar" class="overlay">
+            <button class="closebtn" onclick="closenav()">&times;</button>
+            <div class="overlay-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Showroom</a>
+                <a href="environment.html">Environment</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="grid-container">
+
+        <div class="header-image">
+            <img src="images/contact.jpg" alt="Contact Lis Stender Landscape">
+        </div>
+
+        <div class="left-part-grid">
+            <main>
+                <section class="contact-info">
+                    <p class="contact"> Contact Liss Stender: </p>
+                    <p class="phone"> +45 8212 2144 </p>
+                    <p class="email"> lissstender@gmail.com </p>
+                </section>
+                <section class="social-media">
+                    <a href="https://www.facebook.com/LissStender"> <img src="images/iconfb.png" alt="Facebook Lis Stender"> </a>
+                    <a href="https://www.instagram.com/liss_stender_designer_inuit/"> <img src="images/iconinsta.png" alt="Instagram Lis Stender"> </a>
+                    <a href="#"> <img src="images/iconlinkedin.png" alt="LinkedIn Lis Stender"> </a>
+                </section>
+            </main>
+
+            <p class="contact-liss" style="font-size: 1.1rem; margin-left: 5%;"> Write a direct message and get in contact with Liss: </p>
+            <form>
+                <p> First name:</p>
+                <input type="text" value="Leonardo">
+                <br>
+                <br>
+                <p> Second name:</p>
+                <input type="text" value="da Vinci">
+                <br>
+                <input type="text" value="Write the subject here...">
+                <br>
+                <textarea name="message" rows="15" cols="40">
        Start typing your message here...
        </textarea>
-        <br>
-        <input type="submit">
-    </form>
-    <footer>
-        <p class="copyright"> © Liss Stender Designs 2019 </p>
-    </footer>
+                <br>
+                <input type="submit">
+            </form>
+            <footer>
+                <p class="copyright" style="font-size: 1.1rem; margin-left: 15px; margin-bottom: 10px;"> © Liss Stender Designs 2019 </p>
+            </footer>
+        </div>
 
+    </div>
+
+    <script src="script.js"> </script>
 </body>
 
 </html>

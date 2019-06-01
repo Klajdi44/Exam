@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title> About Designer </title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
-    <style>
-        .wrapperabout {
-            margin-top:
+<style>
+    .wrapperabout {
+        margin-top:
+    }
+
+    .occupation {
+        margin-top: -40px;
+    }
+
+    @media screen and (min-width: 700px) {
+        .occupation {
+            margin-top: 10px;
         }
-        @media screen and (min-width: 768px) {
-        .wrapperabout , .wrapperabout2,.video {
+        .wrapperabout2 {
+            margin-top: 80px;
+            margin-bottom: 70px;
+        }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .wrapperabout,
+        .wrapperabout2,
+        .video {
             padding: 30px 0px;
         }
+
         .wrapperabout {
             margin-top: 130px;
         }
+
         .wrapperabout2 {
             margin-bottom: 60px;
         }
-        }
-    </style>
+    }
+</style>
 
 <body>
 
@@ -32,12 +54,12 @@
             <label for="menu" class="burgerMenu" onclick="opennav()">
                 &#9776;
             </label>
-            <img class="logo" src="images/logo.png" alt="logo">
-            <img class="bag" src="images/bag1.png" alt="bagicon">
+            <img class="logo" src="images/logo.png" alt="Logo Lis Stender">
+            <img class="bag" src="images/bag1.png" alt="Shopping Bag Products">
             <div class="desktop-menu">
                 <div><a href="index.html">Home</a></div>
                 <div><a href="#">About</a></div>
-                <div><a href="shop.html">Shop</a></div>
+                <div><a href="shop.html">Showroom</a></div>
                 <div><a href="environment.html">Environment</a></div>
                 <div><a href="contact.html">Contact</a></div>
             </div>
@@ -47,7 +69,7 @@
             <div class="overlay-content">
                 <a href="index.html">Home</a>
                 <a href="#">About</a>
-                <a href="shop.html">Shop</a>
+                <a href="shop.html">Showroom</a>
                 <a href="environment.html">Environment</a>
                 <a href="contact.html">Contact</a>
             </div>
@@ -57,7 +79,7 @@
     <main>
         <div class="wrapperabout">
             <div class="liss">
-                <img src="images/lis.jpg" alt="portrait">
+                <img src="images/lis.jpg" alt="Artist Portrait">
             </div>
             <section class="aboutlisstext">
                 <h2>About Liss Stender</h2>
@@ -75,28 +97,28 @@
                 <h2>
                     Happy Clients
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quia beatae, eaque natus quod accusamus possimus sequi provident magni veniam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum illo recusandae a, sequi minima maiores, nulla, similique quasi perspiciatis culpa numquam vel. Reiciendis, rem, asperiores?</p>
+                <p> <b> Jean-Michel Huctin </b> </p>
+                <p class="occupation"> Anthropologist </p>
+                <p> "The design is an interconnection of the past, present and future; the young and the old; the men and the women; Greenlandic and International cultures.
+
+                    The design creates a powerfull emotion
+                    by expressing an artistic beauty
+                    in useful objects of Greenlands everyday life.
+                    "</p>
+                    <p> <b> Ann Andreasen </b> </p>
+                <p class="occupation"> Principal </p>
+                <p> "The design is deeply rooted in the greenlandic culture.
+It is timeless and can be used by people in all ages.
+"</p>
             </section>
             <div class="aboutimg">
-                <img src="images/happyclientsAboutpage.jpg" alt="happyclients">
+                <img src="images/happyclientsAboutpage.jpg" alt="Happy Clients">
             </div>
         </div>
 
-
-
-
-
-
-
-
-
     </main>
 
-
-
-
-       <footer>
+    <footer>
         <div class="footer-content">
             <section class="contact-info">
                 <p class="contact fs"> Contact Liss Stender: </p>
@@ -104,17 +126,13 @@
                 <p class="email fs"> lissstender@gmail.com </p>
             </section>
             <section class="social-media">
-                <img src="images/iconfb.png" alt="Facebook Image">
-                <img src="images/iconinsta.png" alt="Instagram Image">
-                <img src="images/iconlinkedin.png" alt="LinkedIn Image">
+                <a href="https://www.facebook.com/LissStender"> <img src="images/iconfb.png" alt="Facebook Lis Stender"> </a>
+                <a href="https://www.instagram.com/liss_stender_designer_inuit/"> <img src="images/iconinsta.png" alt="Instagram Lis Stender"> </a>
+                <a href="#"> <img src="images/iconlinkedin.png" alt="LinkedIn Lis Stender"> </a>
             </section>
             <p class="copyright fs"> © Liss Stender Designs 2019 </p>
         </div>
     </footer>
-
-
-
-
 
     <script src="script.js"></script>
 </body>
