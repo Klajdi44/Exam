@@ -16,6 +16,15 @@ body {
     overflow-x: hidden;
 }
 
+.client {
+    text-align: right;
+}
+
+.client p {
+    padding: 0 !important;
+
+}
+
 h1,
 h2,
 h3 {
@@ -369,24 +378,33 @@ button a {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    margin: 0;
 }
 
 #firstkey {
     grid-area: first;
     color: #44bac0;
+    text-align: right;
+
 }
 
 #secondkey {
     grid-area: second;
+    text-align: left;
+
 }
 
 #thirdkey {
     grid-area: third;
     color: #44bac0;
+    text-align: right;
+
 }
 
 #fourthkey {
     grid-area: fourth;
+    text-align: left;
+
 }
 
 /********************************************************************/
@@ -886,7 +904,7 @@ footer {
     }
 
     .keywords {
-        margin: 0 20px 0 70px;
+        margin: 0 2em;
     }
 }
 
@@ -1243,10 +1261,6 @@ footer {
         padding-top: 4em;
     }
 
-    .happyclients p {
-        margin: 0;
-    }
-
     .gridproducts {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -1435,9 +1449,12 @@ footer {
         display: none;
     }
 
-    .button-wrap {
-        top: 80%;
+    .gridproducts {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     }
+
+
+
 
     header {
         width: 100%;
