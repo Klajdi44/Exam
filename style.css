@@ -718,6 +718,7 @@ button a {
 .producmaterials img {
     border: 1px solid;
     height: 8em;
+    background-color: white;
 }
 
 /********************************************************************/
