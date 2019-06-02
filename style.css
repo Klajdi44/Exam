@@ -242,6 +242,7 @@ h1 {
 
 button.border {
     background-color: #2C2B30;
+    color: #fff;
     font-family: 'Montserrat', 'sans-serif';
     line-height: 0;
     border: 1px solid white;

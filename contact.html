@@ -8,86 +8,88 @@
     <link rel="stylesheet" href="style-contact.css">
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <title> Contact Designer</title>
+    <style>
+        body {
+            background-color: #2C2B30;
+        }
+
+        footer {
+            /*        all: unset;*/
+            font-size: 0.9rem;
+            margin-top: 60px;
+            height: 30px;
+            display: block;
+        }
+
+        main {
+            margin-left: 10%;
+            margin-top: 0px;
+        }
+
+        @media screen and (min-width: 700px) {
+            .contactliss {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (min-width: 1000px) {
+            .grid-container {
+                height: 91vh;
+                margin-top: 70px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr;
+            }
+
+            .header-image img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+
+            .header-image {
+                grid-column: 2/span 1;
+            }
+
+            form {
+                width: 70%;
+            }
+
+            .left-part-grid {
+                grid-column: 1/span 1;
+                grid-row: 1/span 1;
+                margin-top: 50px;
+            }
+
+            .contact-info .contact {
+                font-size: 1.3rem;
+            }
+
+            .contact-info .phone,
+            .contact-info .email {
+                font-size: 1.2rem;
+                line-height: 15px;
+            }
+
+            .social-media {
+                margin-left: calc(50% - 110px);
+            }
+
+        }
+
+        @media screen and (min-width: 1300px) {
+            .social-media {
+                margin-left: calc(120% - 400px);
+            }
+        }
+    </style>
+
 </head>
-<style>
-
-    body {
-    background-color: #2C2B30;
-}
-    footer {
-    all: unset;
-    font-size: 0.9rem;
-    margin-top: 60px;
-    height: 30px;
-    display: block;
-}
-
-    main {
-        margin-left: 10%;
-        margin-top: 0px;
-    }
-
-    @media screen and (min-width: 700px) {
-        .contactliss {
-            font-size: 1.1rem;
-        }
-    }
-
-    @media screen and (min-width: 1000px) {
-        .grid-container {
-            height: 91vh;
-            margin-top: 70px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr;
-        }
-
-        .header-image img {
-            width: 100%;
-            object-fit: cover;
-            height: 100%;
-        }
-
-        .header-image {
-            grid-column: 2/span 1;
-        }
-
-        form {
-            width: 70%;
-        }
-
-        .left-part-grid {
-            grid-column: 1/span 1;
-            grid-row: 1/span 1;
-            margin-top: 50px;
-        }
-
-        .contact-info .contact {
-            font-size: 1.3rem;
-        }
-
-        .contact-info .phone, .contact-info .email {
-            font-size: 1.2rem;
-            line-height: 15px;
-        }
-        .social-media {
-            margin-left: calc(50% - 110px);
-    }
-
-    }
-
-    @media screen and (min-width: 1300px) {
-        .social-media {
-        margin-left: calc(120% - 400px);
-        }
-    }
-
-</style>
 
 <body>
     <header>
         <div class="headerAdj">
-            <label for="menu" class="burgerMenu" onclick="opennav()">
+            <label class="burgerMenu" onclick="opennav()">
                 &#9776;
             </label>
             <img class="logo" src="images/logo.png" alt="Logo Lis Stender">
@@ -159,6 +161,4 @@
     </div>
 
     <script src="script.js"> </script>
-</body>
-
-</html>
+</body></html>
