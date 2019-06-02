@@ -112,7 +112,6 @@
 
             em {
                 align-self: end;
-                grid-area: keyword-area;
             }
 
             .environment {
@@ -202,7 +201,7 @@
                 grid-area: pstory2-area;
             }
 
-            .k1024 {
+            #k1024 {
                 grid-area: keywords1024-area;
             }
 
@@ -304,9 +303,9 @@
                 </section>
 
                 <section class="story" id="storytime">
-                    <span class="quote">
+                    <div class="quote">
                         <p style="margin: 1em 2em;">"Because strength comes from honesty and the ability to tell your story further."</p>
-                    </span>
+                    </div>
                     <p>There should be no trivial routines because life is simply too short. The products, infused with Greenlandic inspired design, offer significance to everyday activities and whisper a good story to be told further.</p>
                 </section>
                 <section class="story" id="storytime2">
@@ -318,16 +317,16 @@
                 <div class="containerstory" id="story-image">
                     <img class="storyimg" src="images/lis-homepage.jpg" alt="Story Lis Stender">
                     <div class="button-wrap">
-                        <button id="button-story" class="border">
+                        <div id="button-story" class="border">
                             <a href="shop.html">View products</a>
-                        </button>
+                        </div>
                     </div>
                 </div>
 
 
-                <span class="quote">
+                <div class="quote">
                     <p>"Use the beauty everyday."</p>
-                </span>
+                </div>
 
 
                 <div class="middleimgs">
@@ -346,14 +345,14 @@
                     <div class="para" id="story-p2">
                         <p class="paragraph"> Owning an original Lis Stender product allows you to have, not only a piece of Greenlandic culture right in your living room, but also a symbol of the cold fight for environment’s protection. </p>
                     </div>
-                    <em>
+
                         <div class="keywords">
-                            <p id="firstkey"> Authentic </p>
-                            <p id="secondkey"> Empowering </p>
-                            <p id="thirdkey"> Valuable </p>
-                            <p id="fourthkey"> Eternal </p>
+                            <em id="emk1" class="firstkey"> Authentic </em>
+                            <em id="emk2" class="secondkey"> Empowering </em>
+                            <em id="emk3" class="thirdkey"> Valuable </em>
+                            <em id="emk4" class="fourthkey"> Eternal </em>
                         </div>
-                    </em>
+
                 </div>
 
 
@@ -363,14 +362,13 @@
                     <p class="paragraph"> Owning an original Lis Stender product allows you to have, not only a piece of Greenlandic culture right in your living room, but also a symbol of the cold fight for environment’s protection. </p>
                 </div>
 
-                <em class="k1024">
-                    <div class="keywords">
-                        <p id="firstkey"> Authentic </p>
-                        <p id="secondkey"> Empowering </p>
-                        <p id="thirdkey"> Valuable </p>
-                        <p id="fourthkey"> Eternal </p>
+
+                    <div id="k1024" class="keywords">
+                        <em id="demk1" class="firstkey"> Authentic </em>
+                        <em id="demk2" class="secondkey"> Empowering </em>
+                        <em id="demk3" class="thirdkey"> Valuable </em>
+                        <em id="demk4" class="fourthkey"> Eternal </em>
                     </div>
-                </em>
 
             </div>
             <section class="environment">
@@ -381,9 +379,9 @@
                 <div class="envcontainer">
                     <img class="storyimg" src="images/enviroHomepage.jpg" alt="Iceberg Environment Landscape">
                     <div class="button-wrap">
-                        <button class="border">
+                        <div class="border">
                             <a href="environment.html">Read More</a>
-                        </button>
+                        </div>
                     </div>
                 </div>
                 <img class="inuitone" src="images/inuitmotif.png" alt="Inuit Greenlandic Motif">
@@ -404,9 +402,9 @@
                 <div class="containerstory" id="client-image">
                     <img class="storyimg" src="images/happy-clients.jpg" alt="Happy">
                     <div class="button-wrap">
-                        <button class="border">
+                        <div class="border">
                             <a href="about.html">Find Out</a>
-                        </button>
+                        </div>
                     </div>
                 </div>
 
@@ -481,7 +479,7 @@
 
                 </div>
 
-                <button><a href="shop.html">Shop now</a></button>
+                <div class="fpb"><a href="shop.html">Shop now</a></div>
 
             </section>
         </div>

@@ -1,5 +1,3 @@
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap"rel="stylesheet" > ;
-
 *:not(.fs) {
     margin: 0;
     padding: 0;
@@ -38,7 +36,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-button {
+.border {
     cursor: pointer;
 }
 
@@ -49,7 +47,7 @@ p:not(.copyright) {
     font-weight: normal;
 }
 
-p: a {
+p:not(a) {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -197,7 +195,7 @@ header {
     display: none;
 }
 
-.k1024 {
+#k1024 {
     display: none;
 }
 
@@ -240,7 +238,7 @@ h1 {
     margin-right: auto;
 }
 
-button.border {
+.border {
     background-color: #2C2B30;
     color: #fff;
     font-family: 'Montserrat', 'sans-serif';
@@ -254,11 +252,11 @@ button.border {
     opacity: 0.85;
 }
 
-button.border:hover {
+.border:hover {
     opacity: 1;
 }
 
-button a {
+.border a {
     all: unset;
     color: white;
 }
@@ -374,36 +372,50 @@ button a {
         'fourth fourth fourth .';
 }
 
-.keywords p {
+.keywords em {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
-    text-align: center;
     margin: 0;
 }
 
-#firstkey {
+#emk1 {
     grid-area: first;
+}
+
+#emk2 {
+    grid-area: second;
+}
+
+#emk3 {
+    grid-area: third;
+}
+
+#emk4 {
+    grid-area: fourth;
+}
+
+
+.firstkey {
     color: #44bac0;
     text-align: right;
 
 }
 
-#secondkey {
-    grid-area: second;
+.secondkey {
     text-align: left;
 
 }
 
-#thirdkey {
-    grid-area: third;
+.thirdkey {
+
     color: #44bac0;
     text-align: right;
 
 }
 
-#fourthkey {
-    grid-area: fourth;
+.fourthkey {
+
     text-align: left;
 
 }
@@ -523,13 +535,14 @@ button a {
     border: 1px solid black;
 }
 
-.famousproducts button:hover {
+.fpb:hover {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
-.famousproducts button {
+.fpb {
     text-align: center;
-    margin: 1em;
+    margin: 0 auto;
+    margin-top: 30px;
     background-color: white;
     font-family: 'Montserrat', 'sans-serif';
     line-height: 0;
@@ -538,14 +551,13 @@ button a {
     font-size: 1.2rem;
     opacity: 0.9;
     border: 1px solid #2c2b30;
-    margin: 30px 30px 50px 30px;
 }
 
-.famousproducts button a {
+.fpc a {
     color: #2c2b30;
 }
 
-.famousproducts button:hover {
+.fpc:hover {
     opacity: 1;
 }
 
@@ -719,8 +731,7 @@ button a {
     font-size: 1.2rem;
     opacity: 0.9;
     border: 1px solid #2c2b30;
-    <<<<<<< HEAD=======margin: 30px 30px 50px 30px;
-    > > > > > > > origin/master
+    margin: 30px 30px 50px 30px;
 }
 
 
@@ -1121,17 +1132,39 @@ footer {
 
     /***************************HOME PAGE****************************/
     .keywords {
+        display: none;
+    }
+
+    #k1024{
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
             '. first first'
             'second second .'
             '. third third'
             'fourth fourth .';
-    }
 
-    .containerstory {
         margin: 0 auto;
     }
+
+
+    #demk1 {
+        grid-area: first;
+    }
+
+    #demk2 {
+        grid-area: second;
+    }
+
+    #demk3 {
+        grid-area: third;
+    }
+
+    #demk4 {
+        grid-area: fourth;
+    }
+
+
 
     .middleimgs {
         margin: 0;
@@ -1153,7 +1186,7 @@ footer {
         margin: 1em 0;
     }
 
-    .keywords p {
+    .keywords em {
         font-size: 2.5em;
     }
 
@@ -1182,7 +1215,7 @@ footer {
         margin-left: 15%;
     }
 
-    button.border {
+    .border {
         margin-left: 70%;
         margin-top: 29%;
     }
@@ -1392,10 +1425,6 @@ footer {
         display: block;
     }
 
-    .k1024 {
-        display: block;
-    }
-
     #h {
         justify-self: start;
     }
@@ -1414,7 +1443,7 @@ footer {
         font-size: 1.3rem;
     }
 
-    button.border {
+    .border {
         background-color: #2C2B30;
         font-family: 'Montserrat', 'sans-serif';
         line-height: 0;
