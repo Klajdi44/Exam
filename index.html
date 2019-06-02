@@ -60,7 +60,8 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                     'h-area .'
-                    'imgstory-area pstory-area'
+                    'imgstory-area pstoryfirst-area'
+                    'pstorysecond-area pstorysecond-area'
                     'quote-area mimage-area'
                     'bottom-area bottom-area';
             }
@@ -70,7 +71,11 @@
             }
 
             #storytime {
-                grid-area: pstory-area;
+                grid-area: pstoryfirst-area;
+            }
+
+            #storytime2 {
+                grid-area: pstorysecond-area;
             }
 
             #story-image {
@@ -92,13 +97,17 @@
                 grid-column-gap: 3em;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
-                    'paragraph-area .'
-                    'paragraph-area keyword-area'
+                    'paragraph1-area paragraph1-area'
+                    'paragraph2-area keyword-area'
                     '. keyword-area'
             }
 
-            .para {
-                grid-area: paragraph-area;
+            #story-p1 {
+                grid-area: paragraph1-area;
+            }
+
+            #story-p2 {
+                grid-area: paragraph2-area;
             }
 
             em {
@@ -139,7 +148,8 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                     'hch-area .'
-                    'hcp-area hcimage-area'
+                    'hcimage-area hcimage-area'
+                    'hcp-area hcp-area'
             }
 
             .happyclients h2 {
@@ -164,11 +174,12 @@
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                     'h-area .'
-                    'pstory-area image1-area'
+                    'image1-area pstoryfirst-area'
+                    'pstorysecond-area pstorysecond-area'
                     'imgstory-area imgstory-area'
-                    'image2-area pstory2-area'
+                    'pstory2-area image2-area'
                     'quote-area keywords1024-area'
-                    '. keywords1024-area';
+                    'quote-area keywords1024-area';
             }
 
             #content-wrap {
@@ -219,10 +230,28 @@
 
             .hcp {
                 display: grid;
-                grid-gap: 17em;
                 grid-template-columns: 1fr 1fr;
+                grid-row-gap: 5em;
+            }
+
+            .client {
+                text-align: left;
+                align-self: end;
             }
         }
+
+        @media all and (min-width: 1920px) {
+            .story-grid {
+                grid-template-areas:
+                    'h-area .'
+                    'image1-area pstoryfirst-area'
+                    'pstorysecond-area pstorysecond-area'
+                    'imgstory-area imgstory-area'
+                    'pstory2-area image2-area'
+                    'keywords1024-area quote-area'
+            }
+        }
+
     </style>
 </head>
 
@@ -279,15 +308,18 @@
                         <p style="margin: 1em 2em;">"Because strength comes from honesty and the ability to tell your story further."</p>
                     </span>
                     <p>There should be no trivial routines because life is simply too short. The products, infused with Greenlandic inspired design, offer significance to everyday activities and whisper a good story to be told further.</p>
+                </section>
+                <section class="story" id="storytime2">
                     <p>An artist and an <a href=”environment.html”> activist for climate change </a> of the 21st century, authentic and unconventional Lis Stender, empowered by a strong need to affirm herself through her ingenious spirit, develops modern designs with a Greenlandic twist. </p>
                     <p>Having an interesting upbringing led her to expressing a powerful will to unleash her creativity and mold it into drawings with a strong Nordic vibe. As she strongly believes that art should not get all dusty in museums, she gets inspired from her land’s culture in order to knit the old with the new. </p>
                 </section>
+
 
                 <div class="containerstory" id="story-image">
                     <img class="storyimg" src="images/lis-homepage.jpg" alt="Story Lis Stender">
                     <div class="button-wrap">
                         <button id="button-story" class="border">
-                            <a href="">View products</a>
+                            <a href="shop.html">View products</a>
                         </button>
                     </div>
                 </div>
@@ -308,9 +340,10 @@
                 <div class="middleimage2"><img src="images/lis-art-homepage2.jpg" alt="Black and White Greenland"></div>
 
                 <div class="underimgp">
-                    <div class="para">
+                    <div class="para" id="story-p1">
                         <p class="paragraph"> Compromising is not a word existent in her vocabulary as Lis Stender avoids at all costs the mass-production exploitation techniques, through deflecting the use of child labor and cheap materials. </p>
-
+                    </div>
+                    <div class="para" id="story-p2">
                         <p class="paragraph"> Owning an original Lis Stender product allows you to have, not only a piece of Greenlandic culture right in your living room, but also a symbol of the cold fight for environment’s protection. </p>
                     </div>
                     <em>
@@ -349,7 +382,7 @@
                     <img class="storyimg" src="images/enviroHomepage.jpg" alt="Iceberg Environment Landscape">
                     <div class="button-wrap">
                         <button class="border">
-                            <a href="#">Read More</a>
+                            <a href="environment.html">Read More</a>
                         </button>
                     </div>
                 </div>
@@ -372,14 +405,12 @@
                     <img class="storyimg" src="images/happy-clients.jpg" alt="Happy">
                     <div class="button-wrap">
                         <button class="border">
-                            <a href="#">Find Out</a>
+                            <a href="about.html">Find Out</a>
                         </button>
                     </div>
                 </div>
 
                 <div class="hcp">
-                    <p> <b> Daniel Byström </b> </p>
-                    <p style="margin-top: -40px;"> Industrial Designer </p>
                     <p>
                         "I share my time working in a lot of different projects and areas,
                         traveling in the nordic countries and in the world. Most of all, I like to find good quality design that is based on real needs,
@@ -388,8 +419,13 @@
                         Everyone who has seen the products, they love them and want to have them.
                         So, the only thing I can say it that I deeply want to recommend the design. "
                     </p>
-                    <p> <b> Erik Bjerregaard </b> </p>
-                    <p style="margin-top: -40px;"> Managing Director </p>
+                    <div class="client">
+                        <p> <b> Daniel Byström </b> </p>
+                        <p style="margin-top: -30px;"> Industrial Designer </p>
+                    </div>
+
+
+
                     <p>"The design gives a new and a timeless expression
                         of some of Greenland’s amulets.
 
@@ -399,11 +435,15 @@
                         Here at the Hotel Arctic, these textiles
                         together with our Greenlandic art in general,
                         create a feel-good sensation for our guests’ stay."</p>
+                    <div class="client">
+                        <p> <b> Erik Bjerregaard </b> </p>
+                        <p style="margin-top: -30px;"> Managing Director </p>
+                    </div>
                 </div>
             </section>
 
             <section class="famousproducts">
-                <h2>Notorious Products Selections</h2>
+                <h2>Famous Products Selections</h2>
                 <img class="inuittwo" src="images/inuitmotif.png" alt="Inuit Motif Greenland">
                 <div class="gridproducts">
 

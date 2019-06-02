@@ -46,62 +46,6 @@
         </div>
         <img class="inuit-picture-left hidden" alt="Inuit Greenland Motif" src="images/inuitmotif.png">
         <section class="container-item">
-            <article class="item">
-                <h4> Item Name </h4>
-
-                <img class="image-item" alt="add-alt-fetch"  src="images/landscape1.png" onclick="openModal()">
-
-                <div class="price-margin">
-                    <h5 class="price"> 300dkk </h5>
-                </div>
-
-                <div class="additional-details">
-                    <p class="material"> <b> Material </b> </p>
-                    <p class="collection"> <b> Collection </b> </p>
-                </div>
-            </article>
-            <article class="item">
-                <h4> Item Name </h4>
-
-                <img class="image-item" alt="add-alt-fetch"  src="images/landscape1.png" onclick="openModal()">
-
-                <div class="price-margin">
-                    <h5 class="price"> 300dkk </h5>
-                </div>
-
-                <div class="additional-details">
-                    <p class="material"> <b> Material </b> </p>
-                    <p class="collection"> <b> Collection </b> </p>
-                </div>
-            </article>
-            <article class="item">
-                <h4> Item Name </h4>
-
-                <img class="image-item" alt="add-alt-fetch"  src="images/landscape1.png" onclick="openModal()">
-
-                <div class="price-margin">
-                    <h5 class="price"> 300dkk </h5>
-                </div>
-
-                <div class="additional-details">
-                    <p class="material"> <b> Material </b> </p>
-                    <p class="collection"> <b> Collection </b> </p>
-                </div>
-            </article>
-            <article class="item">
-                <h4> Item Name </h4>
-
-                <img class="image-item" alt="add-alt-fetch" src="images/landscape1.png" onclick="openModal()">
-
-                <div class="price-margin">
-                    <h5 class="price"> 300dkk </h5>
-                </div>
-
-                <div class="additional-details">
-                    <p class="material"> <b> Material </b> </p>
-                    <p class="collection"> <b> Collection </b> </p>
-                </div>
-            </article>
         </section>
 
         <div class="modal">
@@ -122,9 +66,9 @@
                         </div>
 
                         <div class="presentation-images">
-                            <img class="image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
-                            <img class="image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
-                            <img class="image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                            <img  onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
+                            <img  onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
+                            <img  onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
                         </div>
 
                     </section>
@@ -135,17 +79,9 @@
                             <div class="select-container">
                                 <select class="select-options-modal">
                                     <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                                    <option value="1"> Value 1 </option>
-                                    <option value="2"> Value 2 </option>
-                                    <option value="3"> Value 3 </option>
-                                </select>
-                            </div>
-                            <div class="select-container">
-                                <select class="select-options-modal">
-                                    <option value="0"> <span class="down-arrow"> &#9660 </span> Select option </option>
-                                    <option value="1"> Value 1 </option>
-                                    <option value="2"> Value 2 </option>
-                                    <option value="3"> Value 3 </option>
+                                    <option class="option1" value="1"> Value 1 </option>
+                                    <option class="option2" value="2"> Value 2 </option>
+                                    <option class="option3" value="3"> Value 3 </option>
                                 </select>
                             </div>
                         </div>
@@ -153,17 +89,14 @@
                         <button>
                             <p> Add to Basket </p>
                         </button>
-
                         <section class="genre-modal">
-                            <p> Material </p>
-                            <p> Collection </p>
-                            <p> Other Details </p>
+                            <p class="material-modal"> Material </p>
+                            <p class="collection-modal"> Collection </p>
                         </section>
-
                         <div class="presentation-images-tablet">
-                            <img class="image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
-                            <img class="image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
-                            <img class="image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
+                            <img onclick="imageChange(this.src)" class= "changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
                         </div>
 
 
@@ -185,14 +118,34 @@
                 <p class="phone"> +45 8212 2144 </p>
                 <p class="email"> lissstender@gmail.com </p>
             </section>
-           <section class="social-media">
-                    <a href="https://www.facebook.com/LissStender"> <img src="images/iconfb.png" alt="Facebook Lis Stender">  </a>
-                    <a href="https://www.instagram.com/liss_stender_designer_inuit/"> <img src="images/iconinsta.png" alt="Instagram Lis Stender"> </a>
-                    <a href="#"> <img src="images/iconlinkedin.png" alt="LinkedIn Lis Stender"> </a>
+            <section class="social-media">
+                <a href="https://www.facebook.com/LissStender"> <img src="images/iconfb.png" alt="Facebook Lis Stender"> </a>
+                <a href="https://www.instagram.com/liss_stender_designer_inuit/"> <img src="images/iconinsta.png" alt="Instagram Lis Stender"> </a>
+                <a href="#"> <img src="images/iconlinkedin.png" alt="LinkedIn Lis Stender"> </a>
             </section>
             <p class="copyright"> © Liss Stender Designs 2019 </p>
         </div>
     </footer>
+
+
+    <template>
+        <article class="item">
+            <h4> Item Name </h4>
+
+            <img class="image-item" alt="item image" src="images/landscape1.png">
+
+            <div class="price-margin">
+                <h5 class="price"> 300dkk </h5>
+            </div>
+
+            <div class="additional-details">
+                <p class="material"> <b> Material </b> </p>
+                <p class="collection"> <b> Collection </b> </p>
+            </div>
+        </article>
+    </template>
+
+    <script src="javascript-fetch.js"></script>
     <script src="javascript-modal.js"></script>
     <script src="script.js"></script>
 </body>

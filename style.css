@@ -1,9 +1,10 @@
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap"rel="stylesheet" > ;
 
 *:not(.fs) {
     margin: 0;
     padding: 0;
 }
+
 
 .fs:not(.copyright) {
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +14,15 @@ body {
     margin: 0;
     background: #F6F8F7;
     overflow-x: hidden;
+}
+
+.client {
+    text-align: right;
+}
+
+.client p {
+    padding: 0 !important;
+
 }
 
 h1,
@@ -48,6 +58,14 @@ p: a {
 main {
     margin-top: 82px;
     color: #2b2c30;
+}
+
+.arrow-left {
+    cursor: pointer;
+}
+
+.arrow-right {
+    cursor: pointer
 }
 
 /******************************NAVBAR********************************/
@@ -360,24 +378,33 @@ button a {
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    margin: 0;
 }
 
 #firstkey {
     grid-area: first;
     color: #44bac0;
+    text-align: right;
+
 }
 
 #secondkey {
     grid-area: second;
+    text-align: left;
+
 }
 
 #thirdkey {
     grid-area: third;
     color: #44bac0;
+    text-align: right;
+
 }
 
 #fourthkey {
     grid-area: fourth;
+    text-align: left;
+
 }
 
 /********************************************************************/
@@ -691,7 +718,8 @@ button a {
     font-size: 1.2rem;
     opacity: 0.9;
     border: 1px solid #2c2b30;
-    margin: 30px 30px 50px 30px;
+    <<<<<<< HEAD=======margin: 30px 30px 50px 30px;
+    > > > > > > > origin/master
 }
 
 
@@ -705,13 +733,11 @@ button a {
 
 .envvideo div {
     text-align: center;
-    padding-top: 1em;
-    padding-bottom: 4em
 }
 
 .producmaterials {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 1em;
 }
 
@@ -878,12 +904,8 @@ footer {
         display: none;
     }
 
-    .envbutton {
-        display: none;
-    }
-
     .keywords {
-        margin: 0 20px 0 70px;
+        margin: 0 2em;
     }
 }
 
@@ -1047,10 +1069,6 @@ footer {
         font-size: 1.1em;
     }
 
-    .envvideo div {
-        display: none;
-    }
-
     .envwrapper1 {
         padding: 1em 0;
         margin: 0 3em;
@@ -1197,8 +1215,30 @@ footer {
         text-decoration: none;
         margin: 1em;
         color: black;
+        position: relative;
+    }
+
+    .desktop-menu div a::after {
+        content: '';
+        position: absolute;
+        background: #2C2B30;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transition: transform 245ms ease-in;
+        transform-origin: right;
+    }
+
+    .desktop-menu div a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
 
     }
+
+
+
 
     /*********************environment page***************************/
 
@@ -1220,10 +1260,6 @@ footer {
 
     .hcp {
         padding-top: 4em;
-    }
-
-    .happyclients p {
-        margin: 0;
     }
 
     .gridproducts {
@@ -1248,10 +1284,10 @@ footer {
         display: grid;
         margin: 0 18vw;
         padding: 1em 0;
-        grid-gap: 5em;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-            'envpar-area envvideo-area';
+            'envvideo-area'
+            'envpar-area';
     }
 
     .envwrapper1 {
@@ -1285,10 +1321,6 @@ footer {
 
     .envwrapper1 {
         margin: 0;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'par'
-            'details2';
     }
 
     .quote p {
@@ -1418,9 +1450,12 @@ footer {
         display: none;
     }
 
-    .button-wrap {
-        top: 80%;
+    .gridproducts {
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     }
+
+
+
 
     header {
         width: 100%;
