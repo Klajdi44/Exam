@@ -15,7 +15,7 @@ header {
 }
 
 .desktop-menu div a {
-   cursor: pointer !important;
+    cursor: pointer !important;
 }
 
 .burgerMenu {
@@ -103,7 +103,7 @@ header {
 
 /* TYPOGRAPHY LINKS */
 
-<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">
+/*<link href="https://fonts.googleapis.com/css?family=Lora|Montserrat&display=swap" rel="stylesheet">*/
 
 html {
     font-size: 100%;
