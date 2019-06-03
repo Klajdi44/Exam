@@ -2,6 +2,76 @@ body {
     overflow-x: hidden;
 }
 
+.hide {
+    display: none !important;
+}
+
+/* MOCKUP */
+
+.mockup-name {
+    background-color: grey;
+    color: grey;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: both;
+}
+
+.img-mockup {
+    height: 430px;
+    width: 280px !important;
+    background-color: grey;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: both;
+
+}
+
+.mockup-detail {
+    background-color: grey;
+    color: grey;
+    height: 20px;
+    margin: 10px 0;
+    margin-left: 160px;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: boths;
+}
+
+
+@-webkit-keyframes flow {
+    from {
+        background-color: grey;
+        color: grey;
+    }
+
+    to {
+        background-color: lightgray;
+        color: lightgray;
+    }
+}
+
+
+@keyframes flow {
+    from {
+        background-color: grey;
+        color: grey;
+    }
+
+    to {
+        background-color: lightgray;
+        color: lightgray;
+    }
+}
+
 /* TYPOGRAPHY */
 
 h4 {
@@ -178,6 +248,10 @@ h2 {
     font-weight: 100;
 }
 
+.img-fill {
+    background-color: dimgray;
+}
+
 /* SELECT */
 
 .select-container select {
@@ -231,15 +305,15 @@ h2 {
 
 @media only screen and (max-width: 1023px) {
     .presentation-images-tablet {
-    display: none !important;
-}
+        display: none !important;
+    }
 }
 
 .image-section .presentation-images {
     margin: 10px;
     grid-column: 2/span 3;
     grid-row: 4/span 1;
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
 }

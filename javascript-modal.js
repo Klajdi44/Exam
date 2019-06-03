@@ -14,7 +14,7 @@ function openModal(itemId) {
 function showModal(listing) {
     //console.log(listing);
 
-    document.querySelector("h2").textContent = listing.title.rendered;
+    document.querySelector("body > main > div.modal > div > article > section.image-section > h2").textContent = listing.title.rendered;
     document.querySelector(".image-modal-main").src = listing._embedded["wp:featuredmedia"][0].source_url;
     document.querySelector(".image-modal-main").alt = listing.featured_image_alt;
     document.querySelector(".price-modal").textContent = listing.price;

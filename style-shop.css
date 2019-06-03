@@ -238,10 +238,14 @@ main {
     height: 280px;
     display: grid;
     grid-template-rows: 135px 145px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .image-overlay {
-    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0) 90%);
+    z-index: 2;
+    grid-column: 1/span 3;
+    grid-row: 2/span 1;
+    background: linear-gradient(360deg, rgba(2, 0, 36, 1) 0%, rgba(255, 255, 255, 0) 80%);
 }
 
 .underline {
@@ -262,14 +266,23 @@ main {
 
 .image-categ {
     grid-row: 1/span 1;
+    grid-column: 1/span 3;
     height: 280px;
     width: 100%;
     object-fit: cover;
+    z-index: 0;
+    filter: brightness(85%) grayscale(30%);
+    transition: filter 0.5s;
+}
 
+.image-categ:hover {
+    filter: brightness(100%) grayscale(0);
 }
 
 .text-over {
+    z-index: 2;
     grid-row: 2/span 1;
+    grid-column: 2/span 1;
 }
 
 /* HELPER CLASSES */
