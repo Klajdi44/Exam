@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-.hide{
+.hide {
     display: none !important;
 }
 
@@ -11,12 +11,25 @@ body {
 .mockup-name {
     background-color: grey;
     color: grey;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: both;
 }
 
 .img-mockup {
     height: 430px;
     width: 280px !important;
     background-color: grey;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: both;
+
 }
 
 .mockup-detail {
@@ -25,6 +38,38 @@ body {
     height: 20px;
     margin: 10px 0;
     margin-left: 160px;
+    -webkit-animation-name: flow;
+    -webkit-animation-duration: 0.8s;
+    animation-name: flow;
+    animation-duration: 0.8s;
+    animation-iteration-count: 10;
+    animation-fill-mode: boths;
+}
+
+
+@-webkit-keyframes flow {
+    from {
+        background-color: grey;
+        color: grey;
+    }
+
+    to {
+        background-color: lightgray;
+        color: lightgray;
+    }
+}
+
+
+@keyframes flow {
+    from {
+        background-color: grey;
+        color: grey;
+    }
+
+    to {
+        background-color: lightgray;
+        color: lightgray;
+    }
 }
 
 /* TYPOGRAPHY */
