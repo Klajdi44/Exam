@@ -786,7 +786,7 @@ h1 {
 
 .producmaterials img {
     border: 1px solid;
-    height: 8em;
+    height: 7em;
     background-color: white;
 }
 
@@ -1864,8 +1864,8 @@ footer {
 @media all and (min-width: 1300px) {
 
     .gridproducts section p {
-        left: -44px;
-        bottom: 49px;
+        left: -46px;
+        bottom: 47px;
         height: 35px;
         width: 130px;
         padding-top: 5px;
