@@ -1131,11 +1131,11 @@ footer {
     /****************************************************************/
 
     /***************************HOME PAGE****************************/
-    .keywords {
+    #k1024 {
         display: none;
     }
 
-    #k1024{
+    .keywords{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
