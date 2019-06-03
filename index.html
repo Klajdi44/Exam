@@ -250,6 +250,7 @@
                     'keywords1024-area quote-area'
             }
         }
+
     </style>
 </head>
 
@@ -441,9 +442,9 @@
                 <div class="gridproducts">
 
                     <div class="famous-product">
-                        <p class="item-name">Inuit Bed Set White </p>
+                        <p class="item-name">Bedding Set</p>
                         <section>
-                            <img src="images/famous-products/inuit-bed-set-white.jpg" alt="White Bed Set">
+                            <img onclick="openModal(34)" src="images/famous-products/inuit-bed-set-white.jpg" alt="White Bed Set">
                             <p>799dkk</p>
                         </section>
                     </div>
@@ -451,7 +452,7 @@
                     <div class="famous-product">
                         <p class="item-name">Inuit Pillow Black/White</p>
                         <section>
-                            <img src="images/famous-products/inuk-pillow.jpg" alt="Pillow">
+                            <img onclick="openModal(40)" src="images/famous-products/inuk-pillow.jpg" alt="Pillow">
                             <p>350dkk</p>
                         </section>
                     </div>
@@ -459,7 +460,7 @@
                     <div class="famous-product">
                         <p class="item-name">Madonna on Ice Scarf</p>
                         <section>
-                            <img src="images/famous-products/madonna-scarf.jpg" alt="Madonna Ice Scarf">
+                            <img onclick="openModal(101)" src="images/famous-products/madonna-scarf.jpg" alt="Madonna Ice Scarf">
                             <p> 399dkk</p>
                         </section>
                     </div>
@@ -467,7 +468,7 @@
                     <div class="famous-product">
                         <p class="item-name">Inuit Cutting Board</p>
                         <section>
-                            <img src="images/famous-products/inuit-cutting-board.jpg" alt="Cutting Board Inuit">
+                            <img onclick="openModal(35)" src="images/famous-products/inuit-cutting-board.jpg" alt="Cutting Board Inuit">
                             <p>150dkk</p>
                         </section>
                     </div>
@@ -477,6 +478,68 @@
                 <button class="fpb" onclick="location.href='shop.html'">Shop now </button>
 
             </section>
+        </div>
+
+        <div class="modal">
+
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal()"> &times; </span>
+                <article class="item-modal">
+
+                    <section class="image-section">
+
+
+                        <h2> Inuit Scarf </h2>
+
+                        <img class="image-modal-main" alt="add-alt-fetch" src="images/landscape1.png">
+
+                        <div class="price-margin-modal">
+                            <h5 class="price-modal"> 300dkk </h5>
+                        </div>
+
+                        <div class="presentation-images">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                        </div>
+
+                    </section>
+
+                    <section class="info-section">
+
+                        <div class="select-options">
+                            <div class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> &#9660; Select option </option>
+                                    <option class="option1" value="1"> Value 1 </option>
+                                    <option class="option2" value="2"> Value 2 </option>
+                                    <option class="option3" value="3"> Value 3 </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button>
+                            Add to Basket
+                        </button>
+                        <section class="genre-modal">
+                            <p class="material-modal"> Material </p>
+                            <p class="collection-modal"> Collection </p>
+                        </section>
+                        <div class="presentation-images-tablet">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                        </div>
+
+
+                        <p class="product-details"> Suscipit adipiscing bibendum est ultricies. Ultricies mi quis hendrerit dolor magna. Eget sit amet tellus cras adipiscing enim eu. Platea dictumst vestibulum rhoncus est.
+                        </p>
+
+                    </section>
+
+                </article>
+            </div>
+
         </div>
 
     </main>
@@ -500,4 +563,7 @@
     </footer>
 
     <script src="script.js"></script>
-</body></html>
+    <script src="javascript-modal.js"></script>
+</body>
+
+</html>
