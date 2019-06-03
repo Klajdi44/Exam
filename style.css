@@ -854,6 +854,10 @@ h2 {
     font-weight: 100;
 }
 
+.img-fill {
+    background-color: dimgray;
+}
+
 /* SELECT */
 
 .select-container select {
@@ -907,15 +911,15 @@ h2 {
 
 @media only screen and (max-width: 1023px) {
     .presentation-images-tablet {
-    display: none !important;
-}
+        display: none !important;
+    }
 }
 
 .image-section .presentation-images {
     margin: 10px;
     grid-column: 2/span 3;
     grid-row: 4/span 1;
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
 }
@@ -1305,7 +1309,14 @@ footer {
 
 /*************stuff that is only for mobile version******************/
 @media only screen and (max-width: 767px) {
+    .modal{
+        top: 0;
+        right: 8px;
+    }
 
+    .modal-content{
+        margin: 65px auto;
+    }
 
     .aboutimg {
         display: none;
