@@ -95,6 +95,33 @@ function showModal(listing) {
         document.querySelector(".select-options").style.display = "none";
     }
 
+
+    if (listing.additional_option_1) {
+        document.getElementById("select_secondary").style.display = "block";
+        document.querySelector(".option1sec").textContent = listing.additional_option_1;
+
+
+        if (listing.additional_option_2) {
+            document.querySelector(".option2sec").textContent = listing.additional_option_2;
+            document.querySelector(".option2sec").style.display = "block";
+
+            if (listing.additional_option_3) {
+                document.querySelector(".option3sec").style.display = "block";
+                document.querySelector(".option3sec").textContent = listing.additional_option_3;
+            } else {
+                document.querySelector(".option3sec").style.display = "none";
+            }
+        } else {
+            document.querySelector(".option2sec").style.display = "none";
+            document.querySelector(".option3sec").style.display = "none";
+        }
+        document.querySelector(".option3sec").textContent = listing.additional_option_3;
+    } else {
+        document.getElementById("select_secondary").style.display = "none";
+    }
+
+
+
     document.querySelector(".material-modal").textContent = listing.material;
     document.querySelector(".collection-modal").textContent = listing.collection;
 
