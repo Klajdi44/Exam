@@ -118,6 +118,8 @@ header {
     transition: 0.5s;
     text-align: center;
     padding-bottom: .7em;
+    cursor: pointer;
+
 }
 
 .overlay a:hover {
@@ -537,6 +539,7 @@ h1 {
 
 .fpb:hover {
     background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
 
 .fpb {
@@ -737,6 +740,7 @@ h1 {
     opacity: 0.9;
     border: 1px solid #2c2b30;
     margin: 30px 30px 50px 30px;
+    cursor: pointer;
 }
 
 
@@ -1264,7 +1268,7 @@ footer {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 1px;
         transform: scaleX(0);
         transition: transform 245ms ease-in;
         transform-origin: right;
