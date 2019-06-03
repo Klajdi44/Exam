@@ -199,6 +199,10 @@ h2 {
     font-weight: 100;
 }
 
+.img-fill {
+    background-color: dimgray;
+}
+
 /* SELECT */
 
 .select-container select {
