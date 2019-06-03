@@ -37,7 +37,7 @@ h2 {
 }
 
 p a {
-    color:#45BAC1;
+    color: #45BAC1;
 }
 
 .border {
@@ -88,6 +88,7 @@ header {
 
 .burgerMenu {
     font-size: 2.8em;
+    cursor: pointer;
 }
 
 .overlay {
@@ -316,7 +317,7 @@ h1 {
     margin: 1em .3em;
     margin-left: calc(50% - 125px);
     display: block;
-    background-color: rgba(153,130,102,0.2);
+    background-color: rgba(153, 130, 102, 0.2);
     text-shadow: 2px 2px 13px black;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: white;
