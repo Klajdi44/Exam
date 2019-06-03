@@ -485,6 +485,14 @@ h1 {
 .famous-product img {
     height: auto;
     max-width: 100%;
+    filter: brightness(90%) grayscale(60%);
+    transition: filter 0.5s;
+}
+
+.famous-product img:hover {
+    filter: brightness(100%) grayscale(0);
+    cursor: pointer;
+}
 }
 
 .famous-product .item-name {
@@ -521,7 +529,7 @@ h1 {
     display: block;
     padding-top: 0;
     position: absolute;
-    left: -35px;
+    left: -35.2px;
     bottom: 39px;
     background: white;
     height: 30px;
