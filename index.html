@@ -226,7 +226,7 @@
 
             .envp {
                 display: grid;
-                grid-gap: 17em;
+                grid-gap: 10em;
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -264,7 +264,7 @@
                 &#9776;
             </label>
             <img onclick="location.href='index.html'" class="logo" src="images/logo.png" alt="Logo Lis Stender">
-            <img class="bag" src="images/bag1.png" alt="Shopping Bag Products">
+            <img onclick="location.href='shop.html'" class="bag" src="images/bag1.png" alt="Shopping Bag Products">
             <div class="desktop-menu">
                 <div><a href="#">Home</a></div>
                 <div><a href="about.html">About</a></div>
@@ -372,48 +372,6 @@
 
             </div>
 
-            <section class="famousproducts">
-                <h2>Famous Products Selections</h2>
-                <img class="inuittwo" src="images/inuitmotif.png" alt="Inuit Motif Greenland">
-                <div class="gridproducts">
-
-                    <div class="famous-product">
-                        <p class="item-name">Bedding Set</p>
-                        <section>
-                            <img onclick="openModal(34)" src="images/famous-products/inuit-bed-set-white.jpg" alt="White Bed Set">
-                            <p>799dkk</p>
-                        </section>
-                    </div>
-
-                    <div class="famous-product">
-                        <p class="item-name">Inuit Pillow Black/White</p>
-                        <section>
-                            <img onclick="openModal(40)" src="images/famous-products/inuk-pillow.jpg" alt="Pillow">
-                            <p>350dkk</p>
-                        </section>
-                    </div>
-
-                    <div class="famous-product">
-                        <p class="item-name">Madonna on Ice Scarf</p>
-                        <section>
-                            <img onclick="openModal(101)" src="images/famous-products/madonna-scarf.jpg" alt="Madonna Ice Scarf">
-                            <p> 399dkk</p>
-                        </section>
-                    </div>
-
-                    <div class="famous-product">
-                        <p class="item-name">Inuit Cutting Board</p>
-                        <section>
-                            <img onclick="openModal(35)" src="images/famous-products/inuit-cutting-board.jpg" alt="Cutting Board Inuit">
-                            <p>150dkk</p>
-                        </section>
-                    </div>
-
-                </div>
-
-                <button class="fpb" onclick="location.href='shop.html'">Order now </button>
-
-            </section>
 
             <section class="environment">
                 <h2>Environment</h2>
@@ -484,6 +442,48 @@
                 </div>
             </section>
 
+            <section class="famousproducts">
+                <h2>Famous Products Selections</h2>
+                <img class="inuittwo" src="images/inuitmotif.png" alt="Inuit Motif Greenland">
+                <div class="gridproducts">
+
+                    <div class="famous-product">
+                        <p class="item-name">Bedding Set</p>
+                        <section>
+                            <img onclick="openModal(34)" src="images/famous-products/inuit-bed-set-white.jpg" alt="White Bed Set">
+                            <p>800dkk</p>
+                        </section>
+                    </div>
+
+                    <div class="famous-product">
+                        <p class="item-name">Inuit Pillow Case Set</p>
+                        <section>
+                            <img onclick="openModal(40)" src="images/famous-products/inuk-pillow.jpg" alt="Pillow">
+                            <p>400dkk</p>
+                        </section>
+                    </div>
+
+                    <div class="famous-product">
+                        <p class="item-name">Madonna on Ice Scarf</p>
+                        <section>
+                            <img onclick="openModal(101)" src="images/famous-products/madonna-scarf.jpg" alt="Madonna Ice Scarf">
+                            <p> 400dkk</p>
+                        </section>
+                    </div>
+
+                    <div class="famous-product">
+                        <p class="item-name">Inuit Cutting Board</p>
+                        <section>
+                            <img onclick="openModal(35)" src="images/famous-products/inuit-cutting-board.jpg" alt="Cutting Board Inuit">
+                            <p>400dkk</p>
+                        </section>
+                    </div>
+
+                </div>
+
+                <button class="fpb" onclick="location.href='shop.html'">Shop now </button>
+
+            </section>
 
         </div>
 
@@ -498,16 +498,16 @@
 
                         <h2> Inuit Scarf </h2>
 
-                        <img class="image-modal-main" alt="add-alt-fetch" src="images/landscape1.png">
+                        <img class="image-modal-main" alt="add-alt-fetch" src="">
 
                         <div class="price-margin-modal">
                             <h5 class="price-modal"> 300dkk </h5>
                         </div>
 
                         <div class="presentation-images">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="">
                         </div>
 
                     </section>
@@ -523,6 +523,15 @@
                                     <option class="option3" value="3"> Value 3 </option>
                                 </select>
                             </div>
+
+                            <div id="select_secondary" class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> &#9660; Select option </option>
+                                    <option class="option1sec" value="1"> Value 1 </option>
+                                    <option class="option2sec" value="2"> Value 2 </option>
+                                    <option class="option3sec" value="3"> Value 3 </option>
+                                </select>
+                            </div>
                         </div>
 
                         <button>
@@ -533,9 +542,9 @@
                             <p class="collection-modal"> Collection </p>
                         </section>
                         <div class="presentation-images-tablet">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="images/landscape1.png">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="images/landscape3.png">
-                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="images/landscape2filter.png">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-first" alt="add-alt-fetch" src="">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-second" alt="add-alt-fetch" src="">
+                            <img onclick="imageChange(this.src)" class="changer image-modal-third" alt="add-alt-fetch" src="">
                         </div>
 
 
