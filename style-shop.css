@@ -80,6 +80,7 @@ header {
 
 .logo {
     height: 3.5em;
+    cursor: pointer;
 }
 
 .bag {

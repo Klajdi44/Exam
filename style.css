@@ -122,6 +122,8 @@ header {
     transition: 0.5s;
     text-align: center;
     padding-bottom: .7em;
+    cursor: pointer;
+
 }
 
 .overlay a:hover {
@@ -148,6 +150,7 @@ header {
 
 .logo {
     height: 3.5em;
+    cursor: pointer;
 }
 
 .bag {
@@ -556,6 +559,7 @@ h1 {
 
 .fpb:hover {
     background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
 }
 
 .fpb {
@@ -756,6 +760,7 @@ h1 {
     opacity: 0.9;
     border: 1px solid #2c2b30;
     margin: 30px 30px 50px 30px;
+    cursor: pointer;
 }
 
 
@@ -861,6 +866,10 @@ h2 {
     font-weight: 100;
 }
 
+.img-fill {
+    background-color: dimgray;
+}
+
 /* SELECT */
 
 .select-container select {
@@ -915,15 +924,15 @@ h2 {
 @media only screen and (max-width: 1023px) {
 
     .presentation-images-tablet {
-    display: none !important;
-}
+        display: none !important;
+    }
 }
 
 .image-section .presentation-images {
     margin: 10px;
     grid-column: 2/span 3;
     grid-row: 4/span 1;
-    display: grid ;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 10px;
 }
@@ -1313,7 +1322,14 @@ footer {
 
 /*************stuff that is only for mobile version******************/
 @media only screen and (max-width: 767px) {
+    .modal {
+        top: 0;
+        right: 8px;
+    }
 
+    .modal-content {
+        margin: 65px auto;
+    }
 
     .aboutimg {
         display: none;
@@ -1670,7 +1686,7 @@ footer {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 2px;
+        height: 1px;
         transform: scaleX(0);
         transition: transform 245ms ease-in;
         transform-origin: right;

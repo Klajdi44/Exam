@@ -13,15 +13,21 @@ function openModal(itemId) {
 
 function showModal(listing) {
     //console.log(listing);
-
+    document.querySelector(".presentation-images-tablet").classList.remove("img-fill");
     document.querySelector("body > main > div.modal > div > article > section.image-section > h2").textContent = listing.title.rendered;
     document.querySelector(".image-modal-main").src = listing._embedded["wp:featuredmedia"][0].source_url;
     document.querySelector(".image-modal-main").alt = listing.featured_image_alt;
     document.querySelector(".price-modal").textContent = listing.price;
 
     if (listing.additional_image) {
+
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-first").style.display = "block";
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-second").style.display = "block";
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-third").style.display = "block";
+
         document.querySelector(".presentation-images").style.display = "grid";
         document.querySelector(".presentation-images-tablet").style.display = "block";
+
         document.querySelector(".image-section").style.gridTemplateRows = "90px 300px 130px 90px";
         document.querySelector(".image-modal-first").src = listing._embedded["wp:featuredmedia"][0].source_url;
         document.querySelector(".image-modal-first").alt = listing.featured_image_alt;
@@ -42,7 +48,6 @@ function showModal(listing) {
         if (listing.additional_image_2) {
             document.querySelector(".image-modal-third").style.display = "block";
             document.querySelector(".presentation-images").style.gridTemplateColumns = "repeat(3, 1fr)";
-
             document.querySelector(".image-modal-third").src = listing.additional_image_2.guid;
             document.querySelector(".image-modal-third").alt = listing.additional_image_2_alt;
 
@@ -58,7 +63,10 @@ function showModal(listing) {
 
     } else {
         document.querySelector(".presentation-images").style.display = "none";
-        document.querySelector(".presentation-images-tablet").style.display = "none";
+        document.querySelector(".presentation-images-tablet").classList.add("img-fill");
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-first").style.display = "none";
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-second").style.display = "none";
+        document.querySelector("body > main > div.modal > div > article > section.info-section > div.presentation-images-tablet > img.image-modal-third").style.display = "none";
         document.querySelector(".image-section").style.gridTemplateRows = "90px 300px 130px";
     }
 
@@ -87,6 +95,33 @@ function showModal(listing) {
         document.querySelector(".select-options").style.display = "none";
     }
 
+
+    if (listing.additional_option_1) {
+        document.getElementById("select_secondary").style.display = "block";
+        document.querySelector(".option1sec").textContent = listing.additional_option_1;
+
+
+        if (listing.additional_option_2) {
+            document.querySelector(".option2sec").textContent = listing.additional_option_2;
+            document.querySelector(".option2sec").style.display = "block";
+
+            if (listing.additional_option_3) {
+                document.querySelector(".option3sec").style.display = "block";
+                document.querySelector(".option3sec").textContent = listing.additional_option_3;
+            } else {
+                document.querySelector(".option3sec").style.display = "none";
+            }
+        } else {
+            document.querySelector(".option2sec").style.display = "none";
+            document.querySelector(".option3sec").style.display = "none";
+        }
+        document.querySelector(".option3sec").textContent = listing.additional_option_3;
+    } else {
+        document.getElementById("select_secondary").style.display = "none";
+    }
+
+
+
     document.querySelector(".material-modal").textContent = listing.material;
     document.querySelector(".collection-modal").textContent = listing.collection;
 
@@ -99,8 +134,6 @@ function showModal(listing) {
 
 
 
-function imageChange(source){
-     document.querySelector(".image-modal-main").src = source;
+function imageChange(source) {
+    document.querySelector(".image-modal-main").src = source;
 }
-
-
