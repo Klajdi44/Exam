@@ -497,6 +497,31 @@ footer {
         color: black;
 
     }
+
+    .desktop-menu div a {
+        position: relative;
+    }
+
+    .desktop-menu div a::after {
+        content: '';
+        position: absolute;
+        background: #2C2B30;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        transform: scaleX(0);
+        transition: transform 245ms ease-in;
+        transform-origin: right;
+    }
+
+    .desktop-menu div a:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+
+    }
+
+
 }
 
 main {
