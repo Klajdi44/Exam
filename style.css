@@ -36,6 +36,10 @@ h2 {
     font-size: 1.5rem;
 }
 
+p a {
+    color: #45BAC1;
+}
+
 .border {
     cursor: pointer;
 }
@@ -84,6 +88,7 @@ header {
 
 .burgerMenu {
     font-size: 2.8em;
+    cursor: pointer;
 }
 
 .overlay {
@@ -152,6 +157,7 @@ header {
 .bag {
     margin-top: 5px;
     height: 2.5em;
+    cursor: pointer;
 }
 
 .menu {
@@ -275,7 +281,7 @@ h1 {
 .landscreenimg {
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/p2.jpg);
+    background-image: url(images/lishp.jpg);
     height: 90vh;
     padding-top: 7em;
     margin-top: -10px;
@@ -293,8 +299,8 @@ h1 {
 .ptext {
     text-align: center;
     color: #000;
-    font-size: 1.2em;
-    margin: 0 1em;
+    font-size: 1.3em;
+    margin: 15% 1em;
 }
 
 .ptext h1 {
@@ -306,12 +312,15 @@ h1 {
 .landscreenimg .ptext p {
     font-style: italic;
     transform: translateY(2em);
-    font-size: 1.1em;
-    width: 250px;
+    font-size: 1.4em;
+    width: 290px;
     margin: 1em .3em;
     margin-left: calc(50% - 125px);
     display: block;
-    text-shadow: 2px 2px 10px #484848;
+    background-color: rgba(153, 130, 102, 0.2);
+    text-shadow: 2px 2px 13px black;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: white;
 }
 
 /********************************************************************/
@@ -915,6 +924,7 @@ h2 {
 
 
 @media only screen and (max-width: 1023px) {
+
     .presentation-images-tablet {
         display: none !important;
     }
@@ -1883,12 +1893,12 @@ footer {
 /*****************Media queries Desktop 1920px***********************/
 @media all and (min-width: 1920px) {
 
-    .ptext h1 {
-        font-size: 2em;
+    h1 {
+        font-size: 2.3em;
     }
 
     .landscreenimg .ptext p {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
     .envinuit {

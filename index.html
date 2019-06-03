@@ -10,8 +10,11 @@
     <style>
         @media only screen and (min-width : 768px) {
             h1 {
-                color: white;
-                font-weight: 900;
+                font-size: 3.3em;
+            }
+
+            .landscreenimg .ptext p {
+                font-size: 1.6em;
             }
 
             .ptext p {
@@ -19,7 +22,6 @@
             }
 
             .landscreenimg .ptext p {
-                font-size: 1.2em;
                 width: 500px;
                 margin-left: calc(50% - 250px);
             }
@@ -262,7 +264,7 @@
                 &#9776;
             </label>
             <img onclick="location.href='index.html'" class="logo" src="images/logo.png" alt="Logo Lis Stender">
-            <img class="bag" src="images/bag1.png" alt="Shopping Bag Products">
+            <img onclick="location.href='shop.html'" class="bag" src="images/bag1.png" alt="Shopping Bag Products">
             <div class="desktop-menu">
                 <div><a href="#">Home</a></div>
                 <div><a href="about.html">About</a></div>
@@ -288,10 +290,9 @@
     <main>
 
         <div class="landscreenimg">
-            <img class="image-overlay" src="images/p1.png" alt="Landscape Greenland">
             <div class="ptext">
                 <h1>Welcome to Lis Stender Designs</h1>
-                <p> Ice Cold Designs from a Warm Heart </p>
+                <p> Ice Cold Designs from Greenland </p>
             </div>
         </div>
 
@@ -370,6 +371,8 @@
                 </div>
 
             </div>
+
+
             <section class="environment">
                 <h2>Environment</h2>
 
@@ -419,8 +422,7 @@
                         So, the only thing I can say it that I deeply want to recommend the design. "
                     </p>
                     <div class="client">
-                        <p> <b> Daniel Byström </b> </p>
-                        <p style="margin-top: -30px;"> Industrial Designer </p>
+                        <p> <b> Daniel Byström, </b> Industrial Designer </p>
                     </div>
 
 
@@ -435,8 +437,7 @@
                         together with our Greenlandic art in general,
                         create a feel-good sensation for our guests’ stay."</p>
                     <div class="client">
-                        <p> <b> Erik Bjerregaard </b> </p>
-                        <p style="margin-top: -30px;"> Managing Director </p>
+                        <p> <b> Erik Bjerregaard, </b> Managing Director </p>
                     </div>
                 </div>
             </section>
@@ -483,6 +484,7 @@
                 <button class="fpb" onclick="location.href='shop.html'">Shop now </button>
 
             </section>
+
         </div>
 
         <div class="modal">
@@ -521,10 +523,19 @@
                                     <option class="option3" value="3"> Value 3 </option>
                                 </select>
                             </div>
+
+                            <div id="select_secondary" class="select-container">
+                                <select class="select-options-modal">
+                                    <option value="0"> &#9660; Select option </option>
+                                    <option class="option1sec" value="1"> Value 1 </option>
+                                    <option class="option2sec" value="2"> Value 2 </option>
+                                    <option class="option3sec" value="3"> Value 3 </option>
+                                </select>
+                            </div>
                         </div>
 
                         <button>
-                            Add to Basket
+                            Order Now
                         </button>
                         <section class="genre-modal">
                             <p class="material-modal"> Material </p>
