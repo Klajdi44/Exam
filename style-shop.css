@@ -86,6 +86,7 @@ header {
 .bag {
     margin-top: 5px;
     height: 2.5em;
+    cursor: pointer;
 }
 
 .menu {
