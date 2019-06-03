@@ -37,6 +37,9 @@ function loadApi(data) {
 
         parentElement.appendChild(clone);
     })
+
+
+
 };
 
 function findCategory(data) {
@@ -53,3 +56,15 @@ function findCategory(data) {
 
 loadCategories(baseLink);
 loadListings(baseLink);
+
+
+parentElement.addEventListener("load", hideMockup());
+
+function hideMockup() {
+
+    var mockups = document.getElementsByClassName("mockup-listing");
+
+    for (var i = 0; i < mockups.length; i++) {
+        mockups[i].style.display = "none";
+    }
+}
