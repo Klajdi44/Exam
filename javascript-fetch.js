@@ -33,13 +33,11 @@ function loadApi(data) {
         clone.querySelector(".price").textContent = listing.price;
         clone.querySelector(".material").textContent = listing.material;
         clone.querySelector(".collection").textContent = listing.collection;
+        clone.querySelector(".item").classList.add("hide");
 
 
         parentElement.appendChild(clone);
     })
-
-
-
 };
 
 function findCategory(data) {
@@ -58,13 +56,15 @@ loadCategories(baseLink);
 loadListings(baseLink);
 
 
-parentElement.addEventListener("load", hideMockup());
+window.setTimeout(hideMockup, 1500);
 
 function hideMockup() {
-
     var mockups = document.getElementsByClassName("mockup-listing");
-
+    var listings = document.getElementsByClassName("item");
     for (var i = 0; i < mockups.length; i++) {
         mockups[i].style.display = "none";
+    }
+    for (var i = 0; i < listings.length; i++) {
+        listings[i].classList.remove("hide");
     }
 }
