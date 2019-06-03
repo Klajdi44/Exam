@@ -280,6 +280,7 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(images/lishp.jpg);
+    background-position: bottom;
     height: 90vh;
     padding-top: 7em;
     margin-top: -10px;
@@ -315,7 +316,6 @@ h1 {
     margin: 1em .3em;
     margin-left: calc(50% - 125px);
     display: block;
-    background-color: rgba(153,130,102,0.2);
     text-shadow: 2px 2px 13px black;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: white;
