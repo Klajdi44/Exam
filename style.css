@@ -543,6 +543,7 @@ h1 {
     text-align: center;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 30px;
     background-color: white;
     font-family: 'Montserrat', 'sans-serif';
     line-height: 0;
@@ -553,6 +554,8 @@ h1 {
     border: 1px solid #2c2b30;
 }
 
+
+
 .fpc a {
     color: #2c2b30;
 }
@@ -560,6 +563,8 @@ h1 {
 .fpc:hover {
     opacity: 1;
 }
+
+
 
 /********************************************************************/
 
@@ -1135,7 +1140,7 @@ footer {
         display: none;
     }
 
-    #k1024{
+    #k1024 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
