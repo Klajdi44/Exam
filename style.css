@@ -266,7 +266,7 @@ h1 {
 }
 
 .border a {
-    all: unset;
+    text-decoration: none;
     color: white;
 }
 
@@ -1232,7 +1232,7 @@ footer {
 }
 
 .social-media a {
-    all: unset;
+    text-decoration: none;
 }
 
 .social-media a:hover {

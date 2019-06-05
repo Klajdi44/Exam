@@ -43,7 +43,7 @@ body {
     animation-name: flow;
     animation-duration: 0.8s;
     animation-iteration-count: 10;
-    animation-fill-mode: boths;
+    animation-fill-mode: both;
 }
 
 
