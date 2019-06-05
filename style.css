@@ -1815,6 +1815,10 @@ footer {
         margin: 0 10vw;
     }
 
+    #containerimg iframe {
+        height: 600px;
+    }
+
     /********************************************************/
 
     /*********************About page*************************/
@@ -1842,7 +1846,7 @@ footer {
     }
 
     .video iframe {
-        height: 540px;
+        height: 600px;
     }
 
 
