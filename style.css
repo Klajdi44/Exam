@@ -318,8 +318,7 @@ h1 {
     margin: 1em .3em;
     margin-left: calc(50% - 125px);
     display: block;
-    <<<<<<< HEAD=======background-color: rgba(153, 130, 102, 0.2);
-    > > > > > > > origin/master text-shadow: 2px 2px 13px black;
+    text-shadow: 3px 3px 7px #121212;
     -webkit-text-stroke-width: 0.3px;
     -webkit-text-stroke-color: white;
 }
@@ -1924,7 +1923,7 @@ footer {
     }
 
     .landscreenimg .ptext p {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
     .envinuit {
