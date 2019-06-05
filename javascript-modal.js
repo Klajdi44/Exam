@@ -1,15 +1,21 @@
 let productModal = document.querySelector(".modal");
 let productLink = "https://ingeniousneuron.com/lisstenderdatabase/wordpress/wp-json/wp/v2/product/";
 
+//function that is used to hide modal
+
 function toggleModal() {
     productModal.style.display = "none";
 }
+
+//function that receives an id after a click of a button and data of a product with that specific ID
 
 function openModal(itemId) {
     //console.log(itemId);
     fetch(productLink + itemId + "?_embed").then(e => e.json()).then(showModal);
 }
 
+
+//this function is used to parse data of a specific item to a modal and show it with content
 
 function showModal(listing) {
     //console.log(listing);
@@ -132,7 +138,7 @@ function showModal(listing) {
     productModal.style.display = "block";
 }
 
-
+//function used to change images from product preview to featured one
 
 function imageChange(source) {
     document.querySelector(".image-modal-main").src = source;

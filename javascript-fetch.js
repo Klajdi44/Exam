@@ -5,18 +5,19 @@ const categID = linkParameters.get("cat");
 const template = document.querySelector("template").content;
 const parentElement = document.querySelector(".container-item")
 
-
+//this function loads all the products and parses all the fetched data to the next one
 
 function loadListings(link) {
     fetch(link + "product?categories=" + categID + "&per_page=40&_embed").then(e => e.json()).then(data => loadApi(data));
 }
 
+//this function loads the names of the categories and parses the tada to next one
 
 function loadCategories(link) {
     fetch(link + "categories").then(e => e.json()).then(data => findCategory(data));
 }
 
-
+//this functions loads all the data to website by cloning a template
 
 
 function loadApi(data) {
@@ -40,6 +41,8 @@ function loadApi(data) {
     })
 };
 
+//this function is used to load the header by a category
+
 function findCategory(data) {
     data.forEach(category => {
         //console.log(category);
@@ -50,11 +53,13 @@ function findCategory(data) {
 };
 
 
-
+//here we call the functions
 
 loadCategories(baseLink);
 loadListings(baseLink);
 
+
+//we use this event listener to load a function wich hides the preloader and displays listings after some time so they could be loaded
 
 window.setTimeout(hideMockup, 1500);
 
